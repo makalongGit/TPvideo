@@ -1,0 +1,243 @@
+[ 2017-04-27T19:19:47+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2017-04-27T19:24:02+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2017-04-27T19:52:22+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/Template/Login/login.html
+
+[ 2017-04-27T19:52:47+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/./Template/Login/login.html
+
+[ 2017-04-27T19:54:35+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2017-04-27T19:54:36+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2017-04-27T19:54:36+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Application/Admin/View/Login/login.html
+
+[ 2017-04-27T19:55:22+08:00 ] ::1 /TPvideo/index.php/Admin/Login/login
+ERR: 模板不存在:./Template/default/Admin/Login/login.html
+
+[ 2017-04-27T19:59:32+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.css
+ERR: 非法操作:__ADMIN_JS__pintuer.css
+
+[ 2017-04-27T19:59:32+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.cssadmin.css
+ERR: 非法操作:__ADMIN_JS__pintuer.cssadmin.css
+
+[ 2017-04-27T19:59:32+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.js
+ERR: 非法操作:__ADMIN_JS__pintuer.js
+
+[ 2017-04-27T20:00:12+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.css
+ERR: 非法操作:__ADMIN_JS__pintuer.css
+
+[ 2017-04-27T20:00:12+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.cssadmin.css
+ERR: 非法操作:__ADMIN_JS__pintuer.cssadmin.css
+
+[ 2017-04-27T20:02:02+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_CSS__pintuer.cssadmin.css
+ERR: 非法操作:__ADMIN_CSS__pintuer.cssadmin.css
+
+[ 2017-04-27T20:02:02+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_CSS__pintuer.css
+ERR: 非法操作:__ADMIN_CSS__pintuer.css
+
+[ 2017-04-27T20:02:02+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.js
+ERR: 非法操作:__ADMIN_JS__pintuer.js
+
+[ 2017-04-27T21:46:25+08:00 ] ::1 /TPvideo/index.php/Admin/Login/pintuer.css
+ERR: 非法操作:pintuer.css
+
+[ 2017-04-27T21:46:25+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_CSS__pintuer.cssadmin.css
+ERR: 非法操作:__ADMIN_CSS__pintuer.cssadmin.css
+
+[ 2017-04-27T21:46:25+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.js
+ERR: 非法操作:__ADMIN_JS__pintuer.js
+
+[ 2017-04-27T21:48:26+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_CSS__pintuer.cssadmin.css
+ERR: 非法操作:__ADMIN_CSS__pintuer.cssadmin.css
+
+[ 2017-04-27T21:48:26+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ADMIN_JS__pintuer.js
+ERR: 非法操作:__ADMIN_JS__pintuer.js
+
+[ 2017-04-27T21:48:26+08:00 ] ::1 /TPvideo/index.php/Admin/Login/pintuer.css
+ERR: 非法操作:pintuer.css
+
+[ 2017-04-27T22:05:18+08:00 ] ::1 /TPvideo/index.php/Admin/Login/pintuer.css
+ERR: 非法操作:pintuer.css
+
+[ 2017-04-27T22:05:18+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ROOT__/Template/default/Admin/Public/csspintuer.cssadmin.css
+ERR: 非法操作:__ROOT__
+
+[ 2017-04-27T22:05:18+08:00 ] ::1 /TPvideo/index.php/Admin/Login/__ROOT__/Template/default/Admin/Public/jspintuer.js
+ERR: 非法操作:__ROOT__
+
+[ 2017-04-27T22:13:01+08:00 ] ::1 /TPvideo/index.php/Admin/Login/pintuer.css
+ERR: 非法操作:pintuer.css
+
+[ 2017-04-27T22:13:37+08:00 ] ::1 /TPvideo/index.php/Admin/Login/pintuer.css
+ERR: 非法操作:pintuer.css
+
+[ 2017-04-27T22:13:59+08:00 ] ::1 /TPvideo/index.php/Admin/Login/pintuer.css
+ERR: 非法操作:pintuer.css
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/js/layer.js
+ERR: 非法操作:js
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/css/admin.css
+ERR: 非法操作:css
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/css/pintuer.css
+ERR: 非法操作:css
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/css/font-awesome.min.css
+ERR: 非法操作:css
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/js/pintuer.js
+ERR: 非法操作:js
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/js/jquery-1.10.1.js
+ERR: 非法操作:js
+
+[ 2017-04-27T22:38:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+ERR: 非法操作:start
+
+[ 2017-04-27T22:40:56+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T22:40:57+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+ERR: 非法操作:start
+
+[ 2017-04-27T22:58:55+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T22:58:58+08:00 ] ::1 /TPvideo/index.php/Admin/Index/list.html
+ERR: 非法操作:list
+
+[ 2017-04-27T22:59:06+08:00 ] ::1 /TPvideo/index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-27T22:59:06+08:00 ] ::1 /TPvideo/index.php/Admin/Index/cate.html
+ERR: 非法操作:cate
+
+[ 2017-04-27T22:59:07+08:00 ] ::1 /TPvideo/index.php/Admin/Index/book.html
+ERR: 非法操作:book
+
+[ 2017-04-27T22:59:07+08:00 ] ::1 /TPvideo/index.php/Admin/Index/list.html
+ERR: 非法操作:list
+
+[ 2017-04-27T23:01:11+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+ERR: Syntax Error in template "./Template/default/Admin\Index\index.html"  on line 28 "&lt;li&gt;&lt;a href=&quot;{:U('Admin/Video/videolist')}&quot; target=&quot;right&quot;&gt;&lt;span class=&quot;fa fa-caret-right&quot;&gt;&lt;/span&gt;内容管理&lt;/a&gt;&lt;/li&gt;"  - Unexpected ":"
+
+[ 2017-04-27T23:01:27+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:01:29+08:00 ] ::1 /TPvideo/index.php/Admin/Index/%7B%20:U('Admin/Video/videolist')%20%7D
+ERR: 非法操作:{ :U('Admin
+
+[ 2017-04-27T23:03:01+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:03:13+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:03:16+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 9 "&lt;script src=&quot;{$smarty.xonst.__ADMIN_JS__}jquery-1.10.1.js&quot;&gt;&lt;/script&gt;" $smarty.xonst is invalid
+
+[ 2017-04-27T23:04:26+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:04:30+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 9 "&lt;script src=&quot;{$smarty.xonst.__ADMIN_JS__}jquery-1.10.1.js&quot;&gt;&lt;/script&gt;" $smarty.xonst is invalid
+
+[ 2017-04-27T23:05:24+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:05:25+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:05:41+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:05:42+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:05:45+08:00 ] ::1 /TPvideo/index.php/Admin/Index/ss.htnl
+ERR: 非法操作:ss.htnl
+
+[ 2017-04-27T23:06:09+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:06:11+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 9 "&lt;script src=&quot;{$smarty.xonst.__ADMIN_JS__}jquery-1.10.1.js&quot;&gt;&lt;/script&gt;" $smarty.xonst is invalid
+
+[ 2017-04-27T23:10:24+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:10:24+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:10:40+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:10:52+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 9 "&lt;script src=&quot;{$smarty.xonst.__ADMIN_JS__}jquery-1.10.1.js&quot;&gt;&lt;/script&gt;" $smarty.xonst is invalid
+
+[ 2017-04-27T23:11:51+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 224 "&lt;input type=&quot;text&quot; class=&quot;laydate-icon input w50&quot; name=&quot;datetime&quot; onclick=&quot;laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})&quot; value=&quot;&quot;  data-validate=&quot;required:日期不能为空&quot; style=&quot;padding:10px!important; height:auto!important;border:1px solid #ddd!important;&quot; /&gt;"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-04-27T23:12:24+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 336 "&lt;input type=&quot;text&quot; class=&quot;laydate-icon input w50&quot; name=&quot;datetime&quot; onclick=&quot;laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})&quot; value=&quot;&quot;  data-validate=&quot;required:日期不能为空&quot; style=&quot;padding:10px!important; height:auto!important;border:1px solid #ddd!important;&quot; /&gt;"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-04-27T23:13:06+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:13:07+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:13:07+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:13:09+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 336 "&lt;input type=&quot;text&quot; class=&quot;laydate-icon input w50&quot; name=&quot;datetime&quot; onclick=&quot;laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})&quot; value=&quot;&quot;  data-validate=&quot;required:日期不能为空&quot; style=&quot;padding:10px!important; height:auto!important;border:1px solid #ddd!important;&quot; /&gt;"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-04-27T23:14:09+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:14:11+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 405 "$(&quot;html,body&quot;).animate({scrollTop:$(&quot;#edit&quot;).offset().top},300);"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-04-27T23:14:34+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:14:36+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 405 "$(&quot;html,body&quot;).animate({scrollTop:$(&quot;#edit&quot;).offset().top},300);"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-04-27T23:15:05+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:15:07+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Syntax Error in template "./Template/default/Admin\Video\videolist.html"  on line 430 "layer.msg('已删除', {icon: 1});"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-04-27T23:15:33+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:15:35+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-04-27T23:21:35+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-27T23:21:39+08:00 ] ::1 /TPvideo/index.php/Admin/Index/info.html
+ERR: Syntax Error in template "./Template/default/Admin\Index\info.html"  on line 154 "layer.msg('上传成功', {icon: 1});"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-04-27T23:21:59+08:00 ] ::1 /TPvideo/index.php/Admin/Index/U('Admin/Login/login')
+ERR: 非法操作:U('Admin
+
+[ 2017-04-27T23:22:42+08:00 ] ::1 /TPvideo/index.php/Admin/Index/info.html
+ERR: Syntax Error in template "./Template/default/Admin\Index\info.html"  on line 154 "layer.msg('上传成功', {icon: 1});"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-04-27T23:22:44+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+

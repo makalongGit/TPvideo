@@ -1,0 +1,6 @@
+[ 2017-04-29T10:50:10+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T10:50:14+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
