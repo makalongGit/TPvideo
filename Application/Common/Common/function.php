@@ -14,3 +14,5 @@
 		$ver->entry();//输出验证码
 		return $ver;
 	}
+
+	
