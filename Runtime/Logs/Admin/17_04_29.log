@@ -321,3 +321,30 @@ ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
 [ 2017-04-29T17:33:23+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
 ERR: 非法操作:js
 
+[ 2017-04-29T17:54:14+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T17:54:41+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T17:54:43+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T17:57:58+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T17:58:01+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+ERR: Syntax Error in template "./Template/default/Admin\Cate\catelist.html"  on line 255 "&lt;/html&gt;" unclosed {foreach} tag
+
+[ 2017-04-29T17:58:23+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T17:58:47+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T18:14:30+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+
+[ 2017-04-29T18:15:27+08:00 ] ::1 /TPvideo/index.php/Admin/Index/__ADMIN_FONTS__font-awesome.min.css
+ERR: 非法操作:__ADMIN_FONTS__font-awesome.min.css
+

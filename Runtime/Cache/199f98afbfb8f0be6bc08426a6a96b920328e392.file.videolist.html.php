@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-04-27 23:15:35
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-01 15:45:15
          compiled from "./Template/default/Admin\Video\videolist.html" */ ?>
 <?php /*%%SmartyHeaderCode:2015759020b1754a172-10535321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '199f98afbfb8f0be6bc08426a6a96b920328e392' => 
     array (
       0 => './Template/default/Admin\\Video\\videolist.html',
-      1 => 1493306131,
+      1 => 1493624419,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_59020b17b9f47',
+  'variables' => 
+  array (
+    'info' => 0,
+    'v' => 0,
+    'pagelist' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59020b17b9f47')) {function content_59020b17b9f47($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-cn">
@@ -28,6 +34,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 pintuer.css">
 <link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
 admin.css">
+<link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
+page.css">
 <link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
 font-awesome.min.css">
 <script src="<?php echo @__ADMIN_JS__;?>
@@ -55,10 +63,12 @@ layer.js"></script>
 	
 	<button type="button" class="button border-blue" onclick="" id="button_gai" ><span class="fa fa-edit"></span> 
 	修改</button>
+  <form action="<?php echo @__SELF__;?>
+" method="POST" enctype="multipart/form-data">
       <input type="text" placeholder="请输入视频ID" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
         
-		  <button type="button" class="button border-main" onclick="changesearch()" id="cate_del"><span class="fa fa-search"></span> 
-	搜索</button>
+		  <button type="submit" class="button border-main" onclick="changesearch()" id="cate_del"><span class="fa fa-search"></span> 
+	搜索</button></form>
     </div>
     <table class="table table-hover text-center">
       <tr>
@@ -74,98 +84,40 @@ layer.js"></script>
 		<th width="10%">点击次数</th>
       </tr>
       <volist name="list" id="vo">
+      <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
    		 <tr>
           <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" /></td>
-          <td>1</td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['vid'];?>
+</td>
           <td width="10%"><img src="<?php echo @__ADMIN_IMAGE__;?>
 fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-         <td>喜剧</td>
-		 <td><span class="fa fa-check"></span></td>
-		 <td><span class="fa fa-check"></span></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+</td>
+         <td><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+</td>
+		 <td><span class="fa fa-check"><?php echo $_smarty_tpl->tpl_vars['v']->value['ishomepage'];?>
+</span></td>
+		 <td><span class="fa fa-check"><?php echo $_smarty_tpl->tpl_vars['v']->value['isrem'];?>
+</span></td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+</td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['publishedtime'];?>
+</td>
+		  <td><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
+</td>
         </tr>
-           		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" /></td>
-          <td>1</td>
-          <td width="10%"><img src="<?php echo @__ADMIN_IMAGE__;?>
-fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-         
-        </tr>
-		   		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="<?php echo @__ADMIN_IMAGE__;?>
-fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-          
-        </tr>
-		   		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="<?php echo @__ADMIN_IMAGE__;?>
-fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-         <td>喜剧</td>
-		 <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-          
-        </tr>
-		   		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="<?php echo @__ADMIN_IMAGE__;?>
-fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-        
-				</tr>
-
-		  <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="<?php echo @__ADMIN_IMAGE__;?>
-fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-          
-        </tr>
-     
-      <tr>
-        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
-      </tr>
+        <?php } ?>   		 
+     <tr> 
+      <td colspan="12"><?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
+ </td>
+    </tr>
+      
     </table>
   </div>
 </form>

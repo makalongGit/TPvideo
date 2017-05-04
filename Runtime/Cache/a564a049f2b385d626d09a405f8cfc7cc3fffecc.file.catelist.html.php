@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-04-28 15:15:51
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-04 16:56:22
          compiled from "./Template/default/Admin\Cate\catelist.html" */ ?>
 <?php /*%%SmartyHeaderCode:259315902ec2792d4c7-52090734%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a564a049f2b385d626d09a405f8cfc7cc3fffecc' => 
     array (
       0 => './Template/default/Admin\\Cate\\catelist.html',
-      1 => 1493363745,
+      1 => 1493888173,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_5902ec27ca7f9',
+  'variables' => 
+  array (
+    'catelist' => 0,
+    'v' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5902ec27ca7f9')) {function content_5902ec27ca7f9($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-cn">
@@ -52,80 +57,101 @@ layer.js"></script>
 	<button type="button" class="button border-blue" onclick="" id="button_gai" ><span class="fa fa-edit"></span> 
 	修改</button>
   </div>
+
   <table class="table table-hover text-center">
+   
     <tr>
 	<th width="6%" style="text-align:left;">选择</th>
       <th width="5%">ID</th>
       <th width="12%">类型</th>
 	  <th width="12%">上级类型</th>
     </tr>
+    <form>
+    <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
     <tr>
-	<td style="text-align:left;"><input type="checkbox" name="cate_b_id" class="cate_check" value="" /></td>
-      <td>1</td>
-      <td>电影</td>
-	  <td>顶级类型</td>
+	<td style="text-align:left;">
+  <input id="cate_check_id_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+" type="checkbox" name="cate_b_id" class="cate_check" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+" /></td>
+      <td id="cate_id_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+</td>
+      <td id="cate_cate_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</td>
+	    <td id="up_cate_cate_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['level'];?>
+</td>
      
       
     </tr>
-    <tr>
-	<td style="text-align:left;"><input type="checkbox" name="cate_b_id" value="" class="cate_check"/></td>
-      <td>1</td>
-      <td>恐怖电影</td>
-	  <td>电影</td>
-     
-      
-    </tr>
-    <tr>
-	<td style="text-align:left;"><input type="checkbox" name="cate_b_id" value="" class="cate_check"/></td>
-      <td>1</td>
-      <td>RPG游戏</td>
-	  <td>游戏</td>
-   
-     
-    </tr>
-    <tr>
-	<td style="text-align:left;"><input type="checkbox" name="cate_b_id" value="" class="cate_check"/></td>
-      <td>1</td>
-      <td>国产动漫</td>
-	  <td>动画</td>
-   
-      
-    </tr>
-    <tr>
-	<td style="text-align:left;"><input type="checkbox" name="cate_b_id" value="" class="cate_check"/></td>
-      <td>1</td>
-      <td>大陆剧</td>
-	  <td>电视剧</td>
+
+    <?php } ?>
+    </form>
+</table>
+    
   
-      
-    </tr>
-    <tr>
-	<td style="text-align:left;"><input type="checkbox" name="cate_b_id" value="" class="cate_check"/></td>
-      <td>1</td>
-      <td>华语新歌</td>
-	  <td>音乐</td>
-      
-      
-    </tr>
-  </table>
+  
 </div>
+<div id="div"></div>  
+    <button class="ajaxtest" onclick="">AJAX</button>  
+
 <script type="text/javascript">
+$('.ajaxtest').click(function(){
+  var test=123;
+  var cons={
+     test : test,
+  };
+  $.post("<?php echo U('Cate/ajax');?>
+",cons,function(data){
+    alert(data['status']);
+    alert(data['content']);
+  },'json');
+});
+
 
 
 
 //修改按钮点击
 $('#button_gai').click(function(){ 
+  //未选择
+  if($('input[name="cate_b_id"]:checked').length==0){
+    layer.tips('请选择修改内容', '#button_gai', {
+      tips: [1, '#ff0033'] //还可配置颜色
+    });
+  }
+  else{
+    $("html,body").animate({ scrollTop:$("#edit").offset().top },300);
+    //获得选择的id
+    var inputs = document.getElementsByName('cate_b_id');
+    for(var i = 0; i<inputs.length; i++){
+      var obj = inputs[i];
+      var value;
+      if(obj.type == 'checkbox'){
+        if(obj.checked == true){
+         // alert(obj.id);//选中的id打印
+          value = obj.id;
+        }
+      }
+    }
+  var arr = value.split('_');
+  var str = $('#cate_cate_'+arr[3]).text();
+  var id=$('#cate_id_'+arr[3]).text();
+  var lev=$('#up_cate_cate_'+arr[3]).text();
+  //alert(str);
+  //alert(id);
+  //alert(lev);
+  $('#cate_cate_change').val(str);//获得栏目名称
+  $('.vt_id_up').val(value);
+  $('#level2').val(lev);
 
-
-if($('input[name="cate_b_id"]:checked').length==0){
-layer.tips('请选择修改内容', '#button_gai', {
-  tips: [1, '#ff0033'] //还可配置颜色
-});
-}
-else{
-$("html,body").animate({ scrollTop:$("#edit").offset().top },300);
-}
-
+  }
 });
 
 //添加分类按钮点击
@@ -138,57 +164,71 @@ $("html,body").animate({ scrollTop:$("#add").offset().top },300);
 
 //删除按钮点击
 $('#cate_del').click(function(){ 
+  if($('input[name="cate_b_id"]:checked').length==0){
+    layer.tips('请选择删除内容', '#cate_del', {
+      tips: [1, '#ff0033'] //还可配置颜色
+    });
+  }else{
+    //获得选中id，传到后台
+    layer.confirm('确定删除吗？',{ 
+    btn: ['确定','取消']}, function(){
+    //点击第一个运行
+    /*var id_array=new Array();
+    $('input[name="cate_b_id"]:checked').each(function(){
+      id_array.push($(this).val());
+    });
+    var idstr=id_array.join(',');
+    //alert(idstr);
+    $.post("<?php echo U('Cate/deleteCat');?>
+",{ data : idstr },function(res){
+      alert(res.status);
+      //alert(res.status1);
+      if(res.status==3){
+        alert(123);
+        
+      else if(res.status==1)
+        layer.msg('请先删除子栏目', { icon: 0 });
+      else if(res.status==2)
+        layer.msg('该栏目下有电影不给删', { icon: 0 });
+      else if(res.status==4)
+        layer.msg('删除失败请重试', { icon: 2 });
+    });*/
+  	layer.msg('已删除', { icon: 1 });
+    //alert("1");
+    }, function(){
+        //点击第二个运行
+       // alert("2");
+       layer.msg('已取消', { icon: 1 });     
+      });
 
-if($('input[name="cate_b_id"]:checked').length==0){
-layer.tips('请选择删除内容', '#cate_del', {
-  tips: [1, '#ff0033'] //还可配置颜色
-});
-}else{
- layer.confirm('确定删除吗？', {
-  btn: ['确定','取消'] //按钮
-}, function(){
-  //点击第一个运行
-	layer.msg('已删除', { icon: 1 });
-  //alert("1");
-}, function(){
-  //点击第二个运行
- // alert("2");
- layer.msg('已取消', { icon: 1 });
-  
-});
-
-}
- 
-
-});
+    }
+  });
 
 
 //全选按钮点击
 	var i=1;
 	var h=1;
-$("#checkall").click(function(){ 
+  $("#checkall").click(function(){ 
 	
 		$("input[name='cate_b_id']").each(function(){
-			if(i==1){
-			this.checked = true;
-			$('#button_gai').attr('disabled','disabled');
-			h=1;
-			}else{
-			this.checked = false;
-			$("#button_gai").removeAttr("disabled");
-			h=0;
-			}	
-			
+  			if(i==1){
+  			this.checked = true;
+  			$('#button_gai').attr('disabled','disabled');
+  			h=1;
+  			}else{
+  			this.checked = false;
+  			$("#button_gai").removeAttr("disabled");
+  			h=0;
+			}				
+    });
+    		if(h==1){
+    			i=0;
+    		}else{
+    			i=1;
+    		}
 
-});
-		if(h==1){
-			i=0;
-		}else{
-			i=1;
-		}
-
-		
-	});
+    		
+    	});
 
 
 //单个checkbox点击
@@ -210,13 +250,14 @@ $("#button_gai").removeAttr("disabled");
 <div class="panel admin-panel margin-top">
   <div class="panel-head" id="add"><strong><span class="fa fa-plus-square-o"></span>添加内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">
+    <form method="post" class="form-x" action="<?php echo U('Admin/Cate/add');?>
+">
 		<div class="form-group">
         <div class="label">
           <label>分类标题：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" name="title" value="电影" />
+          <input type="text" class="input w50" name="typeName"  />
           <div class="tips"></div>
         </div>
       </div>
@@ -226,14 +267,28 @@ $("#button_gai").removeAttr("disabled");
           <label>上级分类：</label>
         </div>
         <div class="field">
-          <select name="pid" class="input w50">
-            <option value="">请选择分类</option>
-            <option value="">电影</option>
-            <option value="">电视剧</option>
-            <option value="">动画</option>
-            <option value="">游戏</option>
-			<option value="">直播</option>
-			<option value="">音乐</option>
+          <select name="level" class="input w50">
+          <option value="">请选择分类</option>
+            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+">
+                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
+                <span><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+</span><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+
+                <?php }else{ ?>
+                 <span ><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+</span><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
+<?php $_tmp1=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp1),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
+
+                <?php }?></option>
+              <?php } ?>
           </select>
          
         </div>
@@ -244,7 +299,7 @@ $("#button_gai").removeAttr("disabled");
           <label>关键字：</label>
         </div>
         <div class="field">
-          <input type="text" class="input" name="s_title" />
+          <input type="text" class="input" name="vt_key" />
         </div>
       </div>
    
@@ -266,13 +321,15 @@ $("#button_gai").removeAttr("disabled");
 <div class="panel admin-panel margin-top">
   <div class="panel-head" id="edit"><strong><span class="fa fa-edit"></span>修改分类</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">        
+    <form method="post" class="form-x" action="<?php echo U('Admin/Cate/update');?>
+">   
+    <input type="hidden"  class="vt_id_up" name="vt_id_up"  >    
       <div class="form-group">
-        <div class="label">
+        <div class="label" >
           <label>分类标题：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" name="title" value="电影" />
+          <input type="text" class="input w50" name="typeName" id="cate_cate_change" />
           <div class="tips"></div>
         </div>
       </div>    
@@ -281,14 +338,26 @@ $("#button_gai").removeAttr("disabled");
           <label>上级分类：</label>
         </div>
         <div class="field">
-          <select name="pid" class="input w50">
-            <option value="">请选择分类</option>
-            <option value="">电影</option>
-            <option value="">电视剧</option>
-            <option value="">动画</option>
-            <option value="">游戏</option>
-			<option value="">直播</option>
-			<option value="">音乐</option>
+          <select id="level2" class="input w50">
+            <option value="0">顶级分类</option>
+            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+">
+                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
+                <?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+
+                <?php }else{ ?>
+                <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
+<?php $_tmp2=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp2),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
+
+                <?php }?></option>
+              <?php } ?>
           </select>
          
         </div>
@@ -298,7 +367,7 @@ $("#button_gai").removeAttr("disabled");
           <label>关键字：</label>
         </div>
         <div class="field">
-          <input type="text" class="input" name="s_title" value=""/>         
+          <input type="text" class="input" name="vt_key" value=""/>         
         </div>
       </div>
      
@@ -309,7 +378,7 @@ $("#button_gai").removeAttr("disabled");
           <label></label>
         </div>
         <div class="field">
-          <button class="button bg-main fa fa-check-square edit_tijiao" type="submit"> 提交</button>
+          <button  id="updateS" onclick="" type="submit" class="button bg-main fa fa-check-square edit_tijiao" > 提交</button>
         </div>
       </div>
     </form>

@@ -22,3 +22,55 @@ mg_role_id tinyint(3) unsigned not null default '0' comment '角色id'
 );
 insert into manager values(1,'admin','123123','0');
 insert into manager values(2,'jialong','123123','1');
+
+
+create table cate(
+vt_id int not null auto_increment,
+typeName varchar(20) not null,
+typeDescription text,
+level int not null,
+vt_key varchar(30) not null,
+primary key(vt_id)
+);
+insert into cate values(1,'电影','电影描述',0,'电影关键字');
+insert into cate values(2,'电视剧','电视剧描述',0,'电视剧关键字');
+insert into cate values(3,'爱情电视剧','爱情电视剧描述',2,'爱情电视剧关键字');
+视频表
+create table video(
+vid int not null auto_increment,
+vt_id int not null ,
+uid int(9) not null,
+videoName varchar(30) not null default '',
+introduction text,
+videoSrc varchar(100) not null default '',
+keywords varchar(50),
+publishedTime varchar(20),
+numOfViewed int,
+isPassed int,
+isHomePage int,
+isRem int,
+primary key(vid),
+foreign key(vt_id) references cate(vt_id), 
+foreign key(uid) references user(userID)
+);
+insert into video values(1,1,142011059,'速度与激情8',"2`1323",'33com','激8','2017/4/2',999,1,1,1);
+insert into video values(2,2,142011059,'速度与激情7','激7','33.com','激8','2017/4/2',999,0,1,1);
+insert into video values(3,11,142011060,'速度与激情6','激6','33.com','激8','2017/4/2',999,1,0,1);
+insert into video values(4,3,142011059,'速度与激情5','激5','35.com','激5','2017/4/5',432,1,0,1);
+insert into video values(5,8,142011058,'速度与激情4','激4','34.com','激4','2017/4/4',224,0,1,1);
+insert into video values(6,9,142011057,'速度与激情3','激3','33.com','激3','2017/4/3',132,1,0,1);
+insert into video values(7,10,142011057,'速度与激情2','激2','32.com','激2','2017/4/2',314,1,1,0);
+insert into video values(8,1,142011059,'速度与激情1','激1','31.com','激1','2017/4/1',111,0,1,1);
+create table review(
+ReID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+userID int NOT NULL,
+reviews text NOT NULL,
+vid int NOT NULL,
+reSym int,
+ReTime varchar(20) NOT NULL,
+foreign key(userID) references user(userID),
+foreign key(vid) references video(vid)
+);
+insert into review values(1,142011059,'sjfdfkaf','3',1,'2017/4/2');
+insert into review values(2,142011058,'sjfdfkaf','3',0,'2017/4/2');
+insert into review values(3,142011058,'sjfdfkaf','3',0,'2017/4/2');

@@ -5,6 +5,7 @@
 <title></title>
 <link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}pintuer.css">
 <link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}admin.css">
+<link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}page.css">
 <link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}font-awesome.min.css">
 <script src="{$smarty.const.__ADMIN_JS__}jquery-1.10.1.js"></script>
 <script src="{$smarty.const.__ADMIN_JS__}pintuer.js"></script>
@@ -28,10 +29,11 @@
 	
 	<button type="button" class="button border-blue" onclick="" id="button_gai" ><span class="fa fa-edit"></span> 
 	修改</button>
+  <form action="{$smarty.const.__SELF__}" method="POST" enctype="multipart/form-data">
       <input type="text" placeholder="请输入视频ID" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
         
-		  <button type="button" class="button border-main" onclick="changesearch()" id="cate_del"><span class="fa fa-search"></span> 
-	搜索</button>
+		  <button type="submit" class="button border-main" onclick="changesearch()" id="cate_del"><span class="fa fa-search"></span> 
+	搜索</button></form>
     </div>
     <table class="table table-hover text-center">
       <tr>
@@ -47,92 +49,24 @@
 		<th width="10%">点击次数</th>
       </tr>
       <volist name="list" id="vo">
+      {foreach $info as $k=>$v}
    		 <tr>
           <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" /></td>
-          <td>1</td>
+          <td>{$v.vid}</td>
           <td width="10%"><img src="{$smarty.const.__ADMIN_IMAGE__}fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-         <td>喜剧</td>
-		 <td><span class="fa fa-check"></span></td>
-		 <td><span class="fa fa-check"></span></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
+          <td>{$v.videoname}</td>
+         <td>{$v.vt_id}</td>
+		 <td><span class="fa fa-check">{$v.ishomepage}</span></td>
+		 <td><span class="fa fa-check">{$v.isrem}</span></td>
+          <td>{$v.vt_id}</td>
+          <td>{$v.publishedtime}</td>
+		  <td>{$v.numofviewed}</td>
         </tr>
-           		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" /></td>
-          <td>1</td>
-          <td width="10%"><img src="{$smarty.const.__ADMIN_IMAGE__}fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-         
-        </tr>
-		   		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="{$smarty.const.__ADMIN_IMAGE__}fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-          
-        </tr>
-		   		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="{$smarty.const.__ADMIN_IMAGE__}fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-         <td>喜剧</td>
-		 <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-          
-        </tr>
-		   		 <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="{$smarty.const.__ADMIN_IMAGE__}fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-        
-				</tr>
-
-		  <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           </td>
-          <td>1</td>
-          <td width="10%"><img src="{$smarty.const.__ADMIN_IMAGE__}fuyao.jpg" alt="" width="70" height="50" /></td></td>
-          <td>西游：伏妖传</td>
-          <td>喜剧</td>
-		  <td></td>
-		 <td></td>
-          <td>电影</td>
-          <td>2016-07-01</td>
-		  <td>2016</td>
-          
-        </tr>
-     
-      <tr>
-        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
-      </tr>
+        {/foreach}   		 
+     <tr> 
+      <td colspan="12">{$pagelist} </td>
+    </tr>
+      
     </table>
   </div>
 </form>

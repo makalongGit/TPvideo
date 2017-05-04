@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-04-28 15:16:54
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-04 16:55:04
          compiled from "./Template/default/Admin\Book\booklist.html" */ ?>
 <?php /*%%SmartyHeaderCode:220645902ec66dbfb19-07761642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b706b87fa77d3f7745ae3ae153d5037689d430c9' => 
     array (
       0 => './Template/default/Admin\\Book\\booklist.html',
-      1 => 1493363806,
+      1 => 1493888010,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_5902ec670bbb1',
+  'variables' => 
+  array (
+    'info' => 0,
+    'v' => 0,
+    'pagelist' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5902ec670bbb1')) {function content_5902ec670bbb1($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-cn">
@@ -32,6 +38,8 @@ pintuer.css">
 <link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
 admin.css">
 <link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
+page.css">
+<link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
 font-awesome.min.css">
 <script src="<?php echo @__ADMIN_JS__;?>
 jquery-1.10.1.js"></script>
@@ -41,7 +49,7 @@ pintuer.js"></script>
 layer.js"></script>
 </head>
 <body>
-<form method="post" action="">
+
   <div class="panel admin-panel">
     <div class="panel-head"><strong class="icon-reorder"> 评论管理</strong></div>
     <div class="padding border-bottom">
@@ -65,86 +73,74 @@ layer.js"></script>
         <th width="10%">留言时间</th>
             
       </tr>      
+      <form  action="">
         <tr>
-          <td><input type="checkbox" name="id[]" value="1" /></td>
-            <td>1</td>
-          <td>神夜</td>      
-          <td>这是一套后台UI，喜欢的朋友请多多支持谢谢。</td>
-		   <td>1</td>
-			<td>神夜</td> 
-			<td><span class="fa fa-check"></span></td>
-          <td>2016-07-01</td>
+        <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+          <td><input type="checkbox" name="id" id="checkbox"value="<?php echo $_smarty_tpl->tpl_vars['v']->value['reid'];?>
+" /></td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['reid'];?>
+</td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
+</td>      
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['reviews'];?>
+</td>
+		      <td><?php echo $_smarty_tpl->tpl_vars['v']->value['vid'];?>
+</td>
+			    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['vid'];?>
+</td> 
+			    <td><span class="fa fa-check"><?php echo $_smarty_tpl->tpl_vars['v']->value['resym'];?>
+</span></td>
+          <td><?php echo $_smarty_tpl->tpl_vars['v']->value['retime'];?>
+</td>
           
         </tr>
-        <tr>
-          <td><input type="checkbox" name="id[]" value="1" /></td>
-            <td>1</td>
-          <td>神夜</td>      
-          <td>这是一套后台UI，喜欢的朋友请多多支持谢谢。</td>
-		   <td>1</td>
-			<td>神夜</td> 
-			<td><span class="fa fa-check"></span></td>
-          <td>2016-07-01</td>
-     
-        </tr>
-          <tr>
-          <td><input type="checkbox" name="id[]" value="1" /></td>
-            <td>1</td>
-          <td>神夜</td>      
-          <td>这是一套后台UI，喜欢的朋友请多多支持谢谢。</td>
-		   <td>1</td>
-			<td>神夜</td> 
-			<td><span class="fa fa-check"></span></td>
-          <td>2016-07-01</td>
-         
-        </tr>
-          <tr>
-          <td><input type="checkbox" name="id[]" value="1" /></td>
-            <td>1</td>
-          <td>神夜</td>      
-          <td>这是一套后台UI，喜欢的朋友请多多支持谢谢。</td>
-		   <td>1</td>
-			<td>神夜</td> 
-			<td><span class="fa fa-check"></span></td>
-          <td>2016-07-01</td>
-       
-        </tr>
-          <tr>
-         <td><input type="checkbox" name="id[]" value="1" /></td>
-            <td>1</td>
-          <td>神夜</td>      
-          <td>这是一套后台UI，喜欢的朋友请多多支持谢谢。</td>
-		   <td>1</td>
-			<td>神夜</td> 
-			<td><span class="fa fa-check"></span></td>
-          <td>2016-07-01</td>
-          
-        </tr>
+        <?php } ?>
+        </form>
       <tr>
-        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+        <td colspan="12"><?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
+ </td>
       </tr>
     </table>
   </div>
-</form>
+
 <script>
 
 //删除按钮点击
 $('#cate_del').click(function(){ 
 
-if($('input[name="id[]"]:checked').length==0){
+if($('input[name="id"]:checked').length==0){
 layer.tips('请选择删除内容', '#cate_del', {
   tips: [1, '#ff0033'] //还可配置颜色
 });
 }else{
+
  layer.confirm('确定删除吗？', {
   btn: ['确定','取消'] //按钮
 }, function(){
-  //点击第一个运行
-	layer.msg('已删除', { icon: 1 });
-  //alert("1");
+  //点击第一个运行 
+  var id_array=new Array();
+  $('input[name="id"]:checked').each(function(){
+      id_array.push($(this).val());
+  });
+  var idstr=id_array.join(',');
+  //alert($('form').serializeArray() );
+  $.post("<?php echo U('Book/bookdelete');?>
+",{ data : idstr },function(res){
+    if(res.state==1){
+      layer.msg('已删除', { icon: 1 });
+      setTimeout("document.location.reload()",1250);
+    }
+    else
+      layer.msg('请重试', { icon: 2 });
+    
+  } )
 }, function(){
-  //点击第二个运行
- // alert("2");
  layer.msg('已取消', { icon: 1 });
   
 });

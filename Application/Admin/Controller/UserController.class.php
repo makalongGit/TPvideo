@@ -13,8 +13,8 @@ class UserController extends Controller{
 	/*
 	用户id查询
 	 */
-		if($_POST['keywords']){
-			$info=$this->user->where('userID=%u',$_POST['keywords'])->select();
+		if(I('post.keywords')){
+			$info=$this->user->where('userID=%u',I('post.keywords'))->select();
 			if(!empty($info)){
 				$this->assign('info',$info);
 				$this->display();
@@ -24,12 +24,13 @@ class UserController extends Controller{
 	/*
 	排序
 	 */
-		}else if($_POST['order']){
+		}else if(I('post.order')){
 			$count=$this->user->count();
 		    $page=new \Org\Video\Page($count);
 		    $pagelist=$page->show();	
 			$info=$this->user->order('userVio desc')->select();
 			$this->assign('info',$info);
+			$this->assign('pagelist',$pagelist);
 			$this->display();
 		}
 	/*

@@ -5,7 +5,27 @@ use Think\Controller;
 	用户列表
 	 */
 class BookController extends Controller{	
-	public function booklist(){
-		$this->display();
+	public function __construct(){
+		parent::__construct();
+        $this->book=D('Review');
 	}
+	public function booklist(){
+		$count=$this->book->count();
+	    $page=new \Org\Video\Page($count);
+	    $info=$this->book->limit($page->firstRow.','.$page->listRows)->select();
+	    $pagelist=$page->show();	
+	    //dump($info)	;
+		$this->assign('info',$info);
+		$this->assign('pagelist',$pagelist);
+		$this->display();
+		
+	}
+	public function bookdelete(){
+		$deleteArr=I('post.data');
+		if($this->book->delete($deleteArr)){
+  			$data['state']=1;
+  		}else
+  			$data['state']=0;
+  		$this->ajaxReturn($data);  	
+ 	}
 }

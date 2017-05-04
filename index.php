@@ -34,7 +34,7 @@ define('RUNTIME_PATH','./Runtime/');
 define("__ADMIN_CSS__", '/TPvideo/Template/default/Admin/Public/css/');
 define("__ADMIN_JS__", '/TPvideo/Template/default/Admin/Public/js/');
 define("__ADMIN_IMAGE__", '/TPvideo/Template/default/Admin/Public/images/');
-define("__ADMIN_FONT__", '/TPvideo/Template/default/Admin/Public/fonts/');
+define("__ADMIN_FONTS__", '/TPvideo/Template/default/Admin/Public/css/');
 
 	/*''      => ,
     '__HOME_JS__'       =>  __ROOT__.trim(TMPL_PATH,'.').'Home/Public/js',
