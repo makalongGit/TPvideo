@@ -47,12 +47,17 @@ keywords varchar(50),
 publishedTime varchar(20),
 numOfViewed int,
 isPassed int,
-isHomePage int,
-isRem int,
+isHomePage int not null default 0,
+isRem int not null default 0,
+isDelete int,
 primary key(vid),
 foreign key(vt_id) references cate(vt_id), 
 foreign key(uid) references user(userID)
 );
+alter table video add column ori_img varchar(50);
+alter table video add column thumb_img varchar(50);
+alter table video drop column numOfViewed;
+alter table video add column numOfViewed int not null default 0;
 insert into video values(1,1,142011059,'速度与激情8',"2`1323",'33com','激8','2017/4/2',999,1,1,1);
 insert into video values(2,2,142011059,'速度与激情7','激7','33.com','激8','2017/4/2',999,0,1,1);
 insert into video values(3,11,142011060,'速度与激情6','激6','33.com','激8','2017/4/2',999,1,0,1);
@@ -74,3 +79,16 @@ foreign key(vid) references video(vid)
 insert into review values(1,142011059,'sjfdfkaf','3',1,'2017/4/2');
 insert into review values(2,142011058,'sjfdfkaf','3',0,'2017/4/2');
 insert into review values(3,142011058,'sjfdfkaf','3',0,'2017/4/2');
+
+	//查询表的外键名
+	SELECT  CONSTRAINT_CATALOG, 
+ CONSTRAINT_SCHEMA, 
+ CONSTRAINT_NAME, 
+ TABLE_SCHEMA, 
+ TABLE_NAME, 
+ CONSTRAINT_TYPE  
+ FROM 
+ information_schema.TABLE_CONSTRAINTS 
+ WHERE 
+ TABLE_NAME='表名'
+ 

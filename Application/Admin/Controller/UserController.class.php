@@ -18,7 +18,7 @@ class UserController extends Controller{
 			if(!empty($info)){
 				$this->assign('info',$info);
 				$this->display();
-			}else{
+			}else{  
 				$this->error('该用户不存在',U('Admin/User/userlist'),3);
 			}
 	/*

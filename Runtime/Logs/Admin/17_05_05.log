@@ -1,0 +1,199 @@
+[ 2017-05-05T09:27:55+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:36:34+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:37:16+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:37:20+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:37:22+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:37:23+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:37:29+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:37:31+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:48:04+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:53:20+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:29+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:30+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:30+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:30+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:30+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:30+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:31+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:31+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:53:31+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+ERR: Think\Model:getCatTree方法不存在！
+
+[ 2017-05-05T09:54:04+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T09:54:07+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:02:00+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:03:15+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:03:15+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:06:38+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:08:12+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:09:21+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:12:47+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T10:13:24+08:00 ] ::1 /TPvideo/index.php/Admin/video/videoadd.html
+ERR: 1452:Cannot add or update a child row: a foreign key constraint fails (`video_web`.`video`, CONSTRAINT `video_ibfk_2` FOREIGN KEY (`uid`) REFERENCES `user` (`userID`))
+ [ SQL语句 ] : INSERT INTO `video` (`videoName`,`vt_id`,`isHomePage`,`introduction`,`keywords`,`publishedTime`,`uid`) VALUES ('大沙发','8','1','按时发斯蒂芬','发的发','2017/2/3','142011033')
+
+[ 2017-05-05T14:54:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T14:54:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T14:55:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T14:55:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T14:57:46+08:00 ] ::1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T14:58:11+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T14:58:11+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:14:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:14:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:14:24+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:14:24+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:23:41+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:23:41+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:25:26+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:25:26+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:25:26+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:26+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:28+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:28+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:54+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T15:26:54+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Index/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T16:22:20+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:22:35+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:22:38+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:23:22+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:23:32+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T16:23:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/Video/js/laydate/laydate.js
+ERR: 非法操作:js
+
+[ 2017-05-05T16:23:43+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:24:57+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:25:25+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:27:03+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:27:18+08:00 ] ::1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:45:16+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不支持的图片处理库类型
+
+[ 2017-05-05T16:47:26+08:00 ] 127.0.0.1 /TPvideo/index.php/admin/video/videoupdate.html
+ERR: 不存在的图像文件
+

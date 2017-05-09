@@ -35,7 +35,9 @@ define("__ADMIN_CSS__", '/TPvideo/Template/default/Admin/Public/css/');
 define("__ADMIN_JS__", '/TPvideo/Template/default/Admin/Public/js/');
 define("__ADMIN_IMAGE__", '/TPvideo/Template/default/Admin/Public/images/');
 define("__ADMIN_FONTS__", '/TPvideo/Template/default/Admin/Public/css/');
-
+//上传图片路径
+define("__UPLOAD__",'./Upload/');
+define("__UPLOAD_IMG__",'/TPvideo/Upload/');
 	/*''      => ,
     '__HOME_JS__'       =>  __ROOT__.trim(TMPL_PATH,'.').'Home/Public/js',
     '__HOME_IMAGE__'    =>  __ROOT__.trim(TMPL_PATH,'.').'Home/Public/image',

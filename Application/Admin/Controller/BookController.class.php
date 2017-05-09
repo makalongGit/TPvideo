@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 /*
-	用户列表
+	评论列表
 	 */
 class BookController extends Controller{	
 	public function __construct(){
@@ -14,7 +14,6 @@ class BookController extends Controller{
 	    $page=new \Org\Video\Page($count);
 	    $info=$this->book->limit($page->firstRow.','.$page->listRows)->select();
 	    $pagelist=$page->show();	
-	    //dump($info)	;
 		$this->assign('info',$info);
 		$this->assign('pagelist',$pagelist);
 		$this->display();
