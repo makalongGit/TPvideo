@@ -2,13 +2,14 @@
 namespace Admin\Controller;
 use Think\Controller;
 /*
-	用户列表
+	视频表
 	 */
 class VideoController extends Controller{	
 	public function __construct(){
 		parent::__construct();
 		$this->video=D('Video');
 	}
+
 	public function videolist(){
 	/*
 	视频id查询
@@ -34,13 +35,12 @@ class VideoController extends Controller{
 			$this->display();
 		}
 	}
+
 	public function videoadd(){
-		if(IS_POST){
-			
+		if(I('post.')){
 			$data=I('post.');
 			//上传图片
-			if($_FILES['img']){
-				
+			if($_FILES['img']){		
 				$upload=new \Think\Upload();
 				$info=$upload->uploadOne($_FILES['img']);
 				if(!$info) {// 上传错误提示错误信息
@@ -50,23 +50,26 @@ class VideoController extends Controller{
 	        		$img=$info['savepath'].$info['savename'];
 	        		//缩略图路径
 	        		$thumb_img=dirname($img).'/thumb_'.basename($img);
+	        		$mid_img=dirname($img).'/mid_'.basename($img);
 	        		//生成缩略图
-	        		$image=new \Think\Image();
-	        		$image->open(__UPLOAD__.$img);
-	        		$image->thumb(85,55)->save(__UPLOAD__.$thumb_img);
+	        		 
+	        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$thumb_img,85,55);
+	        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$mid_img);
+
 	        		$data['ori_img']=$img;
 	        		$data['thumb_img']=$thumb_img;
+	        		$data['mid_img']=$mid_img;
 				}
 				if($this->video->create($data)){
            	 		if($this->video->add())//写入数据库,返回新增的键
            	 			$this->success('新增成功', U('Admin/Video/videolist'));
            	 		else
-           	 			$this->error('请重试');
-				}       			
-
+           	 			$this->error('请重试',U('Admin/Video/videolist'));
+				}
 			}
 		}
 	}
+	
 	public function videoupdate(){
 		if(IS_AJAX){
 			$id=I('post.id');
@@ -100,6 +103,7 @@ class VideoController extends Controller{
    	 			$this->error('请重试');
 		}
 	}
+
 	public function videodelete(){
 		if(IS_AJAX){
 			$str=I('post.data');

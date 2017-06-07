@@ -1,0 +1,1383 @@
+[ 2017-05-31T08:13:47+08:00 ] ::1 /TPvideo/index.php/Home/Index/inex
+ERR: 非法操作:inex
+
+[ 2017-05-31T08:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T08:24:31+08:00 ] ::1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T08:25:51+08:00 ] ::1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T08:31:09+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:35:44+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:38:14+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:38:16+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:38:16+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:38:16+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:38:17+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:39:08+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:44:02+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: unable to write file ./Runtime/Cache\ec1d2a5469db5cd6d23ee29cfc5298f116c64000.file.index.html.php
+
+[ 2017-05-31T08:45:22+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:45:38+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:45:41+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:41+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:43+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:44+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:44+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:45+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:45+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:45+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:45+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:51:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file './TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:52:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:52:56+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-31T08:58:34+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-31T09:01:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:29+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:01:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:02:42+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Home/Home/Index/index.html
+
+[ 2017-05-31T09:02:52+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-31T09:03:15+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:29+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:32+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:32+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:32+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:32+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:04:33+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-31T09:22:58+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:22:58+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:22:58+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:24:08+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:24:08+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:24:08+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:24:08+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:24:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:28:34+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:28:34+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:28:34+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:28:35+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:28:37+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/header.htm
+ERR: 非法操作:header.htm
+
+[ 2017-05-31T09:28:37+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index.htm
+ERR: 非法操作:index.htm
+
+[ 2017-05-31T09:28:37+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/footer.htm
+ERR: 非法操作:footer.htm
+
+[ 2017-05-31T09:33:26+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/__URL__/header.html
+ERR: 非法操作:__URL__
+
+[ 2017-05-31T09:33:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/__URL__/header.html
+ERR: 非法操作:__URL__
+
+[ 2017-05-31T09:33:53+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/__URL__/header.html
+ERR: 非法操作:__URL__
+
+[ 2017-05-31T09:33:54+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/__URL__/header.html
+ERR: 非法操作:__URL__
+
+[ 2017-05-31T09:33:55+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/__URL__/header.html
+ERR: 非法操作:__URL__
+
+[ 2017-05-31T09:33:55+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/__URL__/header.html
+ERR: 非法操作:__URL__
+
+[ 2017-05-31T09:53:25+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/upload.html
+ERR: Syntax Error in template "./Template/default/Home\Index\upload.html"  on line 92 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T09:54:49+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/single.html
+ERR: Syntax Error in template "./Template/default/Home\Index\single.html"  on line 92 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T09:55:24+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/single.html
+ERR: Syntax Error in template "./Template/default/Home\Index\single.html"  on line 115 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T09:55:29+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/single.html
+ERR: Syntax Error in template "./Template/default/Home\Index\single.html"  on line 115 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T09:55:45+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/single.html
+ERR: Syntax Error in template "./Template/default/Home\Index\single.html"  on line 206 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Enter email / mobile&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:01+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T09:56:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:57:15+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T09:57:15+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T09:59:18+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T09:59:19+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T09:59:50+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T10:00:59+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T10:04:20+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T10:05:25+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T10:06:30+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/jquery.min.js
+ERR: 非法操作:jquery.min.js
+
+[ 2017-05-31T10:09:48+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/upload.html
+ERR: Syntax Error in template "./Template/default/Home\Index\upload.html"  on line 92 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T10:10:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: unable to write file ./Runtime/Cache\ec1d2a5469db5cd6d23ee29cfc5298f116c64000.file.index.html.php
+
+[ 2017-05-31T10:10:27+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Invalid compiled template for 'Index/index.html'
+
+[ 2017-05-31T10:11:05+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/upload.html
+ERR: Syntax Error in template "./Template/default/Home\Index\upload.html"  on line 92 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T10:11:37+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/upload.html
+ERR: Syntax Error in template "./Template/default/Home\Index\upload.html"  on line 115 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T10:11:53+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/upload.html
+ERR: Syntax Error in template "./Template/default/Home\Index\upload.html"  on line 206 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Enter email / mobile&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:12:40+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T10:13:31+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T10:14:15+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: unable to write file ./Runtime/Cache\ec1d2a5469db5cd6d23ee29cfc5298f116c64000.file.index.html.php
+
+[ 2017-05-31T10:25:45+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:03+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:06+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:08+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:09+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:26:10+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:29:04+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:29:07+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-31T10:36:36+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 31 "{include virtual=&quot;footer.html&quot;}" missing "file" attribute
+
+[ 2017-05-31T10:44:19+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'footer.html' in 'Index/index.html'
+
+[ 2017-05-31T10:49:17+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 31 "{php} echo 1;include'footer.html';{/php}" unknown tag "php"
+
+[ 2017-05-31T10:59:38+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-31T11:10:41+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Home/Index/index.html
+
+[ 2017-05-31T11:22:15+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 107 "jQuery(&quot;.foucebox&quot;).slide({ effect:&quot;fold&quot;, autoPlay:true, delayTime:300, startFun:function(i){jQuery(&quot;.foucebox .showDiv&quot;).eq(i).find(&quot;h2&quot;).css({display:&quot;none&quot;,bottom:0}).animate({opacity:&quot;show&quot;,bottom:&quot;60px&quot;},300);jQuery(&quot;.foucebox .showDiv&quot;).eq(i).find(&quot;p&quot;).css({display:&quot;none&quot;,bottom:0}).animate({opacity:&quot;show&quot;,bottom:&quot;10px&quot;},300);}});" unknown function "jQuery"
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/layer.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.SuperSlide.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/demo.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/share.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/lanrenzhijia.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/lrtk.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/lrtk.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/jquery.SuperSlide.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/js/layer.js
+ERR: 非法操作:js
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/share.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/demo.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:22:46+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/css/lanrenzhijia.css
+ERR: 非法操作:css
+
+[ 2017-05-31T11:23:12+08:00 ] 127.0.0.1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'footer.html' in 'Index/index.html'
+
+[ 2017-05-31T19:38:48+08:00 ] ::1 /TPvideo/index.php/Home/Index/inex
+ERR: 非法操作:inex
+
+[ 2017-05-31T19:38:53+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'footer.html' in 'Index/index.html'
+
+[ 2017-05-31T19:40:14+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 66 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;输入有效的邮箱地址&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T19:40:44+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 109 "// layer.msg('的确很重要', {icon: 1});"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-05-31T19:40:54+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 143 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Enter email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-31T19:41:08+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T19:41:08+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-31T19:41:08+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/headroom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T19:41:08+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-31T19:43:46+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: unable to write file ./Runtime/Cache\ec1d2a5469db5cd6d23ee29cfc5298f116c64000.file.index.html.php
+
+[ 2017-05-31T19:52:17+08:00 ] ::1 /TPvideo/index.php/Home/zongyi/zongyi.php
+ERR: 无法加载控制器:Zongyi
+
+[ 2017-05-31T19:59:42+08:00 ] ::1 /TPvideo/index.php/Home/Variety/zongyi
+ERR: 模板不存在:./Template/default/Home/Variety/zongyi.html
+
+[ 2017-05-31T20:00:14+08:00 ] ::1 /TPvideo/index.php/Home/Variety/zongyi
+ERR: Syntax Error in template "./Template/default/Home\Variety\zongyi.html"  on line 41 "&lt;script&gt;window.PAGE_DATA = {version: &quot;5.0&quot;, slider_data: []};&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/jquery.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/honey.header.v5.bundle.js&quot;&gt;&lt;/script&gt;&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;./唏里唏里 - 综艺频道_files/member-dialog.css&quot;&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/feedback.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/gototop.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/stk.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/jquery.cookie.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/jquery.lazyload.js&quot;&gt;&lt;/script&gt;"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-05-31T20:00:18+08:00 ] ::1 /TPvideo/index.php/Home/zongyi/zongyi.php
+ERR: 无法加载控制器:Zongyi
+
+[ 2017-05-31T20:01:37+08:00 ] ::1 /TPvideo/index.php/Home/Variety/zongyi.html%3E%E7%BB%BC%E8%89%BA%3C/a%3E%3C/li%3E%3Cli%20class=%22nav-item%22%3E%3Ca%20id=%22dianshiju%22%20href=
+ERR: 非法操作:zongyi.html>综艺
+
+[ 2017-05-31T20:03:21+08:00 ] ::1 /TPvideo/index.php/Home/Variety/zongyi.html%3E%E7%BB%BC%E8%89%BA%3C/a%3E%3C/li%3E%3Cli%20class=%22nav-item%22%3E%3Ca%20id=%22dianshiju%22%20href=
+ERR: 非法操作:zongyi.html>综艺
+
+[ 2017-05-31T20:03:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/zongyi.html%3E%E7%BB%BC%E8%89%BA%3C/a%3E%3C/li%3E%3Cli%20class=%22nav-item%22%3E%3Ca%20id=%22dianshiju%22%20href=
+ERR: 非法操作:zongyi.html>综艺
+
+[ 2017-05-31T20:03:31+08:00 ] ::1 /TPvideo/index.php/Home/Variety/zongyi.html
+ERR: Syntax Error in template "./Template/default/Home\Variety\zongyi.html"  on line 41 "&lt;script&gt;window.PAGE_DATA = {version: &quot;5.0&quot;, slider_data: []};&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/jquery.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/honey.header.v5.bundle.js&quot;&gt;&lt;/script&gt;&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;./唏里唏里 - 综艺频道_files/member-dialog.css&quot;&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/feedback.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/gototop.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/stk.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/jquery.cookie.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;./唏里唏里 - 综艺频道_files/jquery.lazyload.js&quot;&gt;&lt;/script&gt;"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/js/layer.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/hm.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/js/lrtk.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/js/jquery-1.11.1.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/beacon.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/css/dashboard.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/css/filmstyle.css
+ERR: 非法操作:css
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/standard.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/css/bootstrap.min.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/css/demo.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list(1).css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/member-dialog.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.header.v5.bundle.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/feedback.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/gototop.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.cookie.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/stk.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:05:26+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.lazyload.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/beacon.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/css/dashboard.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/css/demo.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/css/bootstrap.min.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/hm.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/css/filmstyle.css
+ERR: 非法操作:css
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/standard.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list(1).css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/member-dialog.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/gototop.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/feedback.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.header.v5.bundle.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/stk.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.cookie.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.lazyload.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/hm.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/standard.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/beacon.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/css/filmstyle.css
+ERR: 非法操作:css
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list(1).css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/member-dialog.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.header.v5.bundle.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/feedback.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/gototop.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/stk.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.lazyload.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:08:25+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.cookie.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/hm.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/beacon.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/standard.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/page-list(1).css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.header.v5.bundle.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/member-dialog.css
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/stk.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/gototop.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.cookie.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/feedback.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:09:24+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/jquery.lazyload.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:21:23+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/beacon.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:21:23+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/hm.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:21:23+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:21:28+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/hm.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:21:28+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/beacon.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:21:28+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:22:32+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:22:36+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:22:36+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:22:37+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:22:52+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:27:18+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:08+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:08+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:09+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:09+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:09+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:10+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:28:10+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:29:59+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:30:10+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:30:12+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:30:14+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:31:59+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:34:39+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:34:41+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:34:56+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:41:04+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:41:06+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:42:14+08:00 ] ::1 /TPvideo/index.php/Home/Variety/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%20-%20%E7%BB%BC%E8%89%BA%E9%A2%91%E9%81%93_files/honey.hunantv.imgo.js
+ERR: 非法操作:唏里唏里 - 综艺频道_files
+
+[ 2017-05-31T20:54:20+08:00 ] ::1 /TPvideo/index.php/Home/Index/index.php
+ERR: 非法操作:index.php
+
+[ 2017-05-31T21:01:59+08:00 ] ::1 /TPvideo/index.php/Home/Index/films/movies.php
+ERR: 非法操作:films
+
+[ 2017-05-31T21:02:18+08:00 ] ::1 /TPvideo/index.php/Home/Film/movies.html
+ERR: 模板不存在:./Template/default/Home/Film/movies.html
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/js/jquery-1.11.1.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/Film/css/filmstyle.css
+ERR: 非法操作:css
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/css/bootstrap.min.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/css/dashboard.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/js/lrtk.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/js/layer.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/css/demo.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/Film/js/superslide.2.1.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/Film/js/common.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/Film/js/jquery.lazyload.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:02:42+08:00 ] ::1 /TPvideo/index.php/Home/Film/js/function.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:38:23+08:00 ] ::1 /TPvideo/index.php/Home/Index/dianshiju/dianshiju.php
+ERR: 非法操作:dianshiju
+
+[ 2017-05-31T21:38:57+08:00 ] ::1 /TPvideo/index.php/Home/Index/dianshiju/dianshiju.php
+ERR: 非法操作:dianshiju
+
+[ 2017-05-31T21:39:09+08:00 ] ::1 /TPvideo/index.php/Home/Index/dianshiju/dianshiju.php
+ERR: 非法操作:dianshiju
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/js/jquery-1.11.1.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/css/bootstrap.min.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/js/lrtk.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/css/demo.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/js/layer.js
+ERR: 无法加载控制器:Js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/js/jq.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/js/superslide.2.1.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/js/common.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/css/dashboard.css
+ERR: 无法加载控制器:Css
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/js/1.7.2.min.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/js/function.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/js/jquery.lazyload.js
+ERR: 非法操作:js
+
+[ 2017-05-31T21:39:45+08:00 ] ::1 /TPvideo/index.php/Home/TV/css/filmstyle.css
+ERR: 非法操作:css
+
+[ 2017-05-31T22:02:53+08:00 ] ::1 /TPvideo/index.php/Home/Index/donghua/donghua.php
+ERR: 非法操作:donghua
+
+[ 2017-05-31T22:03:31+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: unable to write file ./Runtime/Cache\ec1d2a5469db5cd6d23ee29cfc5298f116c64000.file.index.html.php
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=4080195901,2013295905&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=811654722,130101203&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=4241987513,3789419715&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=2557811826,2007786970&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=1618794280,2578314300&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=1286010796,1762813222&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3986239096,2714751997&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=593616858,2597100286&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=2216158858,2922819176&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=1493723840,2405594587&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=1402296845,1515441770&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=783138555,3487996589&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=1344325322,3246165502&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3334375866,3406600830&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=2372709731,1127054541&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=901004293,2058047111&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:52+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=466111325,46442140&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3839103291,3088484477&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=2835012470,3957468117&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=924311981,2305963323&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=494003402,2545047587&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=4080195901,2013295905&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=633454111,3978737681&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3530237116,3165818344&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=4048047381,1491292599&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3320019772,2272156840&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3306499429,3524902413&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=4270036784,507209928&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=2862545432,2436871935&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=3631029309,2307412310&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:03:53+08:00 ] ::1 /TPvideo/index.php/Home/Carton/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E5%8A%A8%E7%94%BB_%E5%8D%A1%E9%80%9A%E5%8A%A8%E6%BC%AB_files/u=2140195506,2204143411&fm=20
+ERR: 非法操作:唏里唏里动画_卡通动漫_files
+
+[ 2017-05-31T22:11:12+08:00 ] ::1 /TPvideo/index.php/Home/Game/youxi.html
+ERR: Syntax Error in template "./Template/default/Home\Game\youxi.html"  on line 34 ".w1380 .lastvideo,.w1000 .lastvideo{display:none;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dglobal201302.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }global201302.css
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dnav_v1.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }nav_v1.css
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dcommon.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }common.css
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Dlrtk.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }lrtk.js
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Djquery-1.11.1.min.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }jquery-1.11.1.min.js
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Dlayer.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }layer.js
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dstyle.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }style.css
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Ddashboard.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }dashboard.css
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Ddemo.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }demo.css
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E6%B8%B8%E6%88%8F%E9%A2%91%E9%81%93-%E8%A7%86%E9%A2%91_files/kao.js
+ERR: 非法操作:唏里唏里游戏频道-视频_files
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E6%B8%B8%E6%88%8F%E9%A2%91%E9%81%93-%E8%A7%86%E9%A2%91_files/dict.js
+ERR: 非法操作:唏里唏里游戏频道-视频_files
+
+[ 2017-05-31T22:11:48+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dbootstrap.min.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }bootstrap.min.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dglobal201302.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }global201302.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Dlrtk.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }lrtk.js
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dnav_v1.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }nav_v1.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dcommon.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }common.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Djquery-1.11.1.min.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }jquery-1.11.1.min.js
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Dlayer.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }layer.js
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dbootstrap.min.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }bootstrap.min.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Ddashboard.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }dashboard.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dstyle.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }style.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E6%B8%B8%E6%88%8F%E9%A2%91%E9%81%93-%E8%A7%86%E9%A2%91_files/kao.js
+ERR: 非法操作:唏里唏里游戏频道-视频_files
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Ddemo.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }demo.css
+
+[ 2017-05-31T22:11:58+08:00 ] ::1 /TPvideo/index.php/Home/Game/%E5%94%8F%E9%87%8C%E5%94%8F%E9%87%8C%E6%B8%B8%E6%88%8F%E9%A2%91%E9%81%93-%E8%A7%86%E9%A2%91_files/dict.js
+ERR: 非法操作:唏里唏里游戏频道-视频_files
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dcommon.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }common.css
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Dlrtk.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }lrtk.js
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Djquery-1.11.1.min.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }jquery-1.11.1.min.js
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%20%7Dlayer.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__ }layer.js
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dbootstrap.min.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }bootstrap.min.css
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dnav_v1.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }nav_v1.css
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Ddashboard.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }dashboard.css
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dstyle.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }style.css
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Ddemo.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }demo.css
+
+[ 2017-05-31T22:14:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%20%7Dglobal201302.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__ }global201302.css
+
+[ 2017-05-31T22:15:50+08:00 ] ::1 /TPvideo/index.php/Home/Game/youxi.html
+ERR: Syntax Error in template "./Template/default/Home\Game\youxi.html"  on line 34 ".w1380 .lastvideo,.w1000 .lastvideo{display:none;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dcommon.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}common.css
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dglobal201302.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}global201302.css
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Dlrtk.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}lrtk.js
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dnav_v1.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}nav_v1.css
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Djquery-1.11.1.min.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}jquery-1.11.1.min.js
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dbootstrap.min.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}bootstrap.min.css
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Ddashboard.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}dashboard.css
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dstyle.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}style.css
+
+[ 2017-05-31T22:17:34+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Ddemo.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}demo.css
+
+[ 2017-05-31T22:17:35+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Dlayer.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}layer.js
+
+[ 2017-05-31T22:17:44+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dglobal201302.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}global201302.css
+
+[ 2017-05-31T22:17:44+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dcommon.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}common.css
+
+[ 2017-05-31T22:17:44+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dnav_v1.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}nav_v1.css
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Djquery-1.11.1.min.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}jquery-1.11.1.min.js
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Dlrtk.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}lrtk.js
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dbootstrap.min.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}bootstrap.min.css
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Ddashboard.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}dashboard.css
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Ddemo.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}demo.css
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dstyle.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}style.css
+
+[ 2017-05-31T22:17:45+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Dlayer.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}layer.js
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dglobal201302.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}global201302.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dbootstrap.min.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}bootstrap.min.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dnav_v1.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}nav_v1.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Ddashboard.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}dashboard.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Djquery-1.11.1.min.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}jquery-1.11.1.min.js
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dcommon.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}common.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Dstyle.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}style.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_CSS__%7Ddemo.css
+ERR: 非法操作:{ $smarty.const.__HOME_CSS__}demo.css
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Dlrtk.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}lrtk.js
+
+[ 2017-05-31T22:18:36+08:00 ] ::1 /TPvideo/index.php/Home/Game/%7B%20$smarty.const.__HOME_JS__%7Dlayer.js
+ERR: 非法操作:{ $smarty.const.__HOME_JS__}layer.js
+
+[ 2017-05-31T22:20:19+08:00 ] ::1 /TPvideo/index.php/Home/Game/$smarty.const.__HOME_CSS__%7Dstyle.css
+ERR: 非法操作:$smarty.const.__HOME_CSS__}style.css
+
+[ 2017-05-31T22:20:19+08:00 ] ::1 /TPvideo/index.php/Home/Game/$smarty.const.__HOME_CSS__%7Ddemo.css
+ERR: 非法操作:$smarty.const.__HOME_CSS__}demo.css
+

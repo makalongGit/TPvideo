@@ -50,9 +50,7 @@ isPassed int,
 isHomePage int not null default 0,
 isRem int not null default 0,
 isDelete int,
-primary key(vid),
-foreign key(vt_id) references cate(vt_id), 
-foreign key(uid) references user(userID)
+primary key(vid)
 );
 alter table video add column ori_img varchar(50);
 alter table video add column thumb_img varchar(50);
@@ -72,9 +70,8 @@ userID int NOT NULL,
 reviews text NOT NULL,
 vid int NOT NULL,
 reSym int,
-ReTime varchar(20) NOT NULL,
-foreign key(userID) references user(userID),
-foreign key(vid) references video(vid)
+ReTime varchar(20) NOT NULL
+
 );
 insert into review values(1,142011059,'sjfdfkaf','3',1,'2017/4/2');
 insert into review values(2,142011058,'sjfdfkaf','3',0,'2017/4/2');

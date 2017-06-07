@@ -9,6 +9,7 @@ class UserController extends Controller{
 		parent::__construct();
         $this->user=D('User');
 	}
+	
 	public function userlist(){
 	/*
 	用户id查询

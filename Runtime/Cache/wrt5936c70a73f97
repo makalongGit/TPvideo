@@ -1,0 +1,535 @@
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 23:15:20
+         compiled from "./Template/default/Home\Film\movies.html" */ ?>
+<?php /*%%SmartyHeaderCode:312755936c4eddbadd8-65874920%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'b3e4968031174015301215b450707cd482c4a2d1' => 
+    array (
+      0 => './Template/default/Home\\Film\\movies.html',
+      1 => 1496762115,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '312755936c4eddbadd8-65874920',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_5936c4ef5f302',
+  'variables' => 
+  array (
+    'cate_list' => 0,
+    'v' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5936c4ef5f302')) {function content_5936c4ef5f302($_smarty_tpl) {?><!DOCTYPE html>
+<!-- saved from url=(0040)http://www.ccgzwl.cn/dianying/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>电影 第1页</title>
+<meta name="keywords" content="电影第1页">
+<meta name="description" content="电影第1页">
+	<script src="<?php echo @__HOME_JS__;?>
+jquery-1.11.1.min.js"></script>
+
+	<script src="<?php echo @__HOME_JS__;?>
+lrtk.js"></script>
+	<script src="<?php echo @__HOME_JS__;?>
+layer.js"></script>
+
+ <!-- bootstrap -->
+	<link href="<?php echo @__HOME_CSS__;?>
+bootstrap.min.css" rel='stylesheet' type='text/css' media="all" />
+<!-- //bootstrap -->
+	<link href="<?php echo @__HOME_CSS__;?>
+dashboard.css" rel="stylesheet">
+<!-- Custom Theme files -->
+	
+<link href="<?php echo @__HOME_CSS__;?>
+filmstyle.css" rel="stylesheet">
+	<link href="<?php echo @__HOME_CSS__;?>
+demo.css" rel="stylesheet">
+
+	<link href="<?php echo @__HOME_CSS__;?>
+style.css" rel='stylesheet' type='text/css' media="all" />
+<!-- 导航 -->
+
+<script src="<?php echo @__HOME_JS__;?>
+superslide.2.1.js"></script>
+
+<script src="<?php echo @__HOME_JS__;?>
+common.js"></script>
+<script src="<?php echo @__HOME_JS__;?>
+function.js"></script>
+<script src="<?php echo @__HOME_JS__;?>
+jquery.lazyload.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a id="logo" class="navbar-brand" href="index.php"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+logo.png1.png" alt="xilixili" /></h1></a>
+			</div>
+			
+			 <div id="navbar" class="navbar-collapse collapse">
+			 	<!-- 搜索栏 -->
+				<div class="top-search">
+					<form class="navbar-form navbar-right" method="post" action="sousuo/sousuo.php">
+						<input type="text" class="form-control" placeholder="Search...">
+						<input type="submit" value=" ">
+					</form>
+				</div>
+
+				<div class="header-top-right">
+				<!-- 上传 -->
+					<div class="file">
+						<a href="upload.html">上传</a>
+					</div>	
+				
+
+				<!-- 注册-->
+					<div class="signin">
+						<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a>
+						<!-- pop-up-box -->
+							<script type="text/javascript" src="<?php echo @__HOME_JS__;?>
+modernizr.custom.min.js"></script>    
+							<link href="<?php echo @__HOME_CSS__;?>
+popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+							<script src="<?php echo @__HOME_JS__;?>
+jquery.magnific-popup.js" type="text/javascript"></script>
+						<!--//pop-up-box -->
+						<div id="small-dialog2" class="mfp-hide">
+							<h3>创建账户</h3> 
+							
+						<div class="signup">
+							<form>
+								<input type="text" class="email" placeholder="Email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{ 2,4 })?" title="输入有效的邮箱地址"/>
+								<input type="text" class="email" placeholder="用户名" required="required" pattern="" title="输入用户名"/>
+								<input type="password" placeholder="Password" required="required" pattern=".{ 6, }" title="输入至少6位的密码 autocomplete="off" />
+								<!--
+								<input type="text" class="email" placeholder="Mobile Number" maxlength="10" pattern="[1-9]<?php echo 1;?>
+\d<?php echo 9;?>
+" title="Enter a valid mobile number" />
+								-->
+								
+							</form>
+							<div>
+							<div class="continue-button">
+								<a href="#small-dialog3" class="hvr-shutter-out-horizontal play-icon popup-with-zoom-anim">下一步</a>
+							</div>
+							<p style="margin-left:210px;margin-top:-20px"><span style="positon:relative;left:20px">已有账户? <a href="#small-dialog" class="play-icon popup-with-zoom-anim">登录</p ></a></span>
+							</div>
+						
+						</div>
+						<div class="clearfix"> 
+						</div>
+					</div>	
+					<div id="small-dialog3" class="mfp-hide">
+						<h3>创建账户</h3> 
+						<div class="social-sits">
+							
+						</div>
+						<div class="signup">
+							<form>
+								<input type="text" class="email" placeholder="验证码" required="required" title="输入收到的验证码"/>
+								<!--
+								<input type="text" class="email" placeholder="Mobile Number" maxlength="10" pattern="[1-9]<?php echo 1;?>
+\d<?php echo 9;?>
+" title="Enter a valid mobile number" />
+								-->
+								<input type="submit"  value="注 册"/>
+								<span style="margin-left:5px"><a onclick="sendyanzheng();" class="play-icon popup-with-zoom-anim">重新发送</a> </span>
+								<span style="margin-left:45px">已有账户? <a href="#small-dialog" class="play-icon popup-with-zoom-anim">登录</a> </span>
+							</form>
+						</div>
+					<div class="clearfix"> 
+						</div>
+					</div>	
+						
+					
+					
+					<script>
+						function sendyanzheng(){
+							// layer.msg('的确很重要', { icon: 1 });
+						
+						}
+
+						$(document).ready(function() {
+							$('.popup-with-zoom-anim').magnificPopup({
+								type: 'inline',
+								fixedContentPos: false,
+								fixedBgPos: true,
+								overflowY: 'auto',
+								closeBtnInside: true,
+								preloader: false,
+								
+								removalDelay: 300,
+								mainClass: 'my-mfp-zoom-in'
+							});
+																											
+						});
+					</script>	
+					</div>
+				<!-- //注册-->
+
+				<!-- 登录 -->
+					<div class="signin">
+						<a href="#small-dialog" class="play-icon popup-with-zoom-anim">登录</a>
+						<div id="small-dialog" class="mfp-hide">
+							<h3>登录</h3>
+							<div class="social-sits">
+								<div class="button-bottom">
+									
+								</div>
+							</div>
+							<div class="signup">
+								<form>
+									<input type="text" class="email" placeholder="Enter email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{ 2,4 })?"/>
+									<input type="password" placeholder="Password" required="required" pattern=".{ 6, }" title="Minimum 6 characters required" autocomplete="off" />
+									<input type="submit"  value="登录"/>
+								</form>
+								<div>
+								<div class="forgot">
+									<a href="#">忘记密码 ?</a>
+	
+								</div>
+								<p style="margin-left:200px;margin-top:-20px">新账户? <a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a></p>
+								</div>
+								
+							</div>
+							<div class="clearfix"> 
+							</div>
+						</div>
+					</div>
+				<!-- //登录 -->
+				</div>
+		</div>
+		<div class="clearfix"> </div>
+	</nav>
+
+	<!-- 导航 666-->
+	
+		<div class="wrapper">
+			<div class="navmai">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item"><span><a href="<?php echo U('Home/Index/index');?>
+" ><i class="icon-home"></i>主页</a></span></li>
+						<li class="nav-item"><a id="movies" href="<?php echo U('Home/Film/movies');?>
+">电影</a></li>
+						<li class="nav-item"><a id="zongyi" href="<?php echo U('Home/Variety/zongyi');?>
+">综艺</a></li>
+						<li class="nav-item"><a id="dianshiju" href="<?php echo U('Home/TV/dianshiju');?>
+">电视剧</a></li>
+						<li class="nav-item"><a id="dongman" href="<?php echo U('Home/Carton/carton');?>
+">动画</a></li>
+						<li class="nav-item"><a id="game" href="<?php echo U('Home/Game/youxi');?>
+">游戏</a></li>
+						<li class="nav-item"><a id="music" href=<?php echo U('Home/Music/yinyue');?>
+>音乐</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		
+		
+
+<script type="text/javascript" src="<?php echo @__HOME_JS__;?>
+headroom.min.js"></script>
+<script>
+		
+    $(function() {
+    new Headroom(document.querySelector(".wrapper"), { //这里的nav-scroll改为你的导航栏的id或class
+                
+        classes: {
+            initial: "animated",  // 当元素初始化后所设置的class
+            pinned: "slideUp", // 向上滚动时设置的class
+            unpinned: "slideDown" // 向下滚动时所设置的class
+        }
+    }).init();
+    
+});
+
+$(function(){
+	var index = window.location.href.split("/").length-1;
+	var index2 = window.location.href.split("/").length-2;
+	var href=window.location.href.split("/")[index];
+	var href2=window.location.href.split("/")[index2];
+	//alert(href2+'/'+href);
+	var p = $('.nav-item span a').attr('href');
+	//alert(p);
+	$(".nav-item a[href='../"+href2+'/'+href+"'] " ).addClass('on');
+	
+	if(href == ''||href == 'index.php'){
+		$('.nav-item .on').attr('href',href2+'/'+href);		
+	}else{
+		$('.nav-item .on').attr('href',href);
+	}
+});
+</script>
+<div id="header" class="header-fixed">
+	<div id="headbar">
+		
+
+<div id="content" class="wrap clearfix">
+	
+	<div class="content-left clearfix">
+		<div class="ui-title border-gray">
+            <h3 class="tt-tab">电影&nbsp;&nbsp;<span class="ml19">展开筛选</span></h3>
+        </div>
+		<div class=" ui-cnt filter-focusdl mbfilter border-gray">		
+		
+			<div class="filter-list fn-clear">
+				<h5><i class="iconfont m-r-3 f-s-16"></i>按剧情：</h5>
+				<ul>			
+					<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['cate_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>	  
+					<li>
+					  <a href=""><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</a>
+					</li>          						  
+					<?php } ?>    				     
+				</ul>
+			</div>		
+			
+			
+			  
+			<div class="filter-list fn-clear">
+			  <h5><i class="iconfont m-r-3 f-s-16"></i>按年代：</h5>
+				<ul>			    
+			  
+				<li>
+					<a href="">2016</a>
+				  </li>
+				<li>
+					<a href="">2015</a>
+				  </li>
+				<li>
+					<a href="
+					<a href="">2013</a>
+				  </li>
+				<li>
+					<a href="">2012</a>
+				  </li>
+				<li>
+					<a href="">2011</a>
+				  </li>
+				<li>
+					<a href="">2010</a>
+				  </li>
+				<li>
+					<a href="">2009</a>
+				  </li>
+				<li>
+					<a href="">2008</a>
+				  </li>
+				<li>
+					<a href="">2007</a>
+				  </li>
+				<li>
+					<a href="">2006</a>
+				  </li>
+				<li>
+					<a href="">更早</a>
+				  </li>
+				 </ul>
+			</div>
+			
+			
+
+			<div class="ui-bar fn-clear">
+				<ul class="view-mode">
+					<li id="view-list"><a class="current"><i class="iconfont m-r-3 f-s-14">󰅙</i>选择排序方式</a></li>
+				</ul>
+				<div class="view-filter">
+					<a id="time" href="http://www.ccgzwl.cn/search.php?page=1&amp;searchtype=5&amp;order=time&amp;tid=1" class="order current" target="_self"><span>按时间</span></a>
+					<a id="hits" href="http://www.ccgzwl.cn/search.php?page=1&amp;searchtype=5&amp;order=hit&amp;tid=1" class="order" target="_self"><span>按人气</span></a>
+				</div>
+			</div>
+		</div>
+		<section class="clearfix channellist-box">
+			<div class="hello-box">
+
+				<div class="module-content">
+					<ul class="yun-list clearfix" id="yun-list">		
+								
+						<li class="yun yun-large border-gray">
+							<a class="yun-link" href="http://www.ccgzwl.cn/dianying/xiju/legaobianfuxiadadianying/" title="乐高蝙蝠侠大电影">
+								<div class="img">
+									<img class="lazy" data-original="http://www.520885.com/pic/uploadimg/2016-12/2016123012561067767.jpg" src="<?php echo @__HOME_IMAGE__;?>
+2016123012561067767.jpg" alt="乐高蝙蝠侠大电影" style="display: block;">
+									
+									<span class="bgb">
+									<i class="bgbbg"></i>
+									<p class="name">HD高清</p>
+									<p class="other">剧情：蝙蝠侠（威尔·阿奈特 配音）一边要阻止小丑（扎克·加利费安纳基斯 配音）犯罪，一边要抚养罗宾长大（迈克尔·塞拉 配音），而且，为了保护哥谭市的安全，蝙蝠侠不得不从一个独行侠，变成善于“团队合作”的城市警察。</p>
+									</span>
+								</div>
+								<div class="text">
+									<p class="name">乐高蝙蝠侠大电影</p><p class="actor">主演：威尔·阿奈特 / 罗莎里奥·道森 / 拉尔夫·费因斯 / 迈克尔·塞拉 / 扎克·加利凡纳基斯</p>
+								</div>
+							</a>
+						</li>
+						
+						
+
+					</ul>
+				</div>
+			</div>	
+		</section>
+		<div class="page clearfix">
+		
+		
+		
+		<em>1</em>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index2.html">2</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index3.html">3</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index4.html">4</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index5.html">5</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index6.html">6</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index7.html">7</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index8.html">8</a>
+		
+		
+		
+		<a href="http://www.ccgzwl.cn/dianying/index2.html">&gt;</a>
+		<a href="http://www.ccgzwl.cn/dianying/index628.html">..628</a>
+		
+		</div>
+	</div>
+	<div class="content-right clearfix">
+		
+		<div class="ui-ranking border-gray">
+        <div class="cont-box-list">
+          <h2 class="cont-box-tit-tvs-list"><i class="iconfont m-r-3 f-s-16">󰃐</i>最热排行榜</h2><span class="border-r-15"></span>
+        </div>
+        <ul class="ranking-list">
+				
+            <li>
+            </li>
+				
+            <li><span>17298</span>
+				<em class="">1</em>
+				<a href="http://www.ccgzwl.cn/dianying/aiqing/ailezhicheng/">爱乐之城</a>
+            </li>
+				
+            <li><span>114469</span>
+				<em class="">2</em>
+				<a href="http://www.ccgzwl.cn/dianying/xiju/xiyoufuyaopian/">西游伏妖篇</a>
+            </li>
+				
+            <li><span>130716</span>
+				<em class=''>3</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/gongfuyuga/">功夫瑜伽</a>
+            </li>
+				
+            <li><span>4254</span>
+				<em>4</em>
+				<a href="http://www.ccgzwl.cn/dianying/xiju/huanlehaoshengyin/">欢乐好声音</a>
+            </li>
+				
+            <li><span>6026</span>
+				<em>5</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/cikexintiao/">刺客信条</a>
+            </li>
+				
+            <li><span>5235</span>
+				<em>7</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/luomandikexiaowangshi/">罗曼蒂克消亡史</a>
+            </li>
+				
+            <li><span>13209</span>
+				<em>8</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/jixiantegong3_zhongjihuigui/">极限特工3：终极回归</a>
+            </li>
+				
+            <li><span>35659</span>
+				<em>9</em>
+				<a href="http://www.ccgzwl.cn/dianying/juqing/chengfengpolang/">乘风破浪</a>
+            </li>
+				
+				
+		</ul>
+		</div>
+			
+		<div class="ui-ranking border-gray">
+        <div class="cont-box-list">
+          <h2 class="cont-box-tit-tvs-list"><i class="iconfont m-r-3 f-s-16">󰃐</i>评分排行榜</h2><span class="border-r-15"></span>
+        </div>
+        <ul class="ranking-list2">
+				
+           
+			<li></li>
+            <li><span>0.0</span>
+				<em class=''>1</em>
+				<a href="http://www.ccgzwl.cn/dianying/kongbu/buhanerli/">不寒而栗</a>
+            </li>
+				
+            <li><span>0.0</span>
+				<em class=''>2</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/juedizhanjiang/">绝地战将</a>
+            </li>
+				
+            <li><span>0.0</span>
+				<em class=''>3</em>
+				<a href="http://www.ccgzwl.cn/dianying/xiju/lanyanjingmiqi/">蓝眼睛米奇</a>
+            </li>
+				
+            <li><span>0.0</span>
+				<em>4</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/tegongshaote/">特工绍特</a>
+            </li>
+				
+            <li><span>0.0</span>
+				<em>5</em>
+				<a href="http://www.ccgzwl.cn/dianying/dongzuo/guojiagongdi/">国家公敌</a>
+            </li>						
+		</ul>
+		</div>	
+	</div>
+</div>
+<div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>
+</body>
+<script>
+
+				$('.ranking-list li em').eq(0).addClass('stress');
+				$('.ranking-list li em').eq(1).addClass('stress');
+				$('.ranking-list li em').eq(2).addClass('stress');
+
+				$('.ranking-list2 li em').eq(0).addClass('stress');
+				$('.ranking-list2 li em').eq(1).addClass('stress');
+				$('.ranking-list2 li em').eq(2).addClass('stress');
+
+
+</script>
+</html><?php }} ?>

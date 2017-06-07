@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-04-30 01:18:59
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 08:21:43
          compiled from "./Template/default/Admin\Public\success_tip.html" */ ?>
 <?php /*%%SmartyHeaderCode:13482590300c2501b57-79610162%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '37028471e4ed70582b573767fe2df502e1bb381b' => 
     array (
       0 => './Template/default/Admin\\Public\\success_tip.html',
-      1 => 1493455969,
+      1 => 1496654554,
       2 => 'file',
     ),
   ),
@@ -38,7 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 .errorcon{ padding:35px 0; text-align:center; color:#0ae; font-size:18px;}
 .errorcon i{ display:block; margin:12px auto; font-size:30px; }
 .errorcon span{ color:red; }
-h4{ font-size:14px; color:#666;}
+h4{ font-size:14px; color:#666; }
 a{ color:#0ae; }
 </style>
 </head>

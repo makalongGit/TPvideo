@@ -22,11 +22,12 @@ class Smarty {
      * @return void
      */
     public function fetch($templateFile,$var) {
-        $templateFile   =   substr($templateFile,strlen(THEME_PATH));
+        $templateFile=str_replace(THEME_PATH, '', $templateFile);
         vendor('Smarty.Smarty#class');
         $tpl            =   new \Smarty();
         $tpl->caching       = C('TMPL_CACHE_ON');
         $tpl->template_dir  = THEME_PATH;
+        
         $tpl->compile_dir   = CACHE_PATH ;
         $tpl->cache_dir     = TEMP_PATH ;        
         if(C('TMPL_ENGINE_CONFIG')) {

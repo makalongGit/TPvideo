@@ -7,7 +7,7 @@ use Think\Controller;
 class LoginController extends Controller{
 
 	public function login(){
-		if(!empty($_POST)){
+		if(I('post.')){
 
 			$very=new \Think\Verify();
 			if($very->check($_POST['code'])){

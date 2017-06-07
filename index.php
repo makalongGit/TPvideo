@@ -25,6 +25,7 @@ define("DEFAULT_THEME","default");
 
 // 定义模板文件默认目录
 define("TMPL_PATH","./Template/".DEFAULT_THEME."/");
+//define("THEME_PATH",TMPL_PATH);
 
 // 定义缓存目录
 define('RUNTIME_PATH','./Runtime/');
@@ -35,16 +36,16 @@ define("__ADMIN_CSS__", '/TPvideo/Template/default/Admin/Public/css/');
 define("__ADMIN_JS__", '/TPvideo/Template/default/Admin/Public/js/');
 define("__ADMIN_IMAGE__", '/TPvideo/Template/default/Admin/Public/images/');
 define("__ADMIN_FONTS__", '/TPvideo/Template/default/Admin/Public/css/');
+
+define("__HOME_JS__",'/TPvideo/Template/default/Home/Public/js/');
+define("__HOME_IMAGE__",'/TPvideo/Template/default/Home/Public/images/');
+define("__HOME_CSS__",'/TPvideo/Template/default/Home/Public/css/');
+define("__HOME_FONTS__",'/TPvideo/Template/default/Home/Public/fonts/');
+define("__HOME__",'/TPvideo/Template/default/Home/Index/');
 //上传图片路径
 define("__UPLOAD__",'./Upload/');
 define("__UPLOAD_IMG__",'/TPvideo/Upload/');
-	/*''      => ,
-    '__HOME_JS__'       =>  __ROOT__.trim(TMPL_PATH,'.').'Home/Public/js',
-    '__HOME_IMAGE__'    =>  __ROOT__.trim(TMPL_PATH,'.').'Home/Public/image',
-    '__ADMIN_CSS__'     =>  __ROOT__.trim(TMPL_PATH,'.').'Admin/Public/css',
-    '__ADMIN_JS__'      =>  __ROOT__.trim(TMPL_PATH,'.').'Admin/Public/js',
-    '__ADMIN_IMAGE__'   =>  __ROOT__.trim(TMPL_PATH,'.').'Admin/Public/images',
-    '__ADMIN_FONT__'   =>  __ROOT__.trim(TMPL_PATH,'.').'Admin/Public/fonts',*/
+	
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 // 亲^_^ 后面不需要任何代码了 就是如此简单

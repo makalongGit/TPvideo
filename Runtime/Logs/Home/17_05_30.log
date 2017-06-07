@@ -1,0 +1,312 @@
+[ 2017-05-30T12:32:54+08:00 ] ::1 /TPvideo/
+ERR: Unkown resource type '{ padding'
+
+[ 2017-05-30T13:18:48+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unkown resource type '{ padding'
+
+[ 2017-05-30T13:18:53+08:00 ] ::1 /TPvideo/index.php/Home/Index
+ERR: Unkown resource type '{ padding'
+
+[ 2017-05-30T13:19:17+08:00 ] ::1 /TPvideo/index.php/Home/Index/inex
+ERR: 非法操作:inex
+
+[ 2017-05-30T13:19:21+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unkown resource type '{ padding'
+
+[ 2017-05-30T13:29:12+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 107 "jQuery(&quot;.foucebox&quot;).slide({ effect:&quot;fold&quot;, autoPlay:true, delayTime:300, startFun:function(i){jQuery(&quot;.foucebox .showDiv&quot;).eq(i).find(&quot;h2&quot;).css({display:&quot;none&quot;,bottom:0}).animate({opacity:&quot;show&quot;,bottom:&quot;60px&quot;},300);jQuery(&quot;.foucebox .showDiv&quot;).eq(i).find(&quot;p&quot;).css({display:&quot;none&quot;,bottom:0}).animate({opacity:&quot;show&quot;,bottom:&quot;10px&quot;},300);}});" unknown function "jQuery"
+
+[ 2017-05-30T13:30:04+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 107 "jQuery(&quot;.foucebox&quot;).slide({ effect:&quot;fold&quot;, autoPlay:true, delayTime:300, startFun:function(i){ jQuery(&quot;.foucebox .showDiv&quot;).eq(i).find(&quot;h2&quot;).css({ display:&quot;none&quot;,bottom:0 }).animate({ opacity:&quot;show&quot;,bottom:&quot;60px&quot; },300);jQuery(&quot;.foucebox .showDiv&quot;).eq(i).find(&quot;p&quot;).css({display:&quot;none&quot;,bottom:0}).animate({ opacity:&quot;show&quot;,bottom:&quot;10px&quot; },300); } });"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-05-30T13:31:44+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 853 "$('#scroll_top').click(function(){$('html,body').animate({scrollTop:$('.recommended-film').offset().top-150}, 800);});"  - Unexpected "(", expected one of: "{" , "identifier"
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/jquery.SuperSlide.js
+ERR: 非法操作:js
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/lrtk.js
+ERR: 非法操作:js
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/dashboard.css
+ERR: 非法操作:css
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/style.css
+ERR: 非法操作:css
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/demo.css
+ERR: 非法操作:css
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/share.css
+ERR: 非法操作:css
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/lanrenzhijia.css
+ERR: 非法操作:css
+
+[ 2017-05-30T13:32:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/layer.js
+ERR: 非法操作:js
+
+[ 2017-05-30T14:03:30+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:05:07+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 29 "{include file=header.html}"  - Unexpected ".", expected one of: "}" , " "
+
+[ 2017-05-30T14:05:33+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:07:45+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:13:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:20:05+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "./Template/default/Home\Index\index.html"  on line 30 "{$smarty-&gt;display(&quot;header.html&quot;)}" $smarty. is invalid
+
+[ 2017-05-30T14:21:37+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:29:57+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:30:27+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T14:47:04+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:03:10+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:16:28+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:16:51+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:17:31+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "C:\wamp\www\TPvideo\Template\default\Home\Index\header.html"  on line 36 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;输入有效的邮箱地址&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-30T15:18:14+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "C:\wamp\www\TPvideo\Template\default\Home\Index\header.html"  on line 36 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;输入有效的邮箱地址&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-30T15:18:27+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "C:\wamp\www\TPvideo\Template\default\Home\Index\header.html"  on line 79 "// layer.msg('的确很重要', {icon: 1});"  - Unexpected ": ", expected one of: "}" , " "
+
+[ 2017-05-30T15:19:07+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Syntax Error in template "C:\wamp\www\TPvideo\Template\default\Home\Index\header.html"  on line 113 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Enter email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-30T15:19:24+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-30T15:19:24+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-30T15:19:24+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-30T15:19:24+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/headroom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-30T15:20:43+08:00 ] ::1 /TPvideo/index.php/Home/Index/css/popuo-box.css
+ERR: 非法操作:css
+
+[ 2017-05-30T15:20:43+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/headroom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-30T15:20:43+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/jquery.magnific-popup.js
+ERR: 非法操作:js
+
+[ 2017-05-30T15:20:43+08:00 ] ::1 /TPvideo/index.php/Home/Index/js/modernizr.custom.min.js
+ERR: 非法操作:js
+
+[ 2017-05-30T15:25:25+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:25:43+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:27:16+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:29:33+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:30:30+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:31:06+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:32:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:33:47+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T15:51:13+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:51:58+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:00+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:00+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:00+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:00+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:00+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:00+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:01+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:03+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:03+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:03+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:52:03+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T15:55:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T16:05:36+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T16:07:02+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2017-05-30T16:07:23+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T16:07:45+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T16:07:47+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T16:07:52+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2017-05-30T16:08:45+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T16:14:19+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+
+[ 2017-05-30T16:14:40+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T16:18:32+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T16:18:43+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T16:18:45+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T16:18:46+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T16:21:10+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:30:47+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-30T19:31:04+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-30T19:31:07+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-30T19:31:38+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: 模板不存在:./Template/default/Index/index.html
+
+[ 2017-05-30T19:32:07+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:35:19+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:35:48+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:35:54+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:36:05+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:37:57+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'header.html' in 'Index/index.html'
+
+[ 2017-05-30T19:41:55+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file '/TPvideo/Template/default/Home/Index/header.html' in 'Index/index.html'
+
+[ 2017-05-30T20:08:52+08:00 ] ::1 /TPvideo/index.php/Home/Index/upload.html
+ERR: Syntax Error in template "./Template/default/Home\Index\upload.html"  on line 92 "&lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email&quot; required=&quot;required&quot; pattern=&quot;([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?&quot; title=&quot;Enter a valid email&quot;/&gt;"  - Unexpected ",", expected one of: "}" , " "
+
+[ 2017-05-30T20:15:37+08:00 ] ::1 /TPvideo/index.php/Home/Index/index
+ERR: Unable to load template file 'Index/index.html'
+

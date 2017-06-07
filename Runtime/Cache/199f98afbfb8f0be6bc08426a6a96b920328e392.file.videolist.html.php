@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-05-09 10:02:34
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 09:48:42
          compiled from "./Template/default/Admin\Video\videolist.html" */ ?>
 <?php /*%%SmartyHeaderCode:2015759020b1754a172-10535321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '199f98afbfb8f0be6bc08426a6a96b920328e392' => 
     array (
       0 => './Template/default/Admin\\Video\\videolist.html',
-      1 => 1494295274,
+      1 => 1496713149,
       2 => 'file',
     ),
   ),
@@ -107,10 +107,6 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
          <td id="video_vt_<?php echo $_smarty_tpl->tpl_vars['v']->value['vid'];?>
 "><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 </td>
-		 <!-- <td><eq name="<?php echo $_smarty_tpl->tpl_vars['v']->value['ishomepage'];?>
-" value="1">class="fa fa-check"</eq></td> -->
-     <!-- <td><value="1"><?php if ($_smarty_tpl->tpl_vars['v']->value['ishomepage']=='1'){?><span class="fa fa-check"></span><?php }else{ ?> <h1>1</h1>><?php }?></td>
-     <td><value="1"><?php if ($_smarty_tpl->tpl_vars['v']->value['ishomepage']=='1'){?><span class="fa fa-check"></span><?php }else{ ?> <h1>1</h1>><?php }?></td> -->
           <td ><span class="fa fa-check" ><?php echo $_smarty_tpl->tpl_vars['v']->value['ishomepage'];?>
 </span></td>
 		      <td ><span class="fa fa-check"><?php echo $_smarty_tpl->tpl_vars['v']->value['isrem'];?>

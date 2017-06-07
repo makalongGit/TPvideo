@@ -1,0 +1,4 @@
+[ 2017-05-10T22:29:21+08:00 ] 127.0.0.1 /TPvideo/index.php/Admin/User/registe.html
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `user` (`password`,`email`,`registerTime`,`userstatus`,`userVio`) VALUES ('4297f44b13955235245b2497399d7a93','214693086@qq.com',NULL,'0','0')
+
