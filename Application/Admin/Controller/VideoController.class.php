@@ -51,11 +51,9 @@ class VideoController extends Controller{
 	        		//缩略图路径
 	        		$thumb_img=dirname($img).'/thumb_'.basename($img);
 	        		$mid_img=dirname($img).'/mid_'.basename($img);
-	        		//生成缩略图
-	        		 
+	        		//生成缩略图	        		 
 	        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$thumb_img,85,55);
 	        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$mid_img);
-
 	        		$data['ori_img']=$img;
 	        		$data['thumb_img']=$thumb_img;
 	        		$data['mid_img']=$mid_img;

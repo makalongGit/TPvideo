@@ -17,7 +17,7 @@ class CateController extends Controller{
 		$this->display();
 	}
 	public function add(){
-		if(IS_POST){
+		if(I('post.')){
 			if($this->cate->addData()){
 				$this->success('分类添加成功');
 			}

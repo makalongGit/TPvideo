@@ -1,10 +1,11 @@
 <?php
 namespace Common\Model;
-use Think\Model;
+use Think\Model\RelationModel;
 /**
 * 分类model
 */
-class CateModel extends Model{
+class CateModel extends RelationModel{
+
 	//添加数据
     public function addData(){
         $data=I('post.');

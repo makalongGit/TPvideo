@@ -1,10 +1,10 @@
 <?php
 namespace Common\Model;
-use Think\Model;
+use Think\Model\RelationModel;
 /**
 * 视频model
 */
-class VideoModel extends Model{
+class VideoModel extends RelationModel{
 	//自动完成
 	protected $_auto=array(
 		array('publishedTime','date',1,'function',array('Y-m-d')),
@@ -17,7 +17,14 @@ class VideoModel extends Model{
 	/*protected $_validate = array(
      array('vt_id','has_son','请选择底层栏目',3,'function'),// 自定义函数验证密码格式
    		);*/
-
+   	protected $_link=array(
+   		'Cate'=>array( //栏目关联
+   			'mapping_type'=>self::BELONGS_TO,
+   			'class_name'=>'Cate',
+   			'foreign_key'=>'vt_id',
+   			'as_fields'=>'typename,level',
+   			),
+   		);
 	/*public function has_son($vt_id){
 		$cate=D('Cate');
 		if(!empty($cate->getSon($vt_id))){

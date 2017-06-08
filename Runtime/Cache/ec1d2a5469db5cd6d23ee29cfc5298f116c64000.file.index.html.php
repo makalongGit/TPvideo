@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 09:49:27
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-07 19:37:38
          compiled from "./Template/default/Home\Index\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:65175935759a84a156-21758724%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ec1d2a5469db5cd6d23ee29cfc5298f116c64000' => 
     array (
       0 => './Template/default/Home\\Index\\index.html',
-      1 => 1496713675,
+      1 => 1496835385,
       2 => 'file',
     ),
   ),
@@ -69,7 +69,8 @@ lanrenzhijia.css" type="text/css" rel="stylesheet" />
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a id="logo" class="navbar-brand" href="index.php"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+				<a id="logo" class="navbar-brand" href="<?php echo U('Home/Index/index');?>
+"><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
 			</div>
 			

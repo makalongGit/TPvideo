@@ -85,8 +85,6 @@
 	 * @return [type]            [description]
 	 */
 	function scale_img($src_path,$des_path,$width=300,$height=168){
-		dump($src_path);
-		dump($des_path);
 		$src_image=imagecreatefromstring(file_get_contents($src_path));
 		$src_width=imagesx($src_image);
 		$src_height=imagesy($src_image);
@@ -121,4 +119,3 @@
 			return false;
 	}
 
-	

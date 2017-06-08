@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-01 10:42:33
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-08 18:37:47
          compiled from "./Template/default/Home\Game\youxi.html" */ ?>
-<?php /*%%SmartyHeaderCode:10420592f7f19c2dd68-84984577%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:23907593928fb6bb219-40121442%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '6c43f0a6b5ce2f9812761b2d5dca6490167a97c5' => 
     array (
       0 => './Template/default/Home\\Game\\youxi.html',
-      1 => 1496284909,
+      1 => 1496918228,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10420592f7f19c2dd68-84984577',
+  'nocache_hash' => '23907593928fb6bb219-40121442',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_592f7f1b17408',
+  'unifunc' => 'content_593928fcf3b42',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_592f7f1b17408')) {function content_592f7f1b17408($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_593928fcf3b42')) {function content_593928fcf3b42($_smarty_tpl) {?><!DOCTYPE html>
 <!-- saved from url=(0040)http://my.tv.sohu.com/wm/ch/p128100.html -->
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-07 16:50:50
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-08 17:47:46
          compiled from "./Template/default/Home\Film\movies.html" */ ?>
 <?php /*%%SmartyHeaderCode:72385936c70d08e046-12271718%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b3e4968031174015301215b450707cd482c4a2d1' => 
     array (
       0 => './Template/default/Home\\Film\\movies.html',
-      1 => 1496825449,
+      1 => 1496915053,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5936c70e055dd',
   'variables' => 
   array (
+    '_SESSION' => 0,
     'cate_list' => 0,
     'v' => 0,
     'info' => 0,
@@ -74,7 +75,8 @@ jquery.lazyload.js"></script>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a id="logo" class="navbar-brand" href="index.php"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+				<a id="logo" class="navbar-brand" href="<?php echo U('Home/Index/index');?>
+"><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
 			</div>
 			
@@ -86,7 +88,10 @@ logo.png1.png" alt="xilixili" /></h1></a>
 						<input type="submit" value=" ">
 					</form>
 				</div>
+			<div>
+				<?php echo $_smarty_tpl->tpl_vars['_SESSION']->value['username'];?>
 
+			</div>	
 				<div class="header-top-right">
 				<!-- 上传 -->
 					<div class="file">
@@ -109,21 +114,22 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 							<h3>创建账户</h3> 
 							
 						<div class="signup">
-							<form>
-								<input type="text" class="email" placeholder="Email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{ 2,4 })?" title="输入有效的邮箱地址"/>
-								<input type="text" class="email" placeholder="用户名" required="required" pattern="" title="输入用户名"/>
-								<input type="password" placeholder="Password" required="required" pattern=".{ 6, }" title="输入至少6位的密码 autocomplete="off" />
+							<form action="<?php echo U('Home/User/regist');?>
+" method="post">
+								<input type="text" name="email" class="email" placeholder="Email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="输入有效的邮箱地址"/>
+								<input type="text" name="username" placeholder="用户名" />
+								<input type="password" name="password" placeholder="Password" required="required" pattern=".{6,}" title="输入至少6位的密码 autocomplete="off" />
 								<!--
 								<input type="text" class="email" placeholder="Mobile Number" maxlength="10" pattern="[1-9]<?php echo 1;?>
 \d<?php echo 9;?>
 " title="Enter a valid mobile number" />
 								-->
-								
+								<input type="submit"  value="注 册"/>
 							</form>
 							<div>
-							<div class="continue-button">
+							<!-- <div class="continue-button">
 								<a href="#small-dialog3" class="hvr-shutter-out-horizontal play-icon popup-with-zoom-anim">下一步</a>
-							</div>
+							</div> -->
 							<p style="margin-left:210px;margin-top:-20px"><span style="positon:relative;left:20px">已有账户? <a href="#small-dialog" class="play-icon popup-with-zoom-anim">登录</p ></a></span>
 							</div>
 						
@@ -190,14 +196,16 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 								</div>
 							</div>
 							<div class="signup">
-								<form>
-									<input type="text" class="email" placeholder="Enter email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{ 2,4 })?"/>
-									<input type="password" placeholder="Password" required="required" pattern=".{ 6, }" title="Minimum 6 characters required" autocomplete="off" />
+								<form action="<?php echo U('Home/User/login');?>
+" method="post">
+									<input type="text" name="email" class="email" placeholder="Enter email" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?"/>
+									<input type="password" name="password" placeholder="Password" required="required" pattern=".{6,}" title="Minimum 6 characters required" autocomplete="off" />
 									<input type="submit"  value="登录"/>
 								</form>
 								<div>
 								<div class="forgot">
-									<a href="#">忘记密码 ?</a>
+									<a href="<?php echo U('Home/User/resetPw');?>
+">忘记密码 ?</a>
 	
 								</div>
 								<p style="margin-left:200px;margin-top:-20px">新账户? <a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a></p>
@@ -298,7 +306,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>	  
 					<li>
-					  <a href=""><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+					  <a href='<?php echo U("Home/Film/movies?order=".($_smarty_tpl->tpl_vars['v']->value['vt_id']));?>
+'><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
 </a>
 					</li>          						  
 					<?php } ?>    				     
@@ -355,8 +364,10 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 					<li id="view-list"><a class="current"><i class="iconfont m-r-3 f-s-14"></i>选择排序方式</a></li>
 				</ul>
 				<div class="view-filter">
-					<a id="time" href="http://www.ccgzwl.cn/search.php?page=1&amp;searchtype=5&amp;order=time&amp;tid=1" class="order current" target="_self"><span>按时间</span></a>
-					<a id="hits" href="http://www.ccgzwl.cn/search.php?page=1&amp;searchtype=5&amp;order=hit&amp;tid=1" class="order" target="_self"><span>按人气</span></a>
+					<a id="time" href='<?php echo U("Home/Film/movies?sequence=publishedTime");?>
+' class="order current" target="_self"><span>按时间</span></a>
+					<a id="hits" href='<?php echo U("Home/Film/movies?sequence=numOfViewed");?>
+' class="order" target="_self"><span>按人气</span></a>
 				</div>
 			</div>
 		</div>
@@ -434,40 +445,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 		</ul>
 		</div>
 			
-		<div class="ui-ranking border-gray">
-        <div class="cont-box-list">
-          <h2 class="cont-box-tit-tvs-list"><i class="iconfont m-r-3 f-s-16">󰃐</i>评分排行榜</h2><span class="border-r-15"></span>
-        </div>
-        <ul class="ranking-list2">
-				
-           
-			<li></li>
-            <li><span>0.0</span>
-				<em class=''>1</em>
-				<a href="http://www.ccgzwl.cn/dianying/kongbu/buhanerli/">不寒而栗</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em class=''>2</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/juedizhanjiang/">绝地战将</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em class=''>3</em>
-				<a href="http://www.ccgzwl.cn/dianying/xiju/lanyanjingmiqi/">蓝眼睛米奇</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em>4</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/tegongshaote/">特工绍特</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em>5</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/guojiagongdi/">国家公敌</a>
-            </li>						
-		</ul>
-		</div>	
+		
 	</div>
 </div>
 <div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>
@@ -477,7 +455,6 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 				$('.ranking-list li em').eq(0).addClass('stress');
 				$('.ranking-list li em').eq(1).addClass('stress');
 				$('.ranking-list li em').eq(2).addClass('stress');
-
 				$('.ranking-list2 li em').eq(0).addClass('stress');
 				$('.ranking-list2 li em').eq(1).addClass('stress');
 				$('.ranking-list2 li em').eq(2).addClass('stress');
