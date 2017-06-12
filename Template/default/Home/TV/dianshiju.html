@@ -49,7 +49,8 @@
 					<div class="file">
 						<a href="upload.html">上传</a>
 					</div>	
-				
+				欢迎{$smarty.session.user_name}
+				<a href="{U('Home/User/logout')}">退出</a>
 
 				<!-- 注册-->
 					<div class="signin">
@@ -293,11 +294,20 @@ $(function(){
 					<li id="view-list"><a class="current"><i class="iconfont m-r-3 f-s-14">󰅙</i>选择排序方式</a></li>
 				</ul>
 				<div class="view-filter">
-					<a id="time" href='{U("Home/TV/dianshiju?sequence=publishedTime")}' class="order current" target="_self"><span>按时间</span></a>
+					<a id="time" href='{U("Home/TV/dianshiju?sequence=publishedTime")}' class="order" target="_self"><span>按时间</span></a>
 					<a id="hits" href='{U("Home/TV/dianshiju?sequence=numOfViewed")}' class="order" target="_self"><span>按人气</span></a>
 				</div>
 			</div>
 		</div>
+		<script>
+					var index=window.location.href.split("/").length-1;
+					var href=window.location.href.split("/")[index];
+					if(href=== 'numOfViewed.html'){
+						$('#hits').addClass('current');
+					}else if(href === 'publishedTime.html'){
+						$('#time').addClass('current');
+					}
+			</script>
 		<section class="clearfix channellist-box">
 			<div class="hello-box">
 

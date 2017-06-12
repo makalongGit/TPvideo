@@ -43,13 +43,13 @@
                         <input type="submit" value=" ">
                     </form>
                 </div>
-
                 <div class="header-top-right">
                 <!-- 上传 -->
                     <div class="file">
                         <a href="upload.html">上传</a>
                     </div>  
-                
+                欢迎{$smarty.session.user_name}
+                <a href="{U('Home/User/logout')}">退出</a>
 
                 <!-- 注册-->
                     <div class="signin">

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://www.ccgzwl.cn/dianying/index.html -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>电影 第1页</title>
-<meta name="keywords" content="电影第1页">
-<meta name="description" content="电影第1页">
+<title>电影</title>
+
 	<script src="{$smarty.const.__HOME_JS__}jquery-1.11.1.min.js"></script>
 
 	<script src="{$smarty.const.__HOME_JS__}lrtk.js"></script>
@@ -43,16 +42,14 @@
 						<input type="submit" value=" ">
 					</form>
 				</div>
-			<div>
-				{$_SESSION['username']}
-			</div>	
+				
 				<div class="header-top-right">
 				<!-- 上传 -->
 					<div class="file">
-						<a href="upload.html">上传</a>
+						<a href="{U('Home/Upload/text')}">上传</a>
 					</div>	
-				
-
+				欢迎{$smarty.session.user_name}
+				<a href="{U('Home/User/logout')}">退出</a>
 				<!-- 注册-->
 					<div class="signin">
 						<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a>
@@ -292,11 +289,22 @@ $(function(){
 					<li id="view-list"><a class="current"><i class="iconfont m-r-3 f-s-14"></i>选择排序方式</a></li>
 				</ul>
 				<div class="view-filter">
-					<a id="time" href='{U("Home/Film/movies?sequence=publishedTime")}' class="order current" target="_self"><span>按时间</span></a>
+					<a id="time" href='{U("Home/Film/movies?sequence=publishedTime")}' class="order" target="_self"><span>按时间</span></a>
 					<a id="hits" href='{U("Home/Film/movies?sequence=numOfViewed")}' class="order" target="_self"><span>按人气</span></a>
 				</div>
 			</div>
 		</div>
+			
+			<script>
+					var index=window.location.href.split("/").length-1;
+					var href=window.location.href.split("/")[index];
+					if(href=== 'numOfViewed.html'){
+						$('#hits').addClass('current');
+					}else if(href === 'publishedTime.html'){
+						$('#time').addClass('current');
+					}
+			</script>
+		
 		<section class="clearfix channellist-box">
 			<div class="hello-box">
 

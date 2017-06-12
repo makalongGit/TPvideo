@@ -11,8 +11,15 @@ class CateController extends Controller{
         //$this->cateDate=$this->cate->getAllDate();
 	}
 	public function catelist(){
+		if(IS_AJAX){
+			$vt_id=I('post.vt_id');
+			$result=$this->cate->where("level=$vt_id")->select();
+			$this->ajaxReturn($result,"JSON");			
+		}
 		$info=$this->cate->select();		
 		$catelist=$this->cate->getCatTree($info,0);
+		$parent_info=$this->cate->where("level=0")->select();
+		$this->assign('parent_info',$parent_info);
 		$this->assign('catelist',$catelist);		
 		$this->display();
 	}
@@ -60,6 +67,10 @@ class CateController extends Controller{
 			}
 			$this->ajaxReturn($data);				
 		}
+	}
+
+	public function cateajax(){
+		dump(I('post.'));
 	}
 }
 

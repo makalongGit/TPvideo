@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-08 18:36:05
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-10 11:12:22
          compiled from "./Template/default/Home\Carton\carton.html" */ ?>
 <?php /*%%SmartyHeaderCode:24251592ecd475e03b0-19116175%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4f3bf03da5236869d018f3127b57de2ee7a40888' => 
     array (
       0 => './Template/default/Home\\Carton\\carton.html',
-      1 => 1496918162,
+      1 => 1497062612,
       2 => 'file',
     ),
   ),
@@ -88,13 +88,15 @@ logo.png1.png" alt="xilixili" /></h1></a>
                         <input type="submit" value=" ">
                     </form>
                 </div>
-
                 <div class="header-top-right">
                 <!-- 上传 -->
                     <div class="file">
                         <a href="upload.html">上传</a>
                     </div>  
-                
+                欢迎<?php echo $_SESSION['user_name'];?>
+
+                <a href="<?php echo U('Home/User/logout');?>
+">退出</a>
 
                 <!-- 注册-->
                     <div class="signin">

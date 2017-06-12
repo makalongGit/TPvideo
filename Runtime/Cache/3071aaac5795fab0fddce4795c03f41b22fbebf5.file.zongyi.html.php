@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-08 17:31:06
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-10 11:13:19
          compiled from "./Template/default/Home\Variety\zongyi.html" */ ?>
 <?php /*%%SmartyHeaderCode:32455937fca9aa9dc6-32617870%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3071aaac5795fab0fddce4795c03f41b22fbebf5' => 
     array (
       0 => './Template/default/Home\\Variety\\zongyi.html',
-      1 => 1496914264,
+      1 => 1497060520,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5937fcab631b5',
   'variables' => 
   array (
-    '_SESSION' => 0,
     'cate_list' => 0,
     'v' => 0,
     'info' => 0,
@@ -116,16 +115,16 @@ logo.png1.png" alt="xilixili" /></h1></a>
                         <input type="submit" value=" ">
                     </form>
                 </div>
-                <div>
-                    <?php echo $_smarty_tpl->tpl_vars['_SESSION']->value['username'];?>
-
-                </div>  
+                
                 <div class="header-top-right">
             <!-- 上传 -->
             <div class="file">
                 <a href="upload.html">上传</a>
             </div>  
-                
+                欢迎<?php echo $_SESSION['user_name'];?>
+
+                <a href="<?php echo U('Home/User/logout');?>
+">退出</a>
             <!-- 注册-->
             <div class="signin">
                 <a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a>

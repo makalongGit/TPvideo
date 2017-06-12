@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-09 15:47:06
+         compiled from "./Template/default/Admin\Cate\catelist.html" */ ?>
+<?php /*%%SmartyHeaderCode:259315902ec2792d4c7-52090734%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'a564a049f2b385d626d09a405f8cfc7cc3fffecc' => 
+    array (
+      0 => './Template/default/Admin\\Cate\\catelist.html',
+      1 => 1496994419,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '259315902ec2792d4c7-52090734',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_5902ec27ca7f9',
+  'variables' => 
+  array (
+    'catelist' => 0,
+    'v' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5902ec27ca7f9')) {function content_5902ec27ca7f9($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -6,12 +32,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="renderer" content="webkit">
 <title></title>
-<link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}pintuer.css">
-<link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}admin.css">
-<link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}font-awesome.min.css">
-<script src="{$smarty.const.__ADMIN_JS__}jquery-1.10.1.js"></script>
-<script src="{$smarty.const.__ADMIN_JS__}pintuer.js"></script>
-<script src="{$smarty.const.__ADMIN_JS__}layer.js"></script>
+<link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
+pintuer.css">
+<link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
+admin.css">
+<link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
+font-awesome.min.css">
+<script src="<?php echo @__ADMIN_JS__;?>
+jquery-1.10.1.js"></script>
+<script src="<?php echo @__ADMIN_JS__;?>
+pintuer.js"></script>
+<script src="<?php echo @__ADMIN_JS__;?>
+layer.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
@@ -35,15 +67,29 @@
 	  <th width="12%">上级类型</th>
     </tr>
     <form>
-    {foreach $catelist as $k=>$v}
+    <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
     <tr>
 	    <td style="text-align:left;">
-      <input id="cate_check_id_{$v.vt_id}" type="checkbox" name="cate_b_id" class="cate_check" value="{$v.vt_id}" /></td>
-      <td id="cate_id_{$v.vt_id}">{$v.vt_id}</td>
-      <td id="cate_cate_{$v.vt_id}">{$v.typename}</td>
-	    <td id="up_cate_cate_{$v.vt_id}">{$v.level}</td>   
+      <input id="cate_check_id_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+" type="checkbox" name="cate_b_id" class="cate_check" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+" /></td>
+      <td id="cate_id_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+</td>
+      <td id="cate_cate_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</td>
+	    <td id="up_cate_cate_<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['level'];?>
+</td>   
     </tr>
-    {/foreach}
+    <?php } ?>
     </form>
   </table> 
 </div>
@@ -53,7 +99,8 @@
 <div class="panel admin-panel margin-top">
   <div class="panel-head" id="add"><strong><span class="fa fa-plus-square-o"></span>添加内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="{U('Admin/Cate/add')}">
+    <form method="post" class="form-x" action="<?php echo U('Admin/Cate/add');?>
+">
 		  <div class="form-group">
         <div class="label">
           <label>分类标题：</label>
@@ -68,15 +115,17 @@
           <label>上级分类：</label>
         </div>
         <div class="field">
+          
           <select name="type" size="1" id="type">
              <option>请选择类型</option>
-              {foreach $parent_info as $v}
-                  <option value="{$v.vt_id}">{$v.typename}</option>
-              {/foreach}
+              <foreach name='cate' item='v'>
+                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['ca_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['ca_name'];?>
+</option>
+              </foreach>
           </select>
           标签：
             <select name="lable" size="1" id="lables">
-            <option>请先选择类型</option>
             </select>
         </div>
       </div>     
@@ -103,7 +152,8 @@
 <div class="panel admin-panel margin-top">
   <div class="panel-head" id="edit"><strong><span class="fa fa-edit"></span>修改分类</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="{U('Admin/Cate/cateupdate')}">   
+    <form method="post" class="form-x" action="<?php echo U('Admin/Cate/cateupdate');?>
+">   
       <input type="hidden"  class="vt_id_up" name="vt_id_up"id="vt_id_up"  >    
       <div class="form-group">
         <div class="label" >
@@ -119,16 +169,27 @@
           <label>上级分类：</label>
         </div>
         <div class="field">
-          <select name="type" size="1" id="type">
-             <option>请选择类型</option>
-              {foreach $parent_info as $v}
-                  <option value="{$v.vt_id}">{$v.typename}</option>
-              {/foreach}
+          <select id="level2" class="input w50">
+            <option value="0">顶级分类</option>
+            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+">
+                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
+                <?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+
+                <?php }else{ ?>
+                <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
+<?php $_tmp1=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp1),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
+
+                <?php }?></option>
+              <?php } ?>
           </select>
-          标签：
-            <select name="lable" size="1" id="lables">
-            <option>请先选择类型</option>
-            </select>
          
         </div>
       </div>
@@ -176,7 +237,8 @@ $('#button_gai').click(function(){
       }
     }
   var arr = value.split('_');
-  $.post("{U('Cate/cateupdate')}",{ id : arr[3] },function(data){
+  $.post("<?php echo U('Cate/cateupdate');?>
+",{ id : arr[3] },function(data){
     jdata=eval("("+data+")");
     $('#cate_cate_change').val(jdata.typename);//获得栏目名称
     $('#vt_id_up').val(jdata.vt_id);
@@ -210,7 +272,8 @@ $('#cate_del').click(function(){
     $('input[name="cate_b_id"]:checked').each(function(){
       id_array.push($(this).val());
     });
-    $.post("{U('Cate/deleteCat')}",{ data : id_array },function(res){
+    $.post("<?php echo U('Cate/deleteCat');?>
+",{ data : id_array },function(res){
       if(res.status==3){
         layer.msg('已删除', { icon: 1 });
         setTimeout("document.location.reload()",1250);
@@ -271,22 +334,6 @@ $("#button_gai").removeAttr("disabled");
             }
 
    });
-
-$('#type').click(function(){
-  $(this).change(function(){
-    var   value = $(this).val();
-    $.post("{U('Cate/catelist')}",{ vt_id : value },function(data){
-        $("#lables").empty();
-        var count = data.length;
-        var i = 0;
-        var b="";
-           for(i=0;i<count;i++){
-               b+="<option value='"+data[i].vt_id+"'>"+data[i].typename+"</option>";
-           }
-        $("#lables").append(b);
-    })    
-  });
-});
 </script>
 </body>
-</html>
+</html><?php }} ?>

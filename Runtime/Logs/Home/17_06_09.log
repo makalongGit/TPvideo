@@ -1,0 +1,4 @@
+[ 2017-06-09T14:33:48+08:00 ] ::1 /TPvideo/index.php/Home/Film/movies.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY numOfViewed desc LIMIT 10' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vt_id= ) ORDER BY numOfViewed desc LIMIT 10  
+

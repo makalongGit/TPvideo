@@ -11,7 +11,7 @@ class FilmController extends Controller {
 	}
     public function movies(){  	   	
     	if(I('get.sequence'))
-    			$this->sequence=I('get.sequence');
+    		$this->sequence=I('get.sequence');
     	//类型
     	$cate=M('cate');
     	$cate_list=$cate
@@ -20,14 +20,17 @@ class FilmController extends Controller {
     				->select();
     	//人气排行
     	$hot_list=$this->video
-						->where('isDelete=0 and isPassed=1')
+    					->join('Cate on video.vt_id=Cate.vt_id')
+						->where("isDelete=0 and isPassed=1 and Cate.level=$this->type")
 						->order('numOfViewed desc')
 						->limit(10)
 						->select();
 		
     	if(I('get.order')){
     		$order=I('get.order');
-    		$count=$this->video->where("isDelete=0 and isPassed=1 and vt_id=$order")->count();
+    		$count=$this->video
+    					->where("isDelete=0 and isPassed=1 and vt_id=$order")
+    					->count();
 	    	$page=new \Org\Video\Page($count,12);
     		$info=$this->video
 				    ->where("isDelete=0 and isPassed=1 and vt_id=$order")

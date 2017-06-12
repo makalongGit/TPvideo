@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-08 17:59:26
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-11 21:33:28
          compiled from "./Template/default/Home\TV\dianshiju.html" */ ?>
 <?php /*%%SmartyHeaderCode:13799592ec7a0783256-60027451%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b30c3130e51fdcb145d3d0efd1c3bf5a2c220615' => 
     array (
       0 => './Template/default/Home\\TV\\dianshiju.html',
-      1 => 1496915964,
+      1 => 1497060528,
       2 => 'file',
     ),
   ),
@@ -94,7 +94,10 @@ logo.png1.png" alt="xilixili" /></h1></a>
 					<div class="file">
 						<a href="upload.html">上传</a>
 					</div>	
-				
+				欢迎<?php echo $_SESSION['user_name'];?>
+
+				<a href="<?php echo U('Home/User/logout');?>
+">退出</a>
 
 				<!-- 注册-->
 					<div class="signin">
@@ -360,12 +363,21 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 				</ul>
 				<div class="view-filter">
 					<a id="time" href='<?php echo U("Home/TV/dianshiju?sequence=publishedTime");?>
-' class="order current" target="_self"><span>按时间</span></a>
+' class="order" target="_self"><span>按时间</span></a>
 					<a id="hits" href='<?php echo U("Home/TV/dianshiju?sequence=numOfViewed");?>
 ' class="order" target="_self"><span>按人气</span></a>
 				</div>
 			</div>
 		</div>
+		<script>
+					var index=window.location.href.split("/").length-1;
+					var href=window.location.href.split("/")[index];
+					if(href=== 'numOfViewed.html'){
+						$('#hits').addClass('current');
+					}else if(href === 'publishedTime.html'){
+						$('#time').addClass('current');
+					}
+			</script>
 		<section class="clearfix channellist-box">
 			<div class="hello-box">
 

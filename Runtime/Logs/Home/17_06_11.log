@@ -1,0 +1,416 @@
+[ 2017-06-11T19:47:03+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T19:47:53+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T19:48:56+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T19:49:28+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-11T19:50:18+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-11T19:52:08+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T19:52:33+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T19:52:46+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-11T20:51:11+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+
+[ 2017-06-11T20:51:51+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+
+[ 2017-06-11T20:56:44+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+
+[ 2017-06-11T20:59:32+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 34 行.
+
+[ 2017-06-11T20:59:56+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 35 行.
+
+[ 2017-06-11T21:01:14+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 35 行.
+
+[ 2017-06-11T21:07:02+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 36 行.
+
+[ 2017-06-11T21:08:04+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 36 行.
+
+[ 2017-06-11T21:08:44+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 36 行.
+
+[ 2017-06-11T21:09:16+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+
+[ 2017-06-11T21:09:40+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+
+[ 2017-06-11T21:10:37+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+
+[ 2017-06-11T21:11:37+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+
+[ 2017-06-11T21:17:22+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+
+[ 2017-06-11T21:21:30+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+
+[ 2017-06-11T21:24:34+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0100s ]
+
+[ 2017-06-11T21:25:08+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+
+[ 2017-06-11T21:25:18+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+
+[ 2017-06-11T21:26:11+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+
+[ 2017-06-11T22:03:12+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: email C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 37 行.
+
+[ 2017-06-11T22:03:49+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: email C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 37 行.
+
+[ 2017-06-11T22:04:26+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: email C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 37 行.
+
+[ 2017-06-11T22:10:18+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+
+[ 2017-06-11T22:12:16+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+
+[ 2017-06-11T22:22:43+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: arr C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 38 行.
+NOTIC: [8] Undefined variable: arr C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 39 行.
+
+[ 2017-06-11T22:23:00+08:00 ] ::1 /TPvideo/index.php/Home/User/regist1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 38 行.
+NOTIC: [8] Undefined variable: arr C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 39 行.
+
+[ 2017-06-11T22:30:18+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123','202cb962ac59075b964b07152d234b70','214693085@qq.com','1497191415','51d80d0747b9ae0eb50b705dee7b820c','0','0') [ RunTime:0.4320s ]
+
+[ 2017-06-11T22:30:51+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '214693085@qq.com' for key 'email'
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123','202cb962ac59075b964b07152d234b70','214693085@qq.com','1497191450','51d80d0747b9ae0eb50b705dee7b820c','0','0')
+ERR: 1062:Duplicate entry '214693085@qq.com' for key 'email'
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123','202cb962ac59075b964b07152d234b70','214693085@qq.com','1497191450','51d80d0747b9ae0eb50b705dee7b820c','0','0')
+
+[ 2017-06-11T22:32:07+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123','4297f44b13955235245b2497399d7a93','214693086@qq.com','1497191526','4c4f9c78e004079aef0cf992354031ed','0','0') [ RunTime:0.0610s ]
+
+[ 2017-06-11T22:35:53+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('liuyang','4297f44b13955235245b2497399d7a93','921162960@qq.com','1497191753','f98dbf124924fb796c5c64014cc2afce','0','0') [ RunTime:0.0900s ]
+
+[ 2017-06-11T22:38:50+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123123','4297f44b13955235245b2497399d7a93','214693086@qq.com','1497191930','f4b8fca6abc9651a7d608bd89e9dacbb','0','0') [ RunTime:0.0840s ]
+
+[ 2017-06-11T22:41:33+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123123','4297f44b13955235245b2497399d7a93','214693086@qq.com','1497192093','f4b8fca6abc9651a7d608bd89e9dacbb','0','0') [ RunTime:0.0870s ]
+
+[ 2017-06-11T22:44:15+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123','4297f44b13955235245b2497399d7a93','214693086@qq.com','1497192255','4c4f9c78e004079aef0cf992354031ed','0','0') [ RunTime:0.0690s ]
+
+[ 2017-06-11T22:45:09+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0480s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('123123','4297f44b13955235245b2497399d7a93','921162960@qq.com','1497192308','6fd9b721e87f5f5814a31edd5f81a4cf','0','0') [ RunTime:0.0770s ]
+
+[ 2017-06-11T22:59:45+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('','d41d8cd98f00b204e9800998ecf8427e','','1497193185','d41d8cd98f00b204e9800998ecf8427e','0','0')
+ERR: 1062:Duplicate entry '' for key 'email'
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('','d41d8cd98f00b204e9800998ecf8427e','','1497193185','d41d8cd98f00b204e9800998ecf8427e','0','0')
+
+[ 2017-06-11T23:00:21+08:00 ] ::1 /TPvideo/index.php/Home/User/regist.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '214693086@qq.com' for key 'email'
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('','d41d8cd98f00b204e9800998ecf8427e','214693086@qq.com','1497193221','ddd343488a1d46546352f122caa1d5fb','0','0')
+ERR: 1062:Duplicate entry '214693086@qq.com' for key 'email'
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`email`,`registerTime`,`accessToken`,`userstatus`,`userVio`) VALUES ('','d41d8cd98f00b204e9800998ecf8427e','214693086@qq.com','1497193221','ddd343488a1d46546352f122caa1d5fb','0','0')
+
+[ 2017-06-11T23:03:47+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: accessToken C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 90 行.
+NOTIC: [8] Undefined variable: info C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 91 行.
+
+[ 2017-06-11T23:13:45+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: accessToken C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: info C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 92 行.
+
+[ 2017-06-11T23:14:40+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: accessToken C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: info C:\wamp\www\TPvideo\Application\Home\Controller\UserController.class.php 第 92 行.
+
+[ 2017-06-11T23:19:37+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-11T23:20:20+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T23:22:16+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-11T23:24:32+08:00 ] ::1 /TPvideo/index.php/Home/User/resetPw.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE ( email='214693086@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+

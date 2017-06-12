@@ -10,8 +10,8 @@ class LoginController extends Controller{
 		if(I('post.')){
 
 			$very=new \Think\Verify();
-			if($very->check($_POST['code'])){
-				$info=D('Manager')->checkNP($_POST['name'],$_POST['password']);
+			if($very->check(I('post.name'))){
+				$info=D('Manager')->checkNP(I('post.name'),I('post.password'));
 			
 				if($info){
 					//session持久化用户信息，页面跳转到后台

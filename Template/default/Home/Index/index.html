@@ -32,25 +32,23 @@
 			<div class="navbar-header">
 				<a id="logo" class="navbar-brand" href="{U('Home/Index/index')}"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
 			</div>
-			
+		
 			 <div id="navbar" class="navbar-collapse collapse">
 			 	<!-- 搜索栏 -->
 				<div class="top-search">
-					<form class="navbar-form navbar-right" method="post" action="sousuo/sousuo.php">
-						<input type="text" class="form-control" placeholder="Search...">
+					<form class="navbar-form navbar-right" method="post" action="">
+						<input type="text" class="form-control" placeholder="{$smarty.session.name}">
 						<input type="submit" value=" ">
 					</form>
 				</div>
-			<div>
-				{$_SESSION['username']}
-			</div>	
+			
 				<div class="header-top-right">
 				<!-- 上传 -->
 					<div class="file">
-						<a href="upload.html">上传</a>
+						<a href="{U('Home/Upload/text')}">上传</a>
 					</div>	
-				
-
+				欢迎{$smarty.session.user_name}
+			<a href="{U('Home/User/logout')}">退出</a>
 				<!-- 注册-->
 					<div class="signin">
 						<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a>
@@ -221,74 +219,22 @@ $(function(){
 	<!-- //导航 -->
 	<div class="foucebox">
   <div class="bd">
+  	{foreach $info as $v}
 	    <div class="showDiv"> <a href="">
-		  <img src="{$smarty.const.__HOME_IMAGE__}b1.jpg"></a>
+		  <img src="{$smarty.const.__UPLOAD_IMG__}{$v.ori_img}"></a>
 	      <div class="foucebox_bg"></div>
 	      <div>
-	        <h2 style="bottom: 60px;"><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
+	        <h2 style="bottom: 60px;"><a href="">{$v.videoname}</a></h2>
 	        <p style="bottom: 10px;">xilixili--xilixili</p>
 	      </div>
 	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}2.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2 style="bottom: 60px;"><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="{$smarty.const.__HOME_IMAGE__}b3.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2 style="bottom: 60px;"><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="{$smarty.const.__HOME_IMAGE__}b4.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}5.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}6.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}7.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}8.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili</p>
-	      </div>
-	    </div>
+	{/foreach}
   </div>
   <div class="hd">
     <ul>
-      <li class="on"><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.1.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.2.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.3.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.4.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.5.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.6.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.7.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/{$smarty.const.__HOME_IMAGE__}1.8.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
+    {foreach $info as $v}
+      <li class="on"><a href="#"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}"><span class="txt">{$v.videoname}</span><span class="txt_bg"></span><span class="mask"></span></a></li>
+    {/foreach}
     </ul>
   </div>
 </div><script>
@@ -332,7 +278,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 				</div>
 
 				<div class="recommended-zongyi">
-					
+				
 					<div class="recommended-grids">
 						<div class ="recommended-info">
 						<div style ='width:200px;height:50px;'>
@@ -340,50 +286,36 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 						<a href    ="{U('Home/Variety/zongyi')}" style='font-size:15px;'>>>更多</a>
 						</div>		
 						</div>
+						{foreach $variety_list as $k=>$v}
+							{if $k==4}
+								<div class="clearfix"> </div>
+								<div style=" height:20px;">
+  								</div> 
+							{/if}
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}r1.jpg" alt="" /></a>
+								<a href="single.html"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 								<div class="time small-time">
-									<p>2:34</p>
+									<p>{$v.publishedTime}</p>
 								</div>
 								<div class="clck small-clck">
 									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 								</div>
 							</div>
 							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra viverra nullam nullam interdum metus</a></h5>
+								<h5><a href="single.html" class="title">{$v.introduction}</a></h5>
 								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
+									<li><p class="author author-info"><a href="#" class="author">{$v.uid}</a></p></li>
+									<li class="right-list"><p class="views views-info">{$v.numofviewed} Views</p></li>
 								</ul>
 							</div>
 						</div>
+
+					{/foreach}
+					<div class="clearfix"> </div>	
+					</div>
 					
-						<div class="clearfix"> </div>
-					</div>
-					<div class="recommended-grids">
-						<div class="col-md-3 resent-grid recommended-grid">
-							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}r4.jpg" alt="" /></a>
-								<div class="time small-time">
-									<p>6:34</p>
-								</div>
-								<div class="clck small-clck">
-									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-								</div>
-							</div>
-							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
-								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
-								</ul>
-							</div>
-						</div>
-						
-						
-						<div class="clearfix"> </div>	
-					</div>
+					
 				</div>
 				
 			    <div class="recommended-dianshiju">
@@ -395,49 +327,34 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 							<a href="{U('Home/TV/dianshiju')}" style='font-size:15px;'>>>更多</a>
 						</div>
 						</div>
+						{foreach $TV_list as $k=>$v}
+							{if $k==4}
+								<div class="clearfix"> </div>
+								<div style=" height:20px;">
+  								</div> 
+							{/if}
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}g.jpg" alt="" /></a>
+								<a href="single.html"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 								<div class="time small-time">
-									<p>7:30</p>
+									<p>{$v.publishedTime}</p>
 								</div>
 								<div class="clck small-clck">
 									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 								</div>
 							</div>
 							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+								<h5><a href="single.html" class="title">{$v.introduction}</a></h5>
 								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
+									<li><p class="author author-info"><a href="#" class="author">{$v.uid}</a></p></li>
+									<li class="right-list"><p class="views views-info">{$v.numofviewed}views</p></li>
 								</ul>
 							</div>
 						</div>
-						
+						{/foreach}
 						<div class="clearfix"> </div>
 					
-					<div class="recommended-grids">
-						<div class="col-md-3 resent-grid recommended-grid">
-							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}we2.jpg" alt=""></a>
-								<div class="time small-time">
-									<p>7:30</p>
-								</div>
-								<div class="clck small-clck">
-									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-								</div>
-							</div>
-							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
-								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="clearfix"> </div>
-					</div>	
+					
 			    </div>
 			
 				<div class="recommended-donghua">
@@ -449,31 +366,33 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 						</div>
 						</div>						
 							<div class="animated-grids">
+							{foreach $carton_list as $v}
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}c.jpg" alt="" /></a>
+										<a href="single.html"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 										<div class="time small-time slider-time">
-											<p>7:34</p>
+											<p>{$v.publishedTime}</p>
 										</div>
 										<div class="clck small-clck">
 											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 										</div>
 									</div>
 									<div class="resent-grid-info recommended-grid-info">
-										<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+										<h5><a href="single.html" class="title">{$v.introduction}</a></h5>
 										<div class="slid-bottom-grids">
 											<div class="slid-bottom-grid">
-												<p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+												<p class="author author-info"><a href="#" class="author">{$v.uid}</a></p>
 											</div>
 											<div class="slid-bottom-grid slid-bottom-right">
-												<p class="views views-info">2,114,200 views</p>
+												<p class="views views-info">{$v.numofviewed} Views</p>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
-								
+							{/foreach}
 								<div class="clearfix"> </div>
+							}
 							</div>													
 					</div>
               <div class="recommended-youxi">
@@ -485,30 +404,31 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 						</div>
 						</div>						
 							<div class="animated-grids">
+							{foreach $game_list as $v}
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}c.jpg" alt="" /></a>
+										<a href=""><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 										<div class="time small-time slider-time">
-											<p>7:34</p>
+											<p>{$v.publishedtime}</p>
 										</div>
 										<div class="clck small-clck">
 											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 										</div>
 									</div>
 									<div class="resent-grid-info recommended-grid-info">
-										<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+										<h5><a href="single.html" class="title">{$v.introduction}</a></h5>
 										<div class="slid-bottom-grids">
 											<div class="slid-bottom-grid">
-												<p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+												<p class="author author-info"><a href="#" class="author">{$v.uid}</a></p>
 											</div>
 											<div class="slid-bottom-grid slid-bottom-right">
-												<p class="views views-info">2,114,200 views</p>
+												<p class="views views-info">{$v.numofviewed}views</p>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
-	
+								{/foreach}
 								<div class="clearfix"> </div>
 							</div>													
 					</div>

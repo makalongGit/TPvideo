@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-07 19:37:38
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-12 19:13:25
          compiled from "./Template/default/Home\Index\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:65175935759a84a156-21758724%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ec1d2a5469db5cd6d23ee29cfc5298f116c64000' => 
     array (
       0 => './Template/default/Home\\Index\\index.html',
-      1 => 1496835385,
+      1 => 1497266003,
       2 => 'file',
     ),
   ),
@@ -19,9 +19,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5935759c96b9b',
   'variables' => 
   array (
-    '_SESSION' => 0,
-    'film_list' => 0,
+    'info' => 0,
     'v' => 0,
+    'film_list' => 0,
+    'variety_list' => 0,
+    'k' => 0,
+    'TV_list' => 0,
+    'carton_list' => 0,
+    'game_list' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -73,26 +78,27 @@ lanrenzhijia.css" type="text/css" rel="stylesheet" />
 "><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
 			</div>
-			
+		
 			 <div id="navbar" class="navbar-collapse collapse">
 			 	<!-- 搜索栏 -->
 				<div class="top-search">
-					<form class="navbar-form navbar-right" method="post" action="sousuo/sousuo.php">
-						<input type="text" class="form-control" placeholder="Search...">
+					<form class="navbar-form navbar-right" method="post" action="">
+						<input type="text" class="form-control" placeholder="<?php echo $_SESSION['name'];?>
+">
 						<input type="submit" value=" ">
 					</form>
 				</div>
-			<div>
-				<?php echo $_smarty_tpl->tpl_vars['_SESSION']->value['username'];?>
-
-			</div>	
+			
 				<div class="header-top-right">
 				<!-- 上传 -->
 					<div class="file">
-						<a href="upload.html">上传</a>
+						<a href="<?php echo U('Home/Upload/text');?>
+">上传</a>
 					</div>	
-				
+				欢迎<?php echo $_SESSION['user_name'];?>
 
+			<a href="<?php echo U('Home/User/logout');?>
+">退出</a>
 				<!-- 注册-->
 					<div class="signin">
 						<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a>
@@ -281,90 +287,36 @@ $(function(){
 	<!-- //导航 -->
 	<div class="foucebox">
   <div class="bd">
+  	<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+?>
 	    <div class="showDiv"> <a href="">
-		  <img src="<?php echo @__HOME_IMAGE__;?>
-b1.jpg"></a>
+		  <img src="<?php echo @__UPLOAD_IMG__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['ori_img'];?>
+"></a>
 	      <div class="foucebox_bg"></div>
 	      <div>
-	        <h2 style="bottom: 60px;"><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
+	        <h2 style="bottom: 60px;"><a href=""><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+</a></h2>
 	        <p style="bottom: 10px;">xilixili--xilixili</p>
 	      </div>
 	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-2.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2 style="bottom: 60px;"><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="<?php echo @__HOME_IMAGE__;?>
-b3.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2 style="bottom: 60px;"><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="<?php echo @__HOME_IMAGE__;?>
-b4.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-5.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-6.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-7.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili--xilixili</p>
-	      </div>
-	    </div>
-	    <div class="showDiv"><a href="http://www.lanrenzhijia.com/"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-8.jpg"></a>
-	      <div class="foucebox_bg"></div>
-	      <div>
-	        <h2><a href="http://www.lanrenzhijia.com/">xilixili</a></h2>
-	        <p style="bottom: 10px;">xilixili</p>
-	      </div>
-	    </div>
+	<?php } ?>
   </div>
   <div class="hd">
     <ul>
-      <li class="on"><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.1.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.2.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.3.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.4.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.5.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.6.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.7.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
-      <li><a href="#"><img src="http://demo.lanrenzhijia.com/2015/banner0212/<?php echo @__HOME_IMAGE__;?>
-1.8.jpg"><span class="txt">xilixili</span><span class="txt_bg"></span><span class="mask"></span></a></li>
+    <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+?>
+      <li class="on"><a href="#"><img src="<?php echo @__UPLOAD_IMG__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
+"><span class="txt"><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+</span><span class="txt_bg"></span><span class="mask"></span></a></li>
+    <?php } ?>
     </ul>
   </div>
 </div><script>
@@ -422,7 +374,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 				</div>
 
 				<div class="recommended-zongyi">
-					
+				
 					<div class="recommended-grids">
 						<div class ="recommended-info">
 						<div style ='width:200px;height:50px;'>
@@ -432,52 +384,48 @@ fenge.png"/>&nbsp;综艺</a>
 " style='font-size:15px;'>>>更多</a>
 						</div>		
 						</div>
+						<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['variety_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+							<?php if ($_smarty_tpl->tpl_vars['k']->value==4){?>
+								<div class="clearfix"> </div>
+								<div style=" height:20px;">
+  								</div> 
+							<?php }?>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-r1.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo @__UPLOAD_IMG__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
+" alt="" /></a>
 								<div class="time small-time">
-									<p>2:34</p>
+									<p><?php echo $_smarty_tpl->tpl_vars['v']->value['publishedTime'];?>
+</p>
 								</div>
 								<div class="clck small-clck">
 									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 								</div>
 							</div>
 							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra viverra nullam nullam interdum metus</a></h5>
+								<h5><a href="single.html" class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>
+</a></h5>
 								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
+									<li><p class="author author-info"><a href="#" class="author"><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
+</a></p></li>
+									<li class="right-list"><p class="views views-info"><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
+ Views</p></li>
 								</ul>
 							</div>
 						</div>
+
+					<?php } ?>
+					<div class="clearfix"> </div>	
+					</div>
 					
-						<div class="clearfix"> </div>
-					</div>
-					<div class="recommended-grids">
-						<div class="col-md-3 resent-grid recommended-grid">
-							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-r4.jpg" alt="" /></a>
-								<div class="time small-time">
-									<p>6:34</p>
-								</div>
-								<div class="clck small-clck">
-									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-								</div>
-							</div>
-							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
-								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
-								</ul>
-							</div>
-						</div>
-						
-						
-						<div class="clearfix"> </div>	
-					</div>
+					
 				</div>
 				
 			    <div class="recommended-dianshiju">
@@ -491,51 +439,46 @@ fenge.png"/>&nbsp;电视剧</a>
 " style='font-size:15px;'>>>更多</a>
 						</div>
 						</div>
+						<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['TV_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+							<?php if ($_smarty_tpl->tpl_vars['k']->value==4){?>
+								<div class="clearfix"> </div>
+								<div style=" height:20px;">
+  								</div> 
+							<?php }?>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-g.jpg" alt="" /></a>
+								<a href="single.html"><img src="<?php echo @__UPLOAD_IMG__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
+" alt="" /></a>
 								<div class="time small-time">
-									<p>7:30</p>
+									<p><?php echo $_smarty_tpl->tpl_vars['v']->value['publishedTime'];?>
+</p>
 								</div>
 								<div class="clck small-clck">
 									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 								</div>
 							</div>
 							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+								<h5><a href="single.html" class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>
+</a></h5>
 								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
+									<li><p class="author author-info"><a href="#" class="author"><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
+</a></p></li>
+									<li class="right-list"><p class="views views-info"><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
+views</p></li>
 								</ul>
 							</div>
 						</div>
-						
+						<?php } ?>
 						<div class="clearfix"> </div>
 					
-					<div class="recommended-grids">
-						<div class="col-md-3 resent-grid recommended-grid">
-							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-we2.jpg" alt=""></a>
-								<div class="time small-time">
-									<p>7:30</p>
-								</div>
-								<div class="clck small-clck">
-									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-								</div>
-							</div>
-							<div class="resent-grid-info recommended-grid-info video-info-grid">
-								<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
-								<ul>
-									<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>
-									<li class="right-list"><p class="views views-info">2,114,200 views</p></li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="clearfix"> </div>
-					</div>	
+					
 			    </div>
 			
 				<div class="recommended-donghua">
@@ -549,32 +492,43 @@ fenge.png"/>&nbsp;动画</a>
 						</div>
 						</div>						
 							<div class="animated-grids">
+							<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['carton_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+?>
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-c.jpg" alt="" /></a>
+										<a href="single.html"><img src="<?php echo @__UPLOAD_IMG__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
+" alt="" /></a>
 										<div class="time small-time slider-time">
-											<p>7:34</p>
+											<p><?php echo $_smarty_tpl->tpl_vars['v']->value['publishedTime'];?>
+</p>
 										</div>
 										<div class="clck small-clck">
 											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 										</div>
 									</div>
 									<div class="resent-grid-info recommended-grid-info">
-										<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+										<h5><a href="single.html" class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>
+</a></h5>
 										<div class="slid-bottom-grids">
 											<div class="slid-bottom-grid">
-												<p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+												<p class="author author-info"><a href="#" class="author"><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
+</a></p>
 											</div>
 											<div class="slid-bottom-grid slid-bottom-right">
-												<p class="views views-info">2,114,200 views</p>
+												<p class="views views-info"><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
+ Views</p>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
-								
+							<?php } ?>
 								<div class="clearfix"> </div>
+							}
 							</div>													
 					</div>
               <div class="recommended-youxi">
@@ -588,31 +542,41 @@ fenge.png"/>&nbsp;游戏</a>
 						</div>
 						</div>						
 							<div class="animated-grids">
+							<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['game_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+?>
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-c.jpg" alt="" /></a>
+										<a href=""><img src="<?php echo @__UPLOAD_IMG__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
+" alt="" /></a>
 										<div class="time small-time slider-time">
-											<p>7:34</p>
+											<p><?php echo $_smarty_tpl->tpl_vars['v']->value['publishedtime'];?>
+</p>
 										</div>
 										<div class="clck small-clck">
 											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 										</div>
 									</div>
 									<div class="resent-grid-info recommended-grid-info">
-										<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+										<h5><a href="single.html" class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>
+</a></h5>
 										<div class="slid-bottom-grids">
 											<div class="slid-bottom-grid">
-												<p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+												<p class="author author-info"><a href="#" class="author"><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
+</a></p>
 											</div>
 											<div class="slid-bottom-grid slid-bottom-right">
-												<p class="views views-info">2,114,200 views</p>
+												<p class="views views-info"><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
+views</p>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
-	
+								<?php } ?>
 								<div class="clearfix"> </div>
 							</div>													
 					</div>

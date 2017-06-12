@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-08 17:47:46
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-10 11:13:45
          compiled from "./Template/default/Home\Film\movies.html" */ ?>
 <?php /*%%SmartyHeaderCode:72385936c70d08e046-12271718%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b3e4968031174015301215b450707cd482c4a2d1' => 
     array (
       0 => './Template/default/Home\\Film\\movies.html',
-      1 => 1496915053,
+      1 => 1497064420,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5936c70e055dd',
   'variables' => 
   array (
-    '_SESSION' => 0,
     'cate_list' => 0,
     'v' => 0,
     'info' => 0,
@@ -32,9 +31,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5936c70e055dd')) {function content_5936c70e055dd($_smarty_tpl) {?><!DOCTYPE html>
 <!-- saved from url=(0040)http://www.ccgzwl.cn/dianying/index.html -->
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>电影 第1页</title>
-<meta name="keywords" content="电影第1页">
-<meta name="description" content="电影第1页">
+<title>电影</title>
+
 	<script src="<?php echo @__HOME_JS__;?>
 jquery-1.11.1.min.js"></script>
 
@@ -88,17 +86,17 @@ logo.png1.png" alt="xilixili" /></h1></a>
 						<input type="submit" value=" ">
 					</form>
 				</div>
-			<div>
-				<?php echo $_smarty_tpl->tpl_vars['_SESSION']->value['username'];?>
-
-			</div>	
+				
 				<div class="header-top-right">
 				<!-- 上传 -->
 					<div class="file">
-						<a href="upload.html">上传</a>
+						<a href="<?php echo U('Home/Upload/text');?>
+">上传</a>
 					</div>	
-				
+				欢迎<?php echo $_SESSION['user_name'];?>
 
+				<a href="<?php echo U('Home/User/logout');?>
+">退出</a>
 				<!-- 注册-->
 					<div class="signin">
 						<a href="#small-dialog2" class="play-icon popup-with-zoom-anim">注册</a>
@@ -365,12 +363,23 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 				</ul>
 				<div class="view-filter">
 					<a id="time" href='<?php echo U("Home/Film/movies?sequence=publishedTime");?>
-' class="order current" target="_self"><span>按时间</span></a>
+' class="order" target="_self"><span>按时间</span></a>
 					<a id="hits" href='<?php echo U("Home/Film/movies?sequence=numOfViewed");?>
 ' class="order" target="_self"><span>按人气</span></a>
 				</div>
 			</div>
 		</div>
+			
+			<script>
+					var index=window.location.href.split("/").length-1;
+					var href=window.location.href.split("/")[index];
+					if(href=== 'numOfViewed.html'){
+						$('#hits').addClass('current');
+					}else if(href === 'publishedTime.html'){
+						$('#time').addClass('current');
+					}
+			</script>
+		
 		<section class="clearfix channellist-box">
 			<div class="hello-box">
 

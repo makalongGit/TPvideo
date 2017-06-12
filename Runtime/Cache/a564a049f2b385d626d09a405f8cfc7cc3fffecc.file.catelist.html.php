@@ -1,30 +1,31 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 23:37:17
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-12 12:14:31
          compiled from "./Template/default/Admin\Cate\catelist.html" */ ?>
-<?php /*%%SmartyHeaderCode:259315902ec2792d4c7-52090734%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:20978593a52d33b75d9-71679051%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a564a049f2b385d626d09a405f8cfc7cc3fffecc' => 
     array (
       0 => './Template/default/Admin\\Cate\\catelist.html',
-      1 => 1496709606,
+      1 => 1497182272,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '259315902ec2792d4c7-52090734',
+  'nocache_hash' => '20978593a52d33b75d9-71679051',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5902ec27ca7f9',
+  'unifunc' => 'content_593a52d3a145d',
   'variables' => 
   array (
     'catelist' => 0,
     'v' => 0,
+    'parent_info' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5902ec27ca7f9')) {function content_5902ec27ca7f9($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_593a52d3a145d')) {function content_593a52d3a145d($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -115,30 +116,22 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
           <label>上级分类：</label>
         </div>
         <div class="field">
-          <select name="level" class="input w50">
-          <option value="">请选择分类</option>
-            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+          <select name="type" size="1" id="type">
+             <option>请选择类型</option>
+              <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['parent_info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-">
-                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
-                <span><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-</span><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
-
-                <?php }else{ ?>
-                 <span ><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-</span><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
-<?php $_tmp1=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp1),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
-
-                <?php }?></option>
+                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</option>
               <?php } ?>
           </select>
-         
+          标签：
+            <select name="lable" size="1" id="lables">
+            <option>请先选择类型</option>
+            </select>
         </div>
       </div>     
       <div class="form-group">
@@ -181,27 +174,22 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
           <label>上级分类：</label>
         </div>
         <div class="field">
-          <select id="level2" class="input w50">
-            <option value="0">顶级分类</option>
-            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+          <select name="type" size="1" id="type">
+             <option>请选择类型</option>
+              <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['parent_info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-">
-                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
-                <?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
-
-                <?php }else{ ?>
-                <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
-<?php $_tmp2=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp2),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
-
-                <?php }?></option>
+                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</option>
               <?php } ?>
           </select>
+          标签：
+            <select name="lable" size="1" id="lables">
+            <option>请先选择类型</option>
+            </select>
          
         </div>
       </div>
@@ -346,6 +334,23 @@ $("#button_gai").removeAttr("disabled");
             }
 
    });
+
+$('#type').click(function(){
+  $(this).change(function(){
+    var   value = $(this).val();
+    $.post("<?php echo U('Cate/catelist');?>
+",{ vt_id : value },function(data){
+        $("#lables").empty();
+        var count = data.length;
+        var i = 0;
+        var b="";
+           for(i=0;i<count;i++){
+               b+="<option value='"+data[i].vt_id+"'>"+data[i].typename+"</option>";
+           }
+        $("#lables").append(b);
+    })    
+  });
+});
 </script>
 </body>
 </html><?php }} ?>
