@@ -88,4 +88,27 @@ insert into review values(3,142011058,'sjfdfkaf','3',0,'2017/4/2');
  information_schema.TABLE_CONSTRAINTS 
  WHERE 
  TABLE_NAME='表名'
- 
+ create table review(
+ReID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+userID int NOT NULL,
+reviews text NOT NULL,
+vid int NOT NULL,
+reSym int,
+ReTime varchar(20) NOT NULL
+
+);
+ create table music(
+ 	musicId int auto_increment primary key not null,
+ 	name varchar(30) not null,
+	singer varchar(30) not null default '佚名',
+	singSrc varchar(50) ,
+	imgSrc varchar(50) 
+ );
+
+ create table musicgroup(
+ 	groupId int auto_increment primary key not null,
+ 	name varchar(20) not null default '...',
+ 	musicId int not null,
+ 	singer varchar(30) not null default '佚名',
+ 	imgSrc varchar(50)
+ 	);

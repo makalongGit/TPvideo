@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-12 12:14:31
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 18:14:39
          compiled from "./Template/default/Admin\Cate\catelist.html" */ ?>
 <?php /*%%SmartyHeaderCode:20978593a52d33b75d9-71679051%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a564a049f2b385d626d09a405f8cfc7cc3fffecc' => 
     array (
       0 => './Template/default/Admin\\Cate\\catelist.html',
-      1 => 1497182272,
+      1 => 1497953673,
       2 => 'file',
     ),
   ),
@@ -112,28 +112,29 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
         </div>
       </div>
       <div class="form-group">
-        <div class="label">
-          <label>上级分类：</label>
-        </div>
-        <div class="field">
-          <select name="type" size="1" id="type">
-             <option>请选择类型</option>
+          <div class="label">
+            <label>分类标题：</label>
+          </div>
+          <div class="field">
+            <select id="U-level" name="level" class="input w50">
+              <option value="0">顶级分类</option>
               <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['parent_info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
-</option>
+              <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+">               
+                  <span></span><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+
+              </option>
               <?php } ?>
-          </select>
-          标签：
-            <select name="lable" size="1" id="lables">
-            <option>请先选择类型</option>
             </select>
-        </div>
-      </div>     
+            <div class="tips"></div>
+          </div>
+        </div>     
       <div class="form-group">
         <div class="label">
           <label>关键字：</label>
@@ -168,37 +169,38 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
           <input type="text" class="input w50" name="typeName" id="cate_cate_change" />
           <div class="tips"></div>
         </div>
-      </div>    
-	    <div class="form-group">
-        <div class="label">
-          <label>上级分类：</label>
-        </div>
-        <div class="field">
-          <select name="type" size="1" id="type">
-             <option>请选择类型</option>
-              <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+      </div>   
+      <div class="form-group">
+          <div class="label">
+            <label>分类标题：</label>
+          </div>
+          <div class="field">
+            <select id="U-level" name="level2" class="input w50">
+        <option value="0">顶级分类</option>
+        <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['parent_info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
-</option>
-              <?php } ?>
-          </select>
-          标签：
-            <select name="lable" size="1" id="lables">
-            <option>请先选择类型</option>
+        <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+">               
+            <?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+
+        </option>
+        <?php } ?>
             </select>
-         
-        </div>
-      </div>
+            <div class="tips"></div>
+          </div>
+        </div> 
+	    
       <div class="form-group">
         <div class="label">
           <label>关键字：</label>
         </div>
         <div class="field">
-          <input type="text" class="input" id="vt_key"name="vt_key" value=""/>         
+          <input type="text" class="input" id="vt_key" name="vt_key" value=""/>         
         </div>
       </div>     
       <div class="form-group">

@@ -42,10 +42,21 @@ define("__HOME_IMAGE__",'/TPvideo/Template/default/Home/Public/images/');
 define("__HOME_CSS__",'/TPvideo/Template/default/Home/Public/css/');
 define("__HOME_FONTS__",'/TPvideo/Template/default/Home/Public/fonts/');
 define("__HOME__",'/TPvideo/Template/default/Home/Index/');
-//上传图片路径
+//上传图片视频路径
+define('ROOT',$_SERVER['DOCUMENT_ROOT']);
+define('THINK_PATH',ROOT.'TPvideo/ThinkPHP/');
 define("__UPLOAD__",'./Upload/');
 define("__UPLOAD_IMG__",'/TPvideo/Upload/');
-	
+define("__UPLOAD_VIDEO__",'/TPvideo/Upload/video/');
+define("__UPLOAD_TVIDEO__","./Upload/video/tem_upload.wmv");
+//视频
+define("MOVIE_TYPE",1);
+define("TV_TYPE",2);
+define("GAME_TYPE",27);
+define("CARTON_TYPE",22);
+define("VARIETY_TYPE",15);
 // 引入ThinkPHP入口文件
-require './ThinkPHP/ThinkPHP.php';
+
+require THINK_PATH.'ThinkPHP.php';
+//Thinkphp/ThinkPHP.php
 // 亲^_^ 后面不需要任何代码了 就是如此简单

@@ -43,12 +43,12 @@
 			<th width="15%">用户最近登录时间</th>
 			<th width="10%">违规次数</th>
 			<th width="10%">用户状态</th>
-			<th width="10%">修改状态<th>
+			<th width="10%">修改状态</th>
 		</tr>
 		{foreach $info as $k=>$v}
    		<tr>
 		
-			<td>{$v.userid}</td>
+			<td id="UserId" value="{$v.userid}">{$v.userid}</td>
 			<td>{$v.username}</td>
 			<td>{$v.sex}</td>
 			<td>{$v.phone}</td>
@@ -56,13 +56,23 @@
 			<td>{$v.email}</td>
 			<td>{$v.lastlogintime}</td>
 			<td>{$v.uservio}</td>
-			<td id="UserState" >{$v.userstatus}</td>
+			<td id="UserState">
+			{if $v.userstatue eq 1}
+			document.getElementById("state").options[1].selected = true;
+			{elseif $v.userstatus eq 2}
+			未激活
+			{else}
+			正常使用
+			{/if}
+			</td>
 			<td>
-				<select id="state" style="padding:5px 15px; border:1px solid #ddd;" onchange="changestate()">
-					<option id="normal" value="normal">正常使用</option>
-					<option id="unnormal" value="unnormal">封号中</option>
+				<select name="state" id="state_{$v.userid}" style="padding:5px 15px; border:1px solid #ddd;" onchange="changestate(this)">
+					<option id="state0" value="3">更改状态</option>
+					<option id="state0" value="0">正常使用</option>
+					<option id="state1" value="1">封号中</option>
+					<option id="state2" value="2">未激活</option>
 				</select>
-		  </td>
+		  	</td>
         </tr>
         {/foreach}
 		
@@ -78,25 +88,32 @@
 		if(obj==id_search){
 			var id=document.getElementById("keywords").value;
 			if(id==''){
-				alert('请输入用户ID');
+				layer.msg('请输入用户ID', { icon: 2 });				
 			}
 		}
 	}
 	//单个修改
-	function changestate(){
+	function changestate(obj){
 			
-			var selectId = document.getElementById("state");
-			var selectText = selectId.options[selectId.selectedIndex].text;
-
-
-
-			var tdtext = document.getElementById("UserState").innerHTML;
-			if(!( selectText == tdtext))  
+			//var selectId = document.getElementByName("state");
+			//var selectText = selectId.options[selectId.selectedIndex].text;
+			//var selectValue = selectId.options[selectId.selectedIndex].value;
+			//var tdtext = document.getElementById("UserState").innerHTML;
+			//var userID = document.getElementById("UserId").innerHTML;
+			//alert(userID);
+			alert(obj.id);
+			alert(selectValue);
+			if(!( selectText == tdtext ))
 			{
 					layer.confirm('确定修改吗？', {
 					btn: ['确定','取消'] //按钮
 					}, function(){
 					 //点击第一个运行
+					 // $.post("{U('Admin/User/update_sta')}",{ status:selectValue },function(data){
+      //               alert(data['status']);
+                    
+                  
+      //             })
 						layer.msg('已修改', { icon: 1 });
 						document.getElementById("UserState").innerHTML=selectId.options[selectId.selectedIndex].text; 
 					//alert("1");

@@ -1,0 +1,1 @@
+a:7:{i:0;s:5:"vt_id";i:1;s:8:"typeName";i:2;s:15:"typeDescription";i:3;s:5:"level";i:4;s:6:"vt_key";s:3:"_pk";s:5:"vt_id";s:5:"_type";a:5:{s:5:"vt_id";s:7:"int(11)";s:8:"typeName";s:11:"varchar(20)";s:15:"typeDescription";s:4:"text";s:5:"level";s:7:"int(11)";s:6:"vt_key";s:11:"varchar(30)";}}

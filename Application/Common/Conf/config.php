@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'SHOW_PAGE_TRACE'=>true,
+	'SHOW_PAGE_TRACE'=>false,
 	//Smarty模板引擎切换
 	'TMPL_ENGINE_TYPE'=>'Smarty',
     'TMPL_ENGINE_CONFIG' => array(

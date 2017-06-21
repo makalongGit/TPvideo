@@ -311,3 +311,180 @@ ERR: Syntax Error in template "./Template/default/Home\Game\youxi.html"  on line
 ERR: 1054:Unknown column 'numOfViwed' in 'order clause'
  [ SQL语句 ] : SELECT * FROM `video` WHERE ( isPassed=1 and isDelete=0 and isHomePage=1 ) ORDER BY numOfViwed desc LIMIT 8  
 
+[ 2017-06-12T20:49:33+08:00 ] ::1 /TPvideo/index.php/Home/Player/play
+ERR: Syntax Error in template "./Template/default/Home\Player\play.html"  on line 13 ".demo{width:95%;margin:50px auto 10px auto;padding:10px;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2017-06-12T20:49:59+08:00 ] ::1 /TPvideo/index.php/Home/Player/play
+ERR: Syntax Error in template "./Template/default/Home\Player\play.html"  on line 34 "&lt;script src=&quot;{$smarty.cosnt.__HOME_JS__}main(2).js&quot;&gt;&lt;/script&gt;" $smarty.cosnt is invalid
+
+[ 2017-06-12T20:57:59+08:00 ] ::1 /TPvideo/index.php/Home/Player/play
+ERR: Syntax Error in template "./Template/default/Home\Player\play.html"  on line 40 "src: &quot;{__UPLOAD_IMG__}video/20170531.mp4&quot;," unknown tag "__UPLOAD_IMG__"
+
+[ 2017-06-12T21:36:41+08:00 ] ::1 /TPvideo/index.php/Home/Player/20170531.mp4
+ERR: 非法操作:20170531.mp4
+
+[ 2017-06-12T22:03:11+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/54
+ERR: Think\Controller:video方法不存在！
+
+[ 2017-06-12T22:23:17+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/54
+ERR: Syntax Error in template "./Template/default/Home\Player\play.html"  on line 55 "" unclosed {foreach} tag
+
+[ 2017-06-12T23:05:57+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:09:02+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:15:04+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:17:13+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:17:39+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/[object%20Object],[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object],[object Object] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=[object Object],[object Object] ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object],[object Object] ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=[object Object],[object Object] ) LIMIT 1  
+
+[ 2017-06-12T23:19:19+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/[%7B%20%22text%22:%22abcedede%22%20,color:%22white%22,size:1,position:0,time:12%7D,%7B%20%22text%22:%221234%22%20,color:%22green%22,size:1,position:0,time:23%7D]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[{ &quot;text&quot;:&quot;abcedede&quot; ,color:&quot;white&quot;,size:1,positio' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=[{ &quot;text&quot;:&quot;abcedede&quot; ,color:&quot;white&quot;,size:1,position:0,time:12},{ &quot;text&quot;:&quot;1234&quot; ,color:&quot;green&quot;,size:1,position:0,time:23}] ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[{ &quot;text&quot;:&quot;abcedede&quot; ,color:&quot;white&quot;,size:1,positio' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=[{ &quot;text&quot;:&quot;abcedede&quot; ,color:&quot;white&quot;,size:1,position:0,time:12},{ &quot;text&quot;:&quot;1234&quot; ,color:&quot;green&quot;,size:1,position:0,time:23}] ) LIMIT 1  
+
+[ 2017-06-12T23:23:12+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0120s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:23:29+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0080s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:25:29+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:25:44+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:26:12+08:00 ] ::1 /TPvideo/index.php/Home/Player/play/video_id/U('Home/Book/getBook')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Home ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `video` WHERE ( isDelete=0 and isPassed=1 and vid=U('Home ) LIMIT 1  
+
+[ 2017-06-12T23:26:51+08:00 ] ::1 /TPvideo/index.php/Home/Book/getBook.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-12T23:27:29+08:00 ] ::1 /TPvideo/index.php/Home/Book/getBook.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `review`  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-12T23:27:41+08:00 ] ::1 /TPvideo/index.php/Home/Book/getBook.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `review`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-06-12T23:41:19+08:00 ] ::1 /TPvideo/index.php/Home/Book/getBook.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0100s ]
+SQL: SELECT reviews as text FROM `review`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-12T23:41:58+08:00 ] ::1 /TPvideo/index.php/Home/Book/getBook.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0100s ]
+SQL: SELECT reviews as text FROM `review`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

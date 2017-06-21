@@ -48,4 +48,10 @@ class UserController extends Controller{
 		}
 	}
 
+	public function update_sta()
+	{
+		if(I('post.status')){
+			
+		}
+	}
 }

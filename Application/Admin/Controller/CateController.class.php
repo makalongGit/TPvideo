@@ -17,10 +17,8 @@ class CateController extends Controller{
 			$this->ajaxReturn($result,"JSON");			
 		}
 		$info=$this->cate->select();		
-		$catelist=$this->cate->getCatTree($info,0);
 		$parent_info=$this->cate->where("level=0")->select();
-		$this->assign('parent_info',$parent_info);
-		$this->assign('catelist',$catelist);		
+		$this->assign('parent_info',$parent_info);		
 		$this->display();
 	}
 	public function add(){
@@ -69,8 +67,5 @@ class CateController extends Controller{
 		}
 	}
 
-	public function cateajax(){
-		dump(I('post.'));
-	}
 }
 

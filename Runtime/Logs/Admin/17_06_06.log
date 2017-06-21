@@ -1,4 +1,0 @@
-[ 2017-06-06T08:20:51+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videoupdate.html
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
- [ SQL语句 ] : UPDATE `video` SET `vid`='0',`videoName`='大沙发',`vt_id`='14',`introduction`='123',`keywords`='123',`uid`='123',`ori_img`='images/2017-06-06/5935f56314703.jpg',`thumb_img`='images/2017-06-06/thumb_5935f56314703.jpg' WHERE ( vid= )
-

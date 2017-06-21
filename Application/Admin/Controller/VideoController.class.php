@@ -8,12 +8,14 @@ class VideoController extends Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->video=D('Video');
+
 	}
 
 	public function videolist(){
 	/*
 	视频id查询
 	 */
+		
 		if(I('post.keywords')){
 			$info=$this->video->where('vid=%u',I('post.keywords'))->select();
 			if(!empty($info)){
@@ -22,13 +24,16 @@ class VideoController extends Controller{
 			}else{
 				$this->error('该视频不存在',U('Admin/Video/videolist'),3);
 			}			
-		}else{
+		}else{			
+			delete_up();//删除临时上传文件
 			$count=$this->video->where('isDelete=0')->count();
 		    $page=new \Org\Video\Page($count);
 		    $info=$this->video->where('isDelete=0')->limit($page->firstRow.','.$page->listRows)->select();
 		    $pagelist=$page->show();
 		    $cinfo=D('Cate')->select();		
 			$catelist=D('Cate')->getCatTree($cinfo,0);
+			$parent_info=D('Cate')->where("level=0")->select();
+			$this->assign('parent_info',$parent_info);
 			$this->assign('catelist',$catelist);			
 			$this->assign('info',$info);
 			$this->assign('pagelist',$pagelist);
@@ -37,15 +42,16 @@ class VideoController extends Controller{
 	}
 
 	public function videoadd(){
-		if(I('post.')){
 			$data=I('post.');
+			dump($data);
+			dump($_FILES['img']);
 			//上传图片
-			if($_FILES['img']){		
+			if($_FILES['img']){
 				$upload=new \Think\Upload();
 				$info=$upload->uploadOne($_FILES['img']);
-				if(!$info) {// 上传错误提示错误信息
+				if(!$info) // 上传错误提示错误信息
 	    			$this->error($upload->getError());
-				}else{// 上传成功 获取上传文件信息,对图片进行处理
+				else{// 上传成功 获取上传文件信息,对图片进行处理
 					//原图路径
 	        		$img=$info['savepath'].$info['savename'];
 	        		//缩略图路径
@@ -57,16 +63,27 @@ class VideoController extends Controller{
 	        		$data['ori_img']=$img;
 	        		$data['thumb_img']=$thumb_img;
 	        		$data['mid_img']=$mid_img;
+	        		$filename=__UPLOAD_TVIDEO__;
+
+					if(file_exists($filename)){
+					    if(rename($filename,"./Upload/video/".$data['videoName'].".mp4")){
+					    	$data['videoSrc']=$data['videoName'].".mp4";
+					    }
+					}
 				}
+
 				if($this->video->create($data)){
            	 		if($this->video->add())//写入数据库,返回新增的键
-           	 			$this->success('新增成功', U('Admin/Video/videolist'));
+           	 			$this->success('新增成功', U('Admin/Video/videolist'),2);
            	 		else
            	 			$this->error('请重试',U('Admin/Video/videolist'));
 				}
+				
+				}
 			}
-		}
-	}
+		
+
+	
 	
 	public function videoupdate(){
 		if(IS_AJAX){
@@ -115,5 +132,10 @@ class VideoController extends Controller{
 			}
 			$this->ajaxReturn($str);
 		}
+	}
+	public function dele()
+	{
+		$filepath="./Upload/video/temp_upload.wmv";
+		delete_up($filepath);
 	}
 }

@@ -10,7 +10,90 @@
 <script src="{$smarty.const.__ADMIN_JS__}jquery-1.10.1.js"></script>
 <script src="{$smarty.const.__ADMIN_JS__}pintuer.js"></script>
 <script src="{$smarty.const.__ADMIN_JS__}layer.js"></script>
+<style>
+        #jdt{ width:300px; height:25px; }
+        progress{ display:block;  width:200px; height:25px;  float:left;  }
+        #sd{ float:left;  }        
+    </style>
+  
+   <script>
+        /*
+            我们用到的api有Blob，他的file里面有slice方法可以截取二进制对象的一部分。。
+            而且我们需要修改php.ini文件，
+            upload_max_filesize = 20M ---上传文件，单个文件的最大值
+            post_max_size = 20M  post方式最大上传20M
 
+        */
+        function bfbs(bfb){
+            var pro = document.getElementsByTagName('progress')[0];
+            pro.style.display = 'block';
+            pro.setAttribute('value',bfb);
+            var sd = document.getElementById('sd');
+            sd.innerHTML = bfb +'%';
+        }
+        var clock = null;
+
+        xhr = new XMLHttpRequest();
+
+        function upgo(){
+            /*var up_name=document.getElementById("up_name").value;
+            if(up_name!=""){
+              $.post("{U('Upload/upload')}",{ video_name : up_name },function(data){
+                if(data['status']==1)
+                  alert(该视频已存在);
+                else
+                  clock = window.setInterval(selefile,1000);
+              });
+            }
+            else
+              alert(请输入标题);  */
+            clock = window.setInterval(selefile,1000);
+        }
+
+        var selefile = (function(){
+            const LENGTH = 1 * 1024 * 1024; //每次切割10M
+            var sta = 0;
+            var end = sta + LENGTH;
+            var flag = false; //标识上一块正在上传中...
+            var blob = null;
+            var fd = null;
+            var xhr = null;
+            var bfb = 0;
+
+            return (function(){
+                if(flag == true){
+                    return;
+                }
+                var up_file = document.getElementById('video').files[0];
+                //如果sta大于up_file.size那么就结束咯
+                if(sta > up_file.size){
+                    clearInterval(clock);
+                    return false;
+                }
+                
+                blob = up_file.slice(sta,end);
+                var fd = new FormData();
+                fd.append('up_movie',blob);
+                fd.append('vname',123);
+                //请求后端
+                up(fd);
+
+                sta = end;
+                end = sta + LENGTH;
+                flag = false;
+
+                //进队条
+                bfb = Math.ceil(100 * end / up_file.size);
+                bfb > 100 ? bfb = 100 : bfb = bfb;
+                bfbs(bfb);
+            });
+        })();
+
+        function up(fd){
+            xhr.open('POST',"{U('Admin/Upload/upload')}",false);
+            xhr.send(fd);
+        }
+    </script>
 
 </head>
 <body>
@@ -75,16 +158,26 @@
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="fa fa-plus-square-o"></span> 增加内容</strong></div>
   <div class="body-content">
+  <div class="form-group">
+        <div id="jdt">
+          <progress max="100" value=""></progress>
+          <span id="sd"></span>
+        </div>
+        <input type="file" id="video" name="up_movie" onclick="upgo();" >
+        <div id="desc"></div>
+  </div>
     <form method="post" enctype="multipart/form-data" class="form-x" action="{U('video/videoadd')}">  
       <div class="form-group">
         <div class="label">
           <label>标题：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" value="" name="videoName" data-validate="required:请输入标题" />
+          <input type="text" class="input w50" value="" id="up_name" name="videoName" data-validate="required:请输入标题" />
           <div class="tips"></div>
         </div>
       </div>
+
+     
       <div class="form-group">
         <div class="label">
           <label>图片：</label>
@@ -93,31 +186,47 @@
           <input type="file" id="url1" name="img" class="input" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
           <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
           <input type="file" id="upload_image" style="visibility: hidden;">
-		  
+		    
         </div>
       </div>     
       
-      <if condition="$iscid eq 1">
         <div class="form-group">
-          <div class="label">
-            <label>分类标题：</label>
-          </div>
-          <div class="field">
-            <select name="vt_id" class="input w50">
-				<option value="">请选择分类</option>
-        {foreach $catelist as $k=>$v}
-				<option value="{$v.vt_id}">
-                {if $v.lev==0}
-                <span>{$v.vt_id}</span>{$v.typename}
-                {else}
-                 <span >{$v.vt_id}</span>{$v.typename|indent:{$v.lev}:
-                 "&nbsp&nbsp"}
-                {/if}</option>
-        {/foreach}
-            </select>
-            <div class="tips"></div>
-          </div>
+        <div class="label">
+          <label>分类：</label>
         </div>
+        <div class="field">
+          <select  class="input w50" id="type">
+             <option>请选择类型</option>
+              {foreach $parent_info as $v}
+                  <option value="{$v.vt_id}">{$v.typename}</option>
+              {/foreach}
+          </select>
+          
+            <select name="vt_id" class="input w50" id="lables">
+            <option>请先选择类型</option>
+            </select>
+        </div>
+      </div>  
+       <!--  <div class="form-group">
+         <div class="label">
+           <label>分类标题：</label>
+         </div>
+         <div class="field">
+           <select name="vt_id" class="input w50">
+               <option value="">请选择分类</option>
+       {foreach $catelist as $k=>$v}
+               <option value="{$v.vt_id}">
+               {if $v.lev==0}
+               <span>{$v.vt_id}</span>{$v.typename}
+               {else}
+                <span >{$v.vt_id}</span>{$v.typename|indent:{$v.lev}:
+                "&nbsp&nbsp"}
+               {/if}</option>
+       {/foreach}
+           </select>
+           <div class="tips"></div>
+         </div>
+       </div> -->
         <div class="form-group">
           <div class="label">
             <label>其他属性：</label>
@@ -129,7 +238,6 @@
          
           </div>
         </div>
-      </if>
       <div class="form-group">
         <div class="label">
           <label>描述：</label>
@@ -179,8 +287,8 @@
 <div class="panel admin-panel">
   <div class="panel-head" id="edit"><strong><span class="fa fa-edit"></span>修改内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" enctype="multipart/form-data" action="{U('Video/videoupdate')}"> 
-    <input type="hidden"  name='vid' id="U-id" value="">
+    <form action="{U('Video/videoupdate')}" method="post" class="form-x" enctype="multipart/form-data" > 
+      <input type="hidden"  name='vid' id="U-id" value="">
       <div class="form-group">
         <div class="label">
           <label>标题：</label>
@@ -202,28 +310,24 @@
           
         </div>
       </div>     
-      
-      <if condition="$iscid eq 1">
+        
         <div class="form-group">
-          <div class="label">
-            <label>分类标题：</label>
-          </div>
-          <div class="field">
-            <select id="U-level"name="vt_id" class="input w50">
-				<option value="">请选择分类</option>
-				{foreach $catelist as $k=>$v}
-        <option value="{$v.vt_id}">
-                {if $v.lev==0}
-                <span>{$v.vt_id}</span>{$v.typename}
-                {else}
-                 <span >{$v.vt_id}</span>{$v.typename|indent:{$v.lev}:
-                 "&nbsp&nbsp"}
-                {/if}</option>
-        {/foreach}
-            </select>
-            <div class="tips"></div>
-          </div>
+        <div class="label">
+          <label>分类：</label>
         </div>
+        <div class="field">
+          <select  class="input w50" id="type2">
+             <option>请选择类型</option>
+              {foreach $parent_info as $v}
+                  <option value="{$v.vt_id}">{$v.typename}</option>
+              {/foreach}
+          </select>
+          
+            <select name="vt_id" class="input w50" id="lables2">
+            <option>请先选择类型</option>
+            </select>
+        </div>
+      </div> 
         <div class="form-group">
           <div class="label">
             <label>其他属性：</label>
@@ -435,7 +539,37 @@ $("#button_gai").removeAttr("disabled");
             }
 
    });
-
+//栏目动态获得
+$('#type').click(function(){
+  $(this).change(function(){
+    var   value = $(this).val();
+    $.post("{U('Cate/catelist')}",{ vt_id : value },function(data){
+        $("#lables").empty();
+        var count = data.length;
+        var i = 0;
+        var b="";
+           for(i=0;i<count;i++){
+               b+="<option value='"+data[i].vt_id+"'>"+data[i].typename+"</option>";
+           }
+        $("#lables").append(b);
+    })    
+  });
+});
+$('#type2').click(function(){
+  $(this).change(function(){
+    var   value = $(this).val();
+    $.post("{U('Cate/catelist')}",{ vt_id : value },function(data){
+        $("#lables2").empty();
+        var count = data.length;
+        var i = 0;
+        var b="";
+           for(i=0;i<count;i++){
+               b+="<option value='"+data[i].vt_id+"'>"+data[i].typename+"</option>";
+           }
+        $("#lables2").append(b);
+    })    
+  });
+});
 
 </script>
 

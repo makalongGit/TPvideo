@@ -14,19 +14,23 @@ class UserController extends Controller{
 	public function login(){
 		
 		if(I('post.')){
-			$info=D('User')->checkNP($_POST['email'],$_POST['password']);
-			dump($info);
-			if($info){
-
+			$email=I('post.email');
+			$info=$this->user->where("email='$email'")->find();
+			if($info['userstatus']==2){
+				$info=$this->user->checkNP($_POST['email'],$_POST['password']);
+				if($info){
 					//session持久化用户信息，页面跳转到后台
 					session('user_id',$info['userid']);
 					session('user_name',$info['username']);
 					$returnUrl=session('returnUrl');//登陆后跳转到上一页面
 					$this->success('登陆成功',$returnUrl,2);
-					//$this->redirect('Index/index');
-				}else{
-					$this->error('登录失败',U('Home/Index/index'),2);
-				}
+				}else
+					$this->error('密码错误',U('Home/Index/index'),2);				
+			}else if($info['userstatus']==0){
+				$this->error('账号未激活',U('Home/Index/index'),3);
+			}
+			else 
+				$this->error('账号已被封，请联系管理员',U('Home/Index/index'),2);
 		}
 	}
 	
@@ -35,25 +39,25 @@ class UserController extends Controller{
 	 */
 	public function regist(){
 		if(I('post.')){
+			$email=I('post.email');
 			$data['username']=I('post.name');
 			$data['password']=I('post.password');
-			$data['email']=I('post.email');
+			$data['email']=$email;
 			$data['registerTime']=time();
 			$data['accessToken']=md5(I('post.name').I('post.password').I('post.email'));
-
-			if($this->user->create($data)){
-				if($this->user->add()){
-					$link="http://localhost:8011/TPvideo/index.php/Home/User/activation?accessToken=".$data['accessToken'];
-					dump($link);
-					if(send_email($data['email'],'验证',$link)){
-						$res['status']=1;	
+			if($this->user->where("email='$email'")->find())
+				$res['status']=3;
+			else{
+				if($this->user->create($data)){
+					if($mess=$this->user->add()){
+						$link="http://localhost:8011/TPvideo/index.php/Home/User/activation?accessToken=".$data['accessToken'];
+						if(send_email($data['email'],'验证',$link))
+							$res['status']=1;						
 					}
-					$res['status']=2;				
-				}
-					
-				$this->ajaxReturn($res);	
+				}else
+					$res['status']=2;
 			}
-			
+			$this->ajaxReturn($res);	
 		}
 	}
 	/*
@@ -90,6 +94,7 @@ class UserController extends Controller{
 			if($info){				
 				$link="http://localhost:8011/TPvideo/index.php/Home/User/resetPw?accessToken=".$info['accesstoken'];
 				send_email($info['email'],'验证',$link);
+				$res['link']=$link;
 				$res['status']=1;
 			}else
 				$res['status']=2;
@@ -119,10 +124,7 @@ class UserController extends Controller{
 		}else 
 			$this->display();
 	}
-	public function setPw()
-	{
-		
-	}
+
 	/**
 	 * 退出登陆
 	 * @return [type] [description]
@@ -131,5 +133,12 @@ class UserController extends Controller{
 		session('user_name',null);
 		session('user_id',null);
 		$this->success('退出成功', U('Home/Index/index'),2);
+	}
+	public function userinfo()
+	{
+		if(I('post.')){
+			dump($_POST);
+		}
+		$this->display();
 	}
 }

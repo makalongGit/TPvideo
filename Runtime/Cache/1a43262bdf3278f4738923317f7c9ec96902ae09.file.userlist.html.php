@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-05-04 12:42:09
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-14 20:45:02
          compiled from "./Template/default/Admin\User\userlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:271285902eb85488b16-76413085%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1a43262bdf3278f4738923317f7c9ec96902ae09' => 
     array (
       0 => './Template/default/Admin\\User\\userlist.html',
-      1 => 1493816342,
+      1 => 1497444295,
       2 => 'file',
     ),
   ),
@@ -79,7 +79,7 @@ layer.js"></script>
 			<th width="15%">用户最近登录时间</th>
 			<th width="10%">违规次数</th>
 			<th width="10%">用户状态</th>
-			<th width="10%">修改状态<th>
+			<th width="10%">修改状态</th>
 		</tr>
 		<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
@@ -90,7 +90,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
    		<tr>
 		
-			<td><?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
+			<td id="UserId" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
 </td>
 			<td><?php echo $_smarty_tpl->tpl_vars['v']->value['username'];?>
 </td>
@@ -106,14 +107,24 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 </td>
 			<td><?php echo $_smarty_tpl->tpl_vars['v']->value['uservio'];?>
 </td>
-			<td id="UserState" ><?php echo $_smarty_tpl->tpl_vars['v']->value['userstatus'];?>
-</td>
+			<td id="UserState">
+			<?php if ($_smarty_tpl->tpl_vars['v']->value['userstatue']==1){?>
+			document.getElementById("state").options[1].selected = true;
+			<?php }elseif($_smarty_tpl->tpl_vars['v']->value['userstatus']==2){?>
+			未激活
+			<?php }else{ ?>
+			正常使用
+			<?php }?>
+			</td>
 			<td>
-				<select id="state" style="padding:5px 15px; border:1px solid #ddd;" onchange="changestate()">
-					<option id="normal" value="normal">正常使用</option>
-					<option id="unnormal" value="unnormal">封号中</option>
+				<select name="state" id="state_<?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
+" style="padding:5px 15px; border:1px solid #ddd;" onchange="changestate(this)">
+					<option id="state0" value="3">更改状态</option>
+					<option id="state0" value="0">正常使用</option>
+					<option id="state1" value="1">封号中</option>
+					<option id="state2" value="2">未激活</option>
 				</select>
-		  </td>
+		  	</td>
         </tr>
         <?php } ?>
 		
@@ -130,25 +141,33 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 		if(obj==id_search){
 			var id=document.getElementById("keywords").value;
 			if(id==''){
-				alert('请输入用户ID');
+				layer.msg('请输入用户ID', { icon: 2 });				
 			}
 		}
 	}
 	//单个修改
-	function changestate(){
+	function changestate(obj){
 			
-			var selectId = document.getElementById("state");
-			var selectText = selectId.options[selectId.selectedIndex].text;
-
-
-
-			var tdtext = document.getElementById("UserState").innerHTML;
-			if(!( selectText == tdtext))  
+			//var selectId = document.getElementByName("state");
+			//var selectText = selectId.options[selectId.selectedIndex].text;
+			//var selectValue = selectId.options[selectId.selectedIndex].value;
+			//var tdtext = document.getElementById("UserState").innerHTML;
+			//var userID = document.getElementById("UserId").innerHTML;
+			//alert(userID);
+			alert(obj.id);
+			alert(selectValue);
+			if(!( selectText == tdtext ))
 			{
 					layer.confirm('确定修改吗？', {
 					btn: ['确定','取消'] //按钮
 					}, function(){
 					 //点击第一个运行
+					 // $.post("<?php echo U('Admin/User/update_sta');?>
+",{ status:selectValue },function(data){
+      //               alert(data['status']);
+                    
+                  
+      //             })
 						layer.msg('已修改', { icon: 1 });
 						document.getElementById("UserState").innerHTML=selectId.options[selectId.selectedIndex].text; 
 					//alert("1");

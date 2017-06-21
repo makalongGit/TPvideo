@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-06 09:48:42
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 18:48:26
          compiled from "./Template/default/Admin\Video\videolist.html" */ ?>
 <?php /*%%SmartyHeaderCode:2015759020b1754a172-10535321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '199f98afbfb8f0be6bc08426a6a96b920328e392' => 
     array (
       0 => './Template/default/Admin\\Video\\videolist.html',
-      1 => 1496713149,
+      1 => 1497955683,
       2 => 'file',
     ),
   ),
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'info' => 0,
     'v' => 0,
     'pagelist' => 0,
+    'parent_info' => 0,
     'catelist' => 0,
   ),
   'has_nocache_code' => false,
@@ -45,7 +46,92 @@ jquery-1.10.1.js"></script>
 pintuer.js"></script>
 <script src="<?php echo @__ADMIN_JS__;?>
 layer.js"></script>
+<style>
+        #jdt{ width:300px; height:25px; }
+        progress{ display:block;  width:200px; height:25px;  float:left;  }
+        #sd{ float:left;  }        
+    </style>
+  
+   <script>
+        /*
+            我们用到的api有Blob，他的file里面有slice方法可以截取二进制对象的一部分。。
+            而且我们需要修改php.ini文件，
+            upload_max_filesize = 20M ---上传文件，单个文件的最大值
+            post_max_size = 20M  post方式最大上传20M
 
+        */
+        function bfbs(bfb){
+            var pro = document.getElementsByTagName('progress')[0];
+            pro.style.display = 'block';
+            pro.setAttribute('value',bfb);
+            var sd = document.getElementById('sd');
+            sd.innerHTML = bfb +'%';
+        }
+        var clock = null;
+
+        xhr = new XMLHttpRequest();
+
+        function upgo(){
+            /*var up_name=document.getElementById("up_name").value;
+            if(up_name!=""){
+              $.post("<?php echo U('Upload/upload');?>
+",{ video_name : up_name },function(data){
+                if(data['status']==1)
+                  alert(该视频已存在);
+                else
+                  clock = window.setInterval(selefile,1000);
+              });
+            }
+            else
+              alert(请输入标题);  */
+            clock = window.setInterval(selefile,1000);
+        }
+
+        var selefile = (function(){
+            const LENGTH = 1 * 1024 * 1024; //每次切割10M
+            var sta = 0;
+            var end = sta + LENGTH;
+            var flag = false; //标识上一块正在上传中...
+            var blob = null;
+            var fd = null;
+            var xhr = null;
+            var bfb = 0;
+
+            return (function(){
+                if(flag == true){
+                    return;
+                }
+                var up_file = document.getElementById('video').files[0];
+                //如果sta大于up_file.size那么就结束咯
+                if(sta > up_file.size){
+                    clearInterval(clock);
+                    return false;
+                }
+                
+                blob = up_file.slice(sta,end);
+                var fd = new FormData();
+                fd.append('up_movie',blob);
+                fd.append('vname',123);
+                //请求后端
+                up(fd);
+
+                sta = end;
+                end = sta + LENGTH;
+                flag = false;
+
+                //进队条
+                bfb = Math.ceil(100 * end / up_file.size);
+                bfb > 100 ? bfb = 100 : bfb = bfb;
+                bfbs(bfb);
+            });
+        })();
+
+        function up(fd){
+            xhr.open('POST',"<?php echo U('Admin/Upload/upload');?>
+",false);
+            xhr.send(fd);
+        }
+    </script>
 
 </head>
 <body>
@@ -135,6 +221,14 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="fa fa-plus-square-o"></span> 增加内容</strong></div>
   <div class="body-content">
+  <div class="form-group">
+        <div id="jdt">
+          <progress max="100" value=""></progress>
+          <span id="sd"></span>
+        </div>
+        <input type="file" id="video" name="up_movie" onclick="upgo();" >
+        <div id="desc"></div>
+  </div>
     <form method="post" enctype="multipart/form-data" class="form-x" action="<?php echo U('video/videoadd');?>
 ">  
       <div class="form-group">
@@ -142,10 +236,12 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
           <label>标题：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" value="" name="videoName" data-validate="required:请输入标题" />
+          <input type="text" class="input w50" value="" id="up_name" name="videoName" data-validate="required:请输入标题" />
           <div class="tips"></div>
         </div>
       </div>
+
+     
       <div class="form-group">
         <div class="label">
           <label>图片：</label>
@@ -154,42 +250,64 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
           <input type="file" id="url1" name="img" class="input" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
           <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
           <input type="file" id="upload_image" style="visibility: hidden;">
-		  
+		    
         </div>
       </div>     
       
-      <if condition="$iscid eq 1">
         <div class="form-group">
-          <div class="label">
-            <label>分类标题：</label>
-          </div>
-          <div class="field">
-            <select name="vt_id" class="input w50">
-				<option value="">请选择分类</option>
-        <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+        <div class="label">
+          <label>分类：</label>
+        </div>
+        <div class="field">
+          <select  class="input w50" id="type">
+             <option>请选择类型</option>
+              <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['parent_info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+?>
+                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</option>
+              <?php } ?>
+          </select>
+          
+            <select name="vt_id" class="input w50" id="lables">
+            <option>请先选择类型</option>
+            </select>
+        </div>
+      </div>  
+       <!--  <div class="form-group">
+         <div class="label">
+           <label>分类标题：</label>
+         </div>
+         <div class="field">
+           <select name="vt_id" class="input w50">
+               <option value="">请选择分类</option>
+       <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-				<option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+               <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 ">
-                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
-                <span><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+               <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
+               <span><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 </span><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
 
-                <?php }else{ ?>
-                 <span ><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+               <?php }else{ ?>
+                <span ><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 </span><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
 <?php $_tmp1=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp1),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
 
-                <?php }?></option>
-        <?php } ?>
-            </select>
-            <div class="tips"></div>
-          </div>
-        </div>
+               <?php }?></option>
+       <?php } ?>
+           </select>
+           <div class="tips"></div>
+         </div>
+       </div> -->
         <div class="form-group">
           <div class="label">
             <label>其他属性：</label>
@@ -201,7 +319,6 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
          
           </div>
         </div>
-      </if>
       <div class="form-group">
         <div class="label">
           <label>描述：</label>
@@ -251,9 +368,9 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 <div class="panel admin-panel">
   <div class="panel-head" id="edit"><strong><span class="fa fa-edit"></span>修改内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" enctype="multipart/form-data" action="<?php echo U('Video/videoupdate');?>
-"> 
-    <input type="hidden"  name='vid' id="U-id" value="">
+    <form action="<?php echo U('Video/videoupdate');?>
+" method="post" class="form-x" enctype="multipart/form-data" > 
+      <input type="hidden"  name='vid' id="U-id" value="">
       <div class="form-group">
         <div class="label">
           <label>标题：</label>
@@ -275,39 +392,30 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
           
         </div>
       </div>     
-      
-      <if condition="$iscid eq 1">
+        
         <div class="form-group">
-          <div class="label">
-            <label>分类标题：</label>
-          </div>
-          <div class="field">
-            <select id="U-level"name="vt_id" class="input w50">
-				<option value="">请选择分类</option>
-				<?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['catelist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+        <div class="label">
+          <label>分类：</label>
+        </div>
+        <div class="field">
+          <select  class="input w50" id="type2">
+             <option>请选择类型</option>
+              <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['parent_info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-        <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-">
-                <?php if ($_smarty_tpl->tpl_vars['v']->value['lev']==0){?>
-                <span><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-</span><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
-
-                <?php }else{ ?>
-                 <span ><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
-</span><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
-<?php $_tmp2=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp2),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
-
-                <?php }?></option>
-        <?php } ?>
+                  <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['typename'];?>
+</option>
+              <?php } ?>
+          </select>
+          
+            <select name="vt_id" class="input w50" id="lables2">
+            <option>请先选择类型</option>
             </select>
-            <div class="tips"></div>
-          </div>
         </div>
+      </div> 
         <div class="form-group">
           <div class="label">
             <label>其他属性：</label>
@@ -521,7 +629,39 @@ $("#button_gai").removeAttr("disabled");
             }
 
    });
-
+//栏目动态获得
+$('#type').click(function(){
+  $(this).change(function(){
+    var   value = $(this).val();
+    $.post("<?php echo U('Cate/catelist');?>
+",{ vt_id : value },function(data){
+        $("#lables").empty();
+        var count = data.length;
+        var i = 0;
+        var b="";
+           for(i=0;i<count;i++){
+               b+="<option value='"+data[i].vt_id+"'>"+data[i].typename+"</option>";
+           }
+        $("#lables").append(b);
+    })    
+  });
+});
+$('#type2').click(function(){
+  $(this).change(function(){
+    var   value = $(this).val();
+    $.post("<?php echo U('Cate/catelist');?>
+",{ vt_id : value },function(data){
+        $("#lables2").empty();
+        var count = data.length;
+        var i = 0;
+        var b="";
+           for(i=0;i<count;i++){
+               b+="<option value='"+data[i].vt_id+"'>"+data[i].typename+"</option>";
+           }
+        $("#lables2").append(b);
+    })    
+  });
+});
 
 </script>
 

@@ -118,4 +118,14 @@
 		else 
 			return false;
 	}
+	/**
+	 * 删除临时上传的文件
+	 */
+	function delete_up()
+	{
+		$file="./Upload/video/tem_upload.wmv";
+		if(file_exists($file)){
+			unlink($file);
+		}
+	}
 

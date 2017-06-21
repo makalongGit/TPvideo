@@ -56,8 +56,18 @@ class IndexController extends Controller {
      * 搜索栏
      * @return [type] [description]
      */
-    public function search()
+    public function search_key()
     {
-        
+        $data=I('post.key_word');
+        $count=$this->video->where("keywords like '%$data%'")->count();
+        $page=new \Org\Video\Page($count,20);
+        $video=$this->video->where("keywords like '%$data%'")->limit($page->firstRow.','.$page->listRows)->select();
+        $pagelist=$page->show();
+        if(empty($video)){
+            $this->error('无查询数据',U('Home/Index/index'),2);
+        }
+        $this->assign('pagelist',$pagelist);
+        $this->assign('video',$video);
+        $this->display();
     }
 }
