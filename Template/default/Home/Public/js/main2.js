@@ -69,9 +69,11 @@
         this.$ctrlMain.append('<div class="duration ctrl-btn time-text" >0:00</div>');
         this.$ctrlMain.append('<input class="danmu-input ctrl-btn"   type="textarea" id="danmu_text" max=300 />'); // -> button あ
         this.$ctrlMain.append('<div class=" send-btn  ctrl-btn"  >发送 ></div>');
-        this.$ctrlMain.append('<div class="full-screen   ctrl-btn-right"><span class="" aria-hidden="true">全屏观看</span></div>');
-        this.$ctrlMain.append('<div class="show-danmu  ctrl-btn-right ctrl-btn-right-active"><span class="" aria-hidden="true">关闭弹幕</span></div>');
+        this.$ctrlMain.append('<div style="width:10%" class="full-screen ctrl-btn-right"><span class="" aria-hidden="true">全屏观看</span></div>');
+        this.$ctrlMain.append('<div style="width:15%" class="show-danmu  ctrl-btn-right ctrl-btn-right-active"><span class="" aria-hidden="true">关闭弹幕</span></div>');
+    
 
+         
         //播放器状态
         this.video = $(this.id + " .danmu-video").get(0);
         this.current = 0;  //当前播放时间
@@ -114,7 +116,7 @@
         this.sendDanmu = function (e) {
             var text = $(e.data.that.id + " .danmu-input").get(0).value;
 		
-			var colorString = ["yellow","blue","red","black","white"];
+			var colorString = ["yellow","blue","red"];
 
 			//alert(color[parseInt(5*Math.random())]);
 			//(parseInt(5*Math.random()))-1;

@@ -40,5 +40,17 @@ class PlayerController extends Controller{
 			}			
 		}
 	}
-
+	public function downloadF()
+	{
+		$vid=session('video_id');
+		$videoSrc=$this->video->where("vid=$vid")->getField('videoSrc');
+		$videopath="./Upload/video/".$videoSrc;
+		$name = $vidoeSrc;
+		$obj = new \Org\Video\FileDownload();  
+		$flag = $obj->download($videopath, $name);  
+		//$flag = $obj->download($file, $name, true); // 断点续传  		  
+		if(!$flag){  
+		   $this->error("系统出错");
+		} 				
+	}
 }

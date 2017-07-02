@@ -48,8 +48,7 @@ class UploadController extends Controller{
 		
 		$filename = './Upload/upload.wmv';//确定上传的文件名
 		//第一次上传时没有文件，就创建文件，此后上传只需要把数据追加到此文件中
-		echo '1';
-		dump($_FILES['up_movie']['tmp_name']);
+	
 		if(!file_exists($filename)){
 		    move_uploaded_file($_FILES['up_movie']['tmp_name'],$filename);
 		}else{

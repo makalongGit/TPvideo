@@ -40,7 +40,13 @@ class IndexController extends Controller {
                     ->select();
         $game_list=$this->video
                     ->join('cate on video.vt_id=cate.vt_id')
-                    ->where("isPassed=1 and isDelete=0 and cate.vt_id='27'")
+                    ->where("isPassed=1 and isDelete=0 and cate.level='27'")
+                    ->order('video.vid desc')
+                    ->limit(4)
+                    ->select(); 
+        $music_list=$this->video
+                    ->join('cate on video.vt_id=cate.vt_id')
+                    ->where("isPassed=1 and isDelete=0 and cate.vt_id='31'")
                     ->order('video.vid desc')
                     ->limit(4)
                     ->select(); 
@@ -50,6 +56,7 @@ class IndexController extends Controller {
         $this->assign('TV_list',$TV_list);
         $this->assign('carton_list',$carton_list);
         $this->assign('game_list',$game_list);
+        $this->assign('music_list',$music_list);
     	$this->display();
     }
     /**

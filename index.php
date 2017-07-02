@@ -44,7 +44,7 @@ define("__HOME_FONTS__",'/TPvideo/Template/default/Home/Public/fonts/');
 define("__HOME__",'/TPvideo/Template/default/Home/Index/');
 //上传图片视频路径
 define('ROOT',$_SERVER['DOCUMENT_ROOT']);
-define('THINK_PATH',ROOT.'TPvideo/ThinkPHP/');
+define('THINK_PATH',ROOT.'/TPvideo/ThinkPHP/');
 define("__UPLOAD__",'./Upload/');
 define("__UPLOAD_IMG__",'/TPvideo/Upload/');
 define("__UPLOAD_VIDEO__",'/TPvideo/Upload/video/');

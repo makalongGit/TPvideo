@@ -37,7 +37,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
+        <a id="logo" class="navbar-brand" href="{U('Home/Index/index')}"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
        <div id="navbar" class="navbar-collapse collapse">
@@ -51,9 +51,7 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
-            <a href="upload.html">上传</a>
-          </div>  
+          
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -225,10 +223,13 @@
           </div>
       <!-- //登录 -->
       {else}
-        
+        <div class="file" style="margin-right:5px">
+           
+  <a href="{U('Home/Player/downloadF')}">下载</a>
 
+          </div>  
       <div style="float:right;margin-top:5px">
-        <h3><span class="label label-info" style="">{$smarty.session.user_name}</span>
+        <h3><span class="label label-info" style="font-size:19px">{$smarty.session.user_name}</span>
         <a href="{U('Home/User/logout')}"><button  type="button" class="btn btn-danger">退出</button></a>
         </h3>
         
@@ -280,9 +281,12 @@
 
 <div id="main" style="width:90%"> 
   <div class="demo">
-    <div id="danmup" style="margin:20px auto"></div>
+    <div id="danmup" style="margin:90px auto"></div>
   </div> 
 </div>
+<!-- <div>
+  <a href="{U('Home/Player/downloadF')}"><h1>下载</h1></a>
+</div> -->
 
 <div class="panel panel-info" style="margin:10px 65px 10px 65px">
     <div class="panel-heading">
@@ -319,14 +323,15 @@
                   jdata=eval("("+data+")"); 
                   if(jdata.status==1){
                     layer.msg('评论成功', { icon: 1 });
-                    jdata=eval("("+data+")");                    
-                   
+                    //jdata=eval("("+data+")");     
+                    //alert(jdata.reviews)               ;
+                   var username1=jdata.username;
                     var reviews1=jdata.reviews;
                     var userID1=jdata.userid;
                     var time1=jdata.retime;
                     
-                    $('#revlist').prepend('<li class="list-group-item" style="font-size:20px"><span><strong>'+userID1+'</strong></span><br /><span style="margin-left:20px;font-size:15px">'+reviews1+'</span><br /><span style="font-size:12px">'+time1+'发表'+'</span></li>');
-                    $('#review_area').val("");
+                     $('#revlist').prepend('<li class="list-group-item" style="font-size:20px"><span><strong>'+username1+'</strong></span><br /><span style="margin-left:20px;font-size:15px">'+reviews1+'</span><br /><span style="font-size:12px">'+time1+'发表'+'</span></li>');
+                     $('#review_area').val("");
                   }
                   else if(jdata.status==2)
                     layer.msg('请先登陆', { icon: 2 });

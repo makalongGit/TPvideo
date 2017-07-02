@@ -42,45 +42,43 @@ class VideoController extends Controller{
 	}
 
 	public function videoadd(){
-			$data=I('post.');
-			dump($data);
-			dump($_FILES['img']);
-			//上传图片
-			if($_FILES['img']){
-				$upload=new \Think\Upload();
-				$info=$upload->uploadOne($_FILES['img']);
-				if(!$info) // 上传错误提示错误信息
-	    			$this->error($upload->getError());
-				else{// 上传成功 获取上传文件信息,对图片进行处理
-					//原图路径
-	        		$img=$info['savepath'].$info['savename'];
-	        		//缩略图路径
-	        		$thumb_img=dirname($img).'/thumb_'.basename($img);
-	        		$mid_img=dirname($img).'/mid_'.basename($img);
-	        		//生成缩略图	        		 
-	        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$thumb_img,85,55);
-	        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$mid_img);
-	        		$data['ori_img']=$img;
-	        		$data['thumb_img']=$thumb_img;
-	        		$data['mid_img']=$mid_img;
-	        		$filename=__UPLOAD_TVIDEO__;
-
-					if(file_exists($filename)){
-					    if(rename($filename,"./Upload/video/".$data['videoName'].".mp4")){
-					    	$data['videoSrc']=$data['videoName'].".mp4";
-					    }
-					}
+		$data=I('post.');
+		
+		//上传图片
+		if($_FILES['img']){
+			$upload=new \Think\Upload();
+			$info=$upload->uploadOne($_FILES['img']);
+			if(!$info) // 上传错误提示错误信息
+    			$this->error($upload->getError());
+			else{// 上传成功 获取上传文件信息,对图片进行处理
+				//原图路径
+        		$img=$info['savepath'].$info['savename'];
+        		//缩略图路径
+        		$thumb_img=dirname($img).'/thumb_'.basename($img);
+        		$mid_img=dirname($img).'/mid_'.basename($img);
+        		//生成缩略图	        		 
+        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$thumb_img,85,55);
+        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$mid_img);
+        		$data['ori_img']=$img;
+        		$data['thumb_img']=$thumb_img;
+        		$data['mid_img']=$mid_img;
+        		$filename=__UPLOAD_TVIDEO__;
+        		$data['videoN']=createRandomStr(10);
+				if(file_exists($filename)){
+				    if(rename($filename,"./Upload/video/".$data['videoN'].".mp4")){
+				    	$data['videoSrc']=$data['videoN'].".mp4";
+				    }
 				}
-
-				if($this->video->create($data)){
-           	 		if($this->video->add())//写入数据库,返回新增的键
-           	 			$this->success('新增成功', U('Admin/Video/videolist'),2);
-           	 		else
-           	 			$this->error('请重试',U('Admin/Video/videolist'));
-				}
-				
-				}
+			
 			}
+			if($this->video->create($data)){
+       	 		if($this->video->add())//写入数据库,返回新增的键
+       	 			$this->success('新增成功', U('Admin/Video/videolist'),2);
+       	 		else
+       	 			$this->error('请重试',U('Admin/Video/videolist'));
+			}		
+		}
+	}
 		
 
 	
@@ -105,11 +103,15 @@ class VideoController extends Controller{
         		$img=$info['savepath'].$info['savename'];
         		//缩略图路径
         		$thumb_img=dirname($img).'/thumb_'.basename($img);
+        		$mid_img=dirname($img).'/mid_'.basename($img);
         		//生成缩略图
-        		$image=new \Think\Image();
+        		/*$image=new \Think\Image();
         		$image->open(__UPLOAD__.$img);
-        		$image->thumb(85,55)->save(__UPLOAD__.$thumb_img);
+        		$image->thumb(85,55)->save(__UPLOAD__.$thumb_img);*/	        		 
+        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$thumb_img,85,55);
+        		 scale_img(__UPLOAD__.$img,__UPLOAD__.$mid_img);
         		$data['ori_img']=$img;
+        		$data['mid_img']=$mid_img;
         		$data['thumb_img']=$thumb_img;
 			}
    	 		if($this->video->where("vid=".$data['vid'])->save($data))//写入数据库,返回新增的键
@@ -127,8 +129,9 @@ class VideoController extends Controller{
 				if(false===$this->video->where("vid='$str[$i]'")->save($data)){
 					$str['status']=2;
 					break;
-				}else
+				}else{
 					$str['status']=1;
+				}
 			}
 			$this->ajaxReturn($str);
 		}

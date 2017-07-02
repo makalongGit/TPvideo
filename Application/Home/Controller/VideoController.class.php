@@ -22,19 +22,19 @@ class VideoController extends Controller{
     		$this->sequence=I('get.sequence');
     	$hot_list=$this->video
     					->join('Cate on video.vt_id=Cate.vt_id')
-						->where("isDelete=0 and isPassed=1 and Cate.vt_id=$this->type")
+						->where("isDelete=0 and isPassed=1 and Cate.level=$this->type")
 						->order('numOfViewed desc')
 						->limit(10)
 						->select();
     	$count=$this->video
 					->join('Cate on video.vt_id=Cate.vt_id')
-			    	->where("isDelete=0 and isPassed=1 and Cate.vt_id='$this->type'")
+			    	->where("isDelete=0 and isPassed=1 and Cate.level='$this->type'")
 			    	->count();
 		$page=new \Org\Video\Page($count,12);
 		$info=$this->video
 				    ->join('Cate on video.vt_id=Cate.vt_id')
 				    ->limit($page->firstRow.','.$page->listRows)
-		    		->where("isDelete=0 and isPassed=1 and Cate.vt_id='$this->type'")
+		    		->where("isDelete=0 and isPassed=1 and Cate.level='$this->type'")
 				    ->order("$this->sequence desc")
 				    ->select();			
 	    $pagelist=$page->show();
@@ -160,7 +160,8 @@ class VideoController extends Controller{
     				->select();
     	//人气排行
     	$hot_list=$this->video
-						->where('isDelete=0 and isPassed=1')
+    					->join('Cate on video.vt_id=Cate.vt_id')
+						->where("isDelete=0 and isPassed=1 and Cate.level=$this->type")
 						->order('numOfViewed desc')
 						->limit(10)
 						->select();			
@@ -239,15 +240,15 @@ class VideoController extends Controller{
 	// 	"src":"http://ws.stream.qqmusic.qq.com/108344251.m4a?fromtag=46",
 	// 	"img":"http://imgcache.qq.com/music/photo/album_500/65/500_albumpic_1588165_0.jpg",
 	// }
-   public function yinyue()
-   {
-   	//  $info=D('music')->field('name,singer,src,img')->select();
+   // public function yinyue()
+   // {
+   // 	//  $info=D('music')->field('name,singer,src,img')->select();
 
-   	//  $info=json_encode($info,JSON_UNESCAPED_UNICODE);
+   // 	//  $info=json_encode($info,JSON_UNESCAPED_UNICODE);
    	
-   	// var_dump($info);
-   	 // $this->assign('info',$info);
-   	$this->display();
-   }
+   // 	// var_dump($info);
+   // 	 // $this->assign('info',$info);
+   // 	$this->display();
+   // }
 
 }

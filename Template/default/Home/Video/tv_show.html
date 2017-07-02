@@ -48,9 +48,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -249,7 +249,7 @@
                         <li class="nav-item"><span><a href="{U('Home/Index/index')}" ><i class="icon-home"></i>主页</a></span></li>
                         <li class="nav-item"><a id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
                         <li class="nav-item"><a id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
-                        <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
+                        <li class="nav-item"><a class="on" id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
                         <li class="nav-item"><a id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
                         <li class="nav-item"><a id="music" href={U('Home/Video/yinyue')}>音乐</a></li>
@@ -390,7 +390,7 @@ $(function(){
 					<ul class="yun-list clearfix" id="yun-list">
 					{foreach $info as $v}		
 						<li class="yun yun-large border-gray">
-							<a class="yun-link" href="" title="{$v.videoname}">
+							<a class="yun-link" href='{U("Home/Player/play?video_id={$v.vid}")}' title="{$v.videoname}">
 								<div class="img">
 									<img class="lazy"  src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="{$v.videoname}" style="display: block;">
 									
@@ -429,7 +429,7 @@ $(function(){
 			{foreach $hot_list as $k=>$v}
             <li><span>{$v.numofviewed}</span>
 				<em class="">{$k+1}</em>
-				<a href="">{$v.videoname}</a>
+				<a href='{U("Home/Player/play?video_id={$v.vid}")}'>{$v.videoname}</a>
             </li>						
 			{/foreach}
 				
@@ -439,40 +439,7 @@ $(function(){
 		</ul>
 		</div>
 			
-		<div class="ui-ranking border-gray">
-        <div class="cont-box-list">
-          <h2 class="cont-box-tit-tvs-list"><i class="iconfont m-r-3 f-s-16">󰃐</i>评分排行榜</h2><span class="border-r-15"></span>
-        </div>
-        <ul class="ranking-list2">
-				
-           
-			<li></li>
-            <li><span>0.0</span>
-				<em class=''>1</em>
-				<a href="http://www.ccgzwl.cn/dianying/kongbu/buhanerli/">不寒而栗</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em class=''>2</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/juedizhanjiang/">绝地战将</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em class=''>3</em>
-				<a href="http://www.ccgzwl.cn/dianying/xiju/lanyanjingmiqi/">蓝眼睛米奇</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em>4</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/tegongshaote/">特工绍特</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em>5</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/guojiagongdi/">国家公敌</a>
-            </li>						
-		</ul>
-		</div>	
+		
 	</div>
 </div>
 <div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>

@@ -44,7 +44,7 @@
 
 
 <!-- 网站头部通用html -->
-<div class="mp">
+<div class="mp" style="z-index: 999;bottom:0px">
 	<div class="mp-box">
 		<img src="{$smarty.const.__HOME_IMAGE__}mplayer_error.png" alt="music cover" class="mp-cover">
 		<div class="mp-info">
@@ -203,9 +203,9 @@ setEffects(player);
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -407,7 +407,7 @@ setEffects(player);
                         <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
                         <li class="nav-item"><a id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
-                        <li class="nav-item"><a id="music" href={U('Home/Video/yinyue')}>音乐</a></li>
+                        <li class="nav-item"><a class="on" id="music" href={U('Home/Video/yinyue')}>音乐</a></li>
                     </ul>
                 </nav>
             </div>
@@ -475,9 +475,9 @@ $(function(){
 								<a href="javascript:;"><div class="splice opacity50" style="left: -8.5px;"></div></a>
 								<div class="bannerConBox" style="width: 1349px;">
 									<div class="bannerCon" style="margin-left: -674.5px;">
-										<h1>酷我音乐盒2016</h1>
+										<h1>xilixili音乐盒2016</h1>
 										<p>高音质版震撼来袭</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+								<!-- 		<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -490,7 +490,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>经典回归</h1>
 										<p>歌手·第十一期</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -528,7 +528,7 @@ $(function(){
 												<a onclick="postFocusClick(&#39;384&#39;)" class="all click_log" data-click="www2016focus_link_3" href="javascript:;" data-href="http://album.kuwo.cn/album/h/mbox?id=2325&amp;jxjType=2015Web">查看全部</a>
 											
 										</div>
-										<a class="bannerDown mvDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_3" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown mvDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_3" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -540,7 +540,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>港乐时代</h1>
 										<p>钟情张国荣</p>
-										<a class="bannerDown albumDown click_log indexAB" style="margin-left: 524.5px;">下载客户端</a>
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -550,9 +550,9 @@ $(function(){
 								<a href="javascript:;"><div class="splice opacity50" style="left: -8.5px;"></div></a>
 								<div class="bannerConBox" style="width: 1349px;">
 									<div class="bannerCon" style="margin-left: -674.5px;">
-										<h1>酷我音乐发烧友社区上线啦</h1>
+										<h1>xilixili音乐发烧友社区上线啦</h1>
 										<p>来这里听最真的音乐，遇见志同道合的人</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_5" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_5" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>					
@@ -564,7 +564,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>一曲唱罢，感心动耳</h1>
 										<p>用歌声为自己代言</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_6" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_6" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -576,7 +576,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>3D烧脑系列</h1>
 										<p>小心让你无法自拔</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_7" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_7" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -588,7 +588,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>激情演绎热辣新歌曲！</h1>
 										<p>不容错过的绝美女声！</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_8" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_8" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -600,7 +600,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>母带音频</h1>
 										<p>震撼首发</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_9" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_9" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>				
@@ -610,9 +610,9 @@ $(function(){
 								<a href="javascript:;"><div class="splice opacity50" style="left: -8.5px;"></div></a>
 								<div class="bannerConBox" style="width: 1349px;">
 									<div class="bannerCon" style="margin-left: -674.5px;">
-										<h1>酷我音乐盒2016</h1>
-										<p>高音质版震撼来袭</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<h1>xilixili音乐盒2016</h1>
+										<!-- <p>高音质版震撼来袭</p> -->
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -624,7 +624,7 @@ $(function(){
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>经典回归</h1>
 										<p>歌手·第十一期</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -784,7 +784,7 @@ $(function(){
 			<div class="clearfix"> 
 			</div>	
 			
-		<div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>
+		<div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px;color:#337ab7"><strong>弹幕组</strong></a></div>
 			
 <!-- 网站底部通用html -->
 

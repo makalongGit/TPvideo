@@ -38,7 +38,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
+        <a id="logo" class="navbar-brand" href="{U('Home/Index/index')}"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
        <div id="navbar" class="navbar-collapse collapse">
@@ -52,9 +52,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -290,7 +290,7 @@
          {foreach $video as $v}
      <li static="bl=subcomic_show&amp;to=search&amp;no=0" data-id="14262" class="bd-video-item   bd-video-meta-right ">
                 <div class="bd-video-poster">
-                    <a static="stp=po" href="" target="_blank" class="bd-video-link">
+                    <a static="stp=po" href='{U("Home/Player/play?video_id={$v.vid}")}' target="_blank" class="bd-video-link">
                         <img class="bd-video-img" src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="{$v.introduction}">
                         
                             <span class="bd-video-update">

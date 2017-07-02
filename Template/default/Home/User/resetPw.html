@@ -30,7 +30,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
+        <a id="logo" class="navbar-brand" href="{U('Home/Index/index')}"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
        <div id="navbar" class="navbar-collapse collapse">
@@ -44,9 +44,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -201,11 +201,11 @@
                   var reg_email=$('#email').val();
                     //alert(reg_email);
                   $.post("{U('Home/User/resetPw')}",{ email:reg_email },function(data){
-                    alert(data['link']);
+                    //alert(data['link']);
                     if(data['status']==1)
-                      alert('已发送');
+                      layer.msg('已发送');
                     else
-                      alert('邮箱不存在');
+                      layer.msg('邮箱不存在');
                   
                   })
 
@@ -242,14 +242,14 @@
 			<div class="navmai">
 				<nav class="nav">
 					<ul class="nav-list">
-                        <li class="nav-item"><span><a href="{U('Home/Index/index')}" ><i class="icon-home"></i>主页</a></span></li>
-                        <li class="nav-item"><a id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
-                        <li class="nav-item"><a id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
-                        <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
-                        <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
-                        <li class="nav-item"><a id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
-                        <li class="nav-item"><a id="music" href={U('Home/Video/yinyue')}>音乐</a></li>
-                    </ul>
+            <li class="nav-item"><span><a href="{U('Home/Index/index')}" ><i class="icon-home"></i>主页</a></span></li>
+            <li class="nav-item"><a id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
+            <li class="nav-item"><a id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
+            <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
+            <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
+            <li class="nav-item"><a id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
+            <li class="nav-item"><a id="music" href={U('Home/Video/yinyue')}>音乐</a></li>
+            </ul>
 				</nav>
 			</div>
 		</div>

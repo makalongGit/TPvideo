@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 19:00:34
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 22:15:27
          compiled from "./Template/default/Home\Player\play.html" */ ?>
 <?php /*%%SmartyHeaderCode:1373593e8e268abcb4-29027864%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '75e7cef08ecbabfefce4f7c3ce782e92e90b4666' => 
     array (
       0 => './Template/default/Home\\Player\\play.html',
-      1 => 1497956408,
+      1 => 1498486525,
       2 => 'file',
     ),
   ),
@@ -82,7 +82,8 @@ lanrenzhijia.css" type="text/css" rel="stylesheet" />
     <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+        <a id="logo" class="navbar-brand" href="<?php echo U('Home/Index/index');?>
+"><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
@@ -98,9 +99,7 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
-            <a href="upload.html">上传</a>
-          </div>  
+          
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -283,10 +282,14 @@ jquery.magnific-popup.js" type="text/javascript"></script>
           </div>
       <!-- //登录 -->
       <?php }else{ ?>
-        
+        <div class="file" style="margin-right:5px">
+           
+  <a href="<?php echo U('Home/Player/downloadF');?>
+">下载</a>
 
+          </div>  
       <div style="float:right;margin-top:5px">
-        <h3><span class="label label-info" style=""><?php echo $_SESSION['user_name'];?>
+        <h3><span class="label label-info" style="font-size:19px"><?php echo $_SESSION['user_name'];?>
 </span>
         <a href="<?php echo U('Home/User/logout');?>
 "><button  type="button" class="btn btn-danger">退出</button></a>
@@ -348,9 +351,13 @@ headroom.min.js"></script>
 
 <div id="main" style="width:90%"> 
   <div class="demo">
-    <div id="danmup" style="margin:20px auto"></div>
+    <div id="danmup" style="margin:90px auto"></div>
   </div> 
 </div>
+<!-- <div>
+  <a href="<?php echo U('Home/Player/downloadF');?>
+"><h1>下载</h1></a>
+</div> -->
 
 <div class="panel panel-info" style="margin:10px 65px 10px 65px">
     <div class="panel-heading">
@@ -396,14 +403,15 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                   jdata=eval("("+data+")"); 
                   if(jdata.status==1){
                     layer.msg('评论成功', { icon: 1 });
-                    jdata=eval("("+data+")");                    
-                   
+                    //jdata=eval("("+data+")");     
+                    //alert(jdata.reviews)               ;
+                   var username1=jdata.username;
                     var reviews1=jdata.reviews;
                     var userID1=jdata.userid;
                     var time1=jdata.retime;
                     
-                    $('#revlist').prepend('<li class="list-group-item" style="font-size:20px"><span><strong>'+userID1+'</strong></span><br /><span style="margin-left:20px;font-size:15px">'+reviews1+'</span><br /><span style="font-size:12px">'+time1+'发表'+'</span></li>');
-                    $('#review_area').val("");
+                     $('#revlist').prepend('<li class="list-group-item" style="font-size:20px"><span><strong>'+username1+'</strong></span><br /><span style="margin-left:20px;font-size:15px">'+reviews1+'</span><br /><span style="font-size:12px">'+time1+'发表'+'</span></li>');
+                     $('#review_area').val("");
                   }
                   else if(jdata.status==2)
                     layer.msg('请先登陆', { icon: 2 });

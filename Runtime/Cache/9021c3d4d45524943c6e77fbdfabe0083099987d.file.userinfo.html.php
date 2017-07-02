@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 11:02:57
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-25 00:52:15
          compiled from "./Template/default/Home\User\userinfo.html" */ ?>
 <?php /*%%SmartyHeaderCode:341059422b3420c5f8-03860256%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9021c3d4d45524943c6e77fbdfabe0083099987d' => 
     array (
       0 => './Template/default/Home\\User\\userinfo.html',
-      1 => 1497927749,
+      1 => 1498323132,
       2 => 'file',
     ),
   ),
@@ -289,6 +289,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 		<div class="wrapper">
 			<div class="navmai">
 				<nav class="nav">
+                    
 					<ul class="nav-list">
 						<li class="nav-item"><span><a href='index.php' ><i class="icon-home"></i>主页</a></span></li>
 						<li class="nav-item"><a id="movies" href='films/movies.php'>电影</a></li>
@@ -316,15 +317,9 @@ headroom.min.js"></script>
             box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
             
 <div style="padding: 50px 100px 10px;">
-	<form class="bs-example bs-example-form" method="post" entype="multipart/form-data" action="<?php echo U('Home/User/userinfo');?>
+	<form class="bs-example bs-example-form" method="post"  action="<?php echo U('Home/User/userinfo');?>
 "   role="form">
-		<div class="input-group" style="margin-bottom:10px">
-                          
-
-		<button type="button" class="btn btn-primary" onclick="select();">选择头像</button>
-		<input type="file" id="upload_image" style="visibility: hidden;">
-
-			</div>
+		
 		<div  class="input-group" style="margin-bottom:10px">
 			<span class="input-group-addon">用户名</span>
 			<input type="text" id="username" class="form-control" placeholder="输入至少6位密码">							
@@ -353,8 +348,9 @@ headroom.min.js"></script>
 				</select>
 			</div>
 
-		<button style="margin-left:450px;margin-top:10px">  <input type="submit" class="btn btn-primary" 
-    data-toggle="button" value="保存"> </button>
+		
+    <input type="submit" class="btn btn-primary" 
+    data-toggle="button" value="保存"> 
 		<br>
 		
 	</form>

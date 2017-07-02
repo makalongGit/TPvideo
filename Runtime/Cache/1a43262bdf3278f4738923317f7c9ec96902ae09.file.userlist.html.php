@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-14 20:45:02
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-22 18:09:56
          compiled from "./Template/default/Admin\User\userlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:271285902eb85488b16-76413085%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1a43262bdf3278f4738923317f7c9ec96902ae09' => 
     array (
       0 => './Template/default/Admin\\User\\userlist.html',
-      1 => 1497444295,
+      1 => 1498126193,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'info' => 0,
     'v' => 0,
+    'k' => 0,
     'pagelist' => 0,
   ),
   'has_nocache_code' => false,
@@ -57,8 +58,9 @@ layer.js"></script>
         <li>
         <form action="<?php echo @__SELF__;?>
 " method="POST" enctype="multipart/form-data">
-          <input type="text" placeholder="请输入用户ID" id="keywords"name="keywords"  class="input" style="width:250px; line-height:17px;display:inline-block" />
-		  <button type="submit" class="button border-main" onclick="changesearch(this)" id="id_search"><span class="fa fa-search"></span> 
+          <input type="text" placeholder="请输入用户ID" id="keywords" name="keywords"  class="input" style="width:250px; line-height:17px;display:inline-block" />
+		  <button type="submit" class="button border-main" onclick="changesearch(this)" id="id_search">
+		  <span class="fa fa-search"></span> 
 	搜索</button></form>
 		</li>
 			<form action="<?php echo @__SELF__;?>
@@ -108,21 +110,22 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 			<td><?php echo $_smarty_tpl->tpl_vars['v']->value['uservio'];?>
 </td>
 			<td id="UserState">
-			<?php if ($_smarty_tpl->tpl_vars['v']->value['userstatue']==1){?>
-			document.getElementById("state").options[1].selected = true;
+			<?php if ($_smarty_tpl->tpl_vars['v']->value['userstatus']==1){?>
+			封号中
 			<?php }elseif($_smarty_tpl->tpl_vars['v']->value['userstatus']==2){?>
-			未激活
-			<?php }else{ ?>
 			正常使用
+			<?php }else{ ?>
+			未激活
 			<?php }?>
 			</td>
 			<td>
-				<select name="state" id="state_<?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
+				<select name="state_<?php echo $_smarty_tpl->tpl_vars['k']->value;?>
+" id="state_<?php echo $_smarty_tpl->tpl_vars['v']->value['userid'];?>
 " style="padding:5px 15px; border:1px solid #ddd;" onchange="changestate(this)">
-					<option id="state0" value="3">更改状态</option>
-					<option id="state0" value="0">正常使用</option>
-					<option id="state1" value="1">封号中</option>
-					<option id="state2" value="2">未激活</option>
+					<option  value="0">更改状态</option>
+					<option  value="2">正常使用</option>
+					<option  value="1">封号中</option>
+					<option  value="0">未激活</option>
 				</select>
 		  	</td>
         </tr>
@@ -147,48 +150,46 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 	}
 	//单个修改
 	function changestate(obj){
+		var arr=obj.id;
+		var id = arr.split('_');
+		var name=obj.name;
+		var selectId = document.getElementsByName(name)[0];
+		var selectText = selectId.options[selectId.selectedIndex].text;
+		var selectValue = selectId.options[selectId.selectedIndex].value;
+		var tdtext = document.getElementById("UserState").innerHTML;
+		var userID = document.getElementById("UserId").innerHTML;			
+		//alert(selectValue);	
+		if(!( selectText == tdtext ))
+		{
+			layer.confirm('确定修改吗？', {
+			btn: ['确定','取消'] //按钮
+			}, function(){
+			 //点击第一个运行
+			 $.post("<?php echo U('Admin/User/update_sta');?>
+",{ ID:id[1],ST:selectValue },function(data){
+            	if(data['status']==1){
+            		layer.msg('已修改', { icon: 1 });
+            		setTimeout("document.location.reload()",1250);
+            	}else if(data['status']==0)
+            		layer.msg('修改失败', { icon: 2 });
+            	else
+            		layer.msg('修改失败', { icon: 2 });
+            	
+          	});
 			
-			//var selectId = document.getElementByName("state");
-			//var selectText = selectId.options[selectId.selectedIndex].text;
-			//var selectValue = selectId.options[selectId.selectedIndex].value;
-			//var tdtext = document.getElementById("UserState").innerHTML;
-			//var userID = document.getElementById("UserId").innerHTML;
-			//alert(userID);
-			alert(obj.id);
-			alert(selectValue);
-			if(!( selectText == tdtext ))
-			{
-					layer.confirm('确定修改吗？', {
-					btn: ['确定','取消'] //按钮
-					}, function(){
-					 //点击第一个运行
-					 // $.post("<?php echo U('Admin/User/update_sta');?>
-",{ status:selectValue },function(data){
-      //               alert(data['status']);
-                    
-                  
-      //             })
-						layer.msg('已修改', { icon: 1 });
-						document.getElementById("UserState").innerHTML=selectId.options[selectId.selectedIndex].text; 
-					//alert("1");
-					}, function(){
-					 //点击第二个运行
-					// alert("2");
-					layer.msg('已取消', { icon: 1 });
-					if(selectId.selectedIndex == 0){
-							selectId.options[1].selected = true;
-							
-						}
-						else{
-							selectId.options[0].selected = true;
-							
-						}
-  
-			});
-		
-				
-			}  
 			
+			//alert("1");
+			}, function(){
+			 //点击第二个运行
+			// alert("2");
+			layer.msg('已取消', { icon: 1 });
+			// if(selectId.selectedIndex == 0){
+			// 	selectId.options[1].selected = true;						
+			// 	}else{
+			// 		selectId.options[0].selected = true;				
+			// 	}
+			});			
+		}  			
 	}
 	
 

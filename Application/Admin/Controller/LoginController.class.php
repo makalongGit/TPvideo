@@ -10,7 +10,7 @@ class LoginController extends Controller{
 		if(I('post.')){
 
 			$very=new \Think\Verify();
-			if($very->check(I('post.name'))){
+			if($very->check(I('post.code'))){
 				$info=D('Manager')->checkNP(I('post.name'),I('post.password'));
 			
 				if($info){

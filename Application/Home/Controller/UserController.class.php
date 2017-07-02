@@ -19,6 +19,9 @@ class UserController extends Controller{
 			if($info['userstatus']==2){
 				$info=$this->user->checkNP($_POST['email'],$_POST['password']);
 				if($info){
+					$update['userID']=$this->user->where("email='$email'")->getField('userID');
+					$update['lastLoginTime']=date('Y-m-d H:i:s',time());
+					$this->user->save($update);
 					//session持久化用户信息，页面跳转到后台
 					session('user_id',$info['userid']);
 					session('user_name',$info['username']);
@@ -26,10 +29,9 @@ class UserController extends Controller{
 					$this->success('登陆成功',$returnUrl,2);
 				}else
 					$this->error('密码错误',U('Home/Index/index'),2);				
-			}else if($info['userstatus']==0){
+			}else if($info['userstatus']==0)
 				$this->error('账号未激活',U('Home/Index/index'),3);
-			}
-			else 
+			else if($info['userstatus']==1)
 				$this->error('账号已被封，请联系管理员',U('Home/Index/index'),2);
 		}
 	}
@@ -66,22 +68,20 @@ class UserController extends Controller{
 	public function activation(){
 		$accessToken=I('get.accessToken');
 		$nowTime=time();
-		dump($accessToken);
 		$rs=$this->user->where("accessToken='$accessToken'")->find();
-		dump($rs);
 		if($rs){
 			if(round(($nowTime-$rs['registertime'])/3600/24)>1){
-				echo '链接已过期';
+				$this->error("链接已过期",U('Home/Index/index'),2);
 			}else{
 				$data['userstatus']=2;
 				$update=$this->user->where("accessToken='$accessToken'")->save($data);
 				if($update){
-					echo '激活成功';
+					$this->success('激活成功',U('Home/Index/index'),2);
 				}else
-					echo '已激活或激活失败';
+					$this->error('已激活',U('Home/Index/index'),2);
 				}
 		}else
-			echo '插入数据失败';
+			$this->error('系统错误',U('Home/Index/index'),2);
 	}
 	/**
 	 * 验证邮箱
@@ -138,7 +138,8 @@ class UserController extends Controller{
 	{
 		if(I('post.')){
 			dump($_POST);
-		}
+		}else{
 		$this->display();
+	}
 	}
 }

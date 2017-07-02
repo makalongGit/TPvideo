@@ -50,8 +50,15 @@ class UserController extends Controller{
 
 	public function update_sta()
 	{
-		if(I('post.status')){
-			
+		if(I('post.ID')){
+			$update['userID']=I('post.ID');
+			$update['userstatus']=I('post.ST');
+			if($this->user->save($update)){
+				$data['status']=1;
+			}else{
+				$data['status']=0;
+			}
+			$this->AjaxReturn($data);
 		}
 	}
 }

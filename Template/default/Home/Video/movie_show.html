@@ -47,9 +47,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>  --> 
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -246,7 +246,7 @@
 				<nav class="nav">
 					<ul class="nav-list">
                         <li class="nav-item"><span><a href="{U('Home/Index/index')}" ><i class="icon-home"></i>主页</a></span></li>
-                        <li class="nav-item"><a id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
+                        <li class="nav-item"><a class="on" id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
                         <li class="nav-item"><a id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
                         <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
@@ -388,7 +388,7 @@ $(function(){
 					<ul class="yun-list clearfix" id="yun-list">		
 						{foreach $info as $k=>$v}
 						<li class="yun yun-large border-gray">
-							<a class="yun-link" href="" title="{$v.videoName}">
+							<a class="yun-link" href='{U("Home/Player/play?video_id={$v.vid}")}' title="{$v.videoName}">
 								<div class="img">
 									<img class="lazy"  src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="乐高蝙蝠侠大电影" style="display: block;">
 									
@@ -428,7 +428,7 @@ $(function(){
 				{foreach $hot_list as $k=>$v}
             <li><span>{$v.numofviewed}</span>
 				<em class="">{$k+1}</em>
-				<a href="">{$v.videoname}</a>
+				<a href='{U("Home/Player/play?video_id={$v.vid}")}'>{$v.videoname}</a>
             </li>						
 				{/foreach}
 		</ul>

@@ -32,7 +32,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
+        <a id="logo" class="navbar-brand" href="{U('Home/Index/index')}"><h1><img src="{$smarty.const.__HOME_IMAGE__}logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
        <div id="navbar" class="navbar-collapse collapse">
@@ -46,9 +46,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>  --> 
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -296,7 +296,7 @@ $(function(){
 	<div class="foucebox">
   <div class="bd">
   	{foreach $info as $v}
-	    <div class="showDiv"> <a href="">
+	    <div class="showDiv"> <a href='{U("Home/Player/play?video_id={$v.vid}")}'>
 		  <img src="{$smarty.const.__UPLOAD_IMG__}{$v.ori_img}"></a>
 	      <div class="foucebox_bg"></div>
 	      <div>
@@ -326,7 +326,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 					<div class="recommended-info">
 						<div style='width:200px;height:50px;'>
 						<a href="#" style='font-size:20px;color:black'><img src="{$smarty.const.__HOME_IMAGE__}fenge.png"/>&nbsp;电影</a>
-						<a href="{U('Home/Film/movies')}" style='font-size:15px;'>>>更多</a>
+						<a href="{U('Home/Video/movie_show')}" style='font-size:15px;'>>>更多</a>
 						</div>						
 					</div>
 					{foreach $film_list as $k=>$v}
@@ -370,7 +370,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 							{/if}
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
+								<a href='{U("Home/Player/play?video_id={$v.vid}")}'><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 								<div class="time small-time">
 									<p>{$v.publishedTime}</p>
 								</div>
@@ -411,7 +411,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 							{/if}
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
+								<a href='{U("Home/Player/play?video_id={$v.vid}")}'><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 								<div class="time small-time">
 									<p>{$v.publishedTime}</p>
 								</div>
@@ -445,7 +445,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 							{foreach $carton_list as $v}
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
+										<a href='{U("Home/Player/play?video_id={$v.vid}")}'><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 										<div class="time small-time slider-time">
 											<p>{$v.publishedTime}</p>
 										</div>
@@ -468,7 +468,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 								</div>
 							{/foreach}
 								<div class="clearfix"> </div>
-							}
+							
 							</div>													
 					</div>
               <div class="recommended-youxi">
@@ -483,7 +483,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 							{foreach $game_list as $v}
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href=""><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
+										<a href='{U("Home/Player/play?video_id={$v.vid}")}'><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="" /></a>
 										<div class="time small-time slider-time">
 											<p>{$v.publishedtime}</p>
 										</div>
@@ -509,7 +509,8 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 							</div>													
 					</div>
 					<div class="recommended-yinyue">
-					<div class="recommended-grids">
+					<!-- <div class="recommended-grids">
+
 						<div class="recommended-info">
 							<div style='width:200px;height:50px;'>
 							<a href="#" style='font-size:20px;color:black'><img src="{$smarty.const.__HOME_IMAGE__}fenge.png"/>&nbsp;音乐</a>
@@ -517,32 +518,34 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 						</div>
 						</div>						
 							<div class="animated-grids">
+               {foreach $music_list as $v}
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="{$smarty.const.__HOME_IMAGE__}c.jpg" alt="" /></a>
+										<a href='{U("Home/Player/play?video_id={$v.vid}")}'><img src="{$smarty.const.__HOME_IMAGE__}{$v.mid_img}" alt="" /></a>
 										<div class="time small-time slider-time">
-											<p>7:34</p>
+											<p>{$v.publishedtime}</p>
 										</div>
 										<div class="clck small-clck">
 											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 										</div>
 									</div>
 									<div class="resent-grid-info recommended-grid-info">
-										<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+										<h5><a href="single.html" class="title">{$v.introduction}</a></h5>
 										<div class="slid-bottom-grids">
 											<div class="slid-bottom-grid">
-												<p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+												<p class="author author-info"><a href="#" class="author">{$v.uid}</a></p>
 											</div>
 											<div class="slid-bottom-grid slid-bottom-right">
-												<p class="views views-info">2,114,200 views</p>
+												<p class="views views-info">{$v.numofviewed}views</p>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
+                {/foreach}
 								<div class="clearfix"> </div>
 							</div>													
-					</div>
+					</div> -->
 
 			    </div>
 				<!-- footer -->
@@ -587,11 +590,12 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 				<a id="scroll_yinyue" class="appgame-leftside-twi"  title="音乐">音乐</a>
 			</div>
 			<a class="appgame-leftside-top" onclick="gotoTPoint(&#39;top&#39;,400)"></a>
-		</div></div></div>
-		<div class="clearfix"> </div>
-			
- 	<div class="footer">
- 	<p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a>
- 	</div>
+		</div></div>
+    <div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>
+      
+    </div>
+
+		
+
  </body>
 </html>

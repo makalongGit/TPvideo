@@ -70,9 +70,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -266,14 +266,14 @@
 	
 		<div class="wrapper">
 			<div class="navmai">
-				<nav class="nav">
+				<nav class="nav" style="margin-top: 30px">
 					<ul class="nav-list">
                         <li class="nav-item"><span><a href="{U('Home/Index/index')}" ><i class="icon-home"></i>主页</a></span></li>
                         <li class="nav-item"><a id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
                         <li class="nav-item"><a id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
                         <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
-                        <li class="nav-item"><a id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
+                        <li class="nav-item"><a class="on" id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
                         <li class="nav-item"><a id="music" href={U('Home/Video/yinyue')}>音乐</a></li>
                     </ul>
 				</nav>
@@ -333,12 +333,12 @@ $(function(){
 						<li>
 	                        <p class="r-pic"><a target="_blank"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="{$v.videoname}"></a></p>
 	                        <div class="r-neck">
-	                            <a target="_blank" class="useravatar" href=""><img alt="" src="./唏里唏里游戏频道-视频_files/294457638_156ec691fe6g201b2831066_1.jpg"></a>
-	                            <a target="_blank" class="username" href="http://my.tv.sohu.com/user/294457638">{$v.uid}</a>
+	                            <a target="_blank" class="useravatar" href='{U("Home/Player/play?video_id={$v.vid}")}'></a>
+	                            <a target="_blank" class="username"  href='{U("Home/Player/play?video_id={$v.vid}")}'>{$v.uid}</a>
 	                        </div>
-	                        <h3><a title="零交流？辅助逆天获得四杀" href="" target="_blank">零交流？辅助逆天获得四杀</a></h3>
+	                        <h3><a title="" href='{U("Home/Player/play?video_id={$v.vid}")}' target="_blank">{$v.introduction}</a></h3>
 	                        <p>
-	                           <a title="零交流？辅助逆天获得四杀" href="" target="_blank">
+	                           <a title="" href="" target="_blank">
 	                        	<span rel="87322823" class="bcount" id="bvid87322823">{$v.numofviewed} Views</span>
 	                           </a>
 	                        </p>
@@ -373,7 +373,7 @@ $(function(){
 	            <ul class="col4" npb-txid="wm-2_wm-2-yx-rbb-rb_14" style="display: block;">
 	            {foreach $hot_list as $v}
 					<li class="cfix">
-	                    <a class="r-pic3" target="_blank" href="">
+	                    <a class="r-pic3" target="_blank" href='{U("Home/Player/play?video_id={$v.vid}")}'>
 	                        <span class="num nm1">1</span>
 	                        <img alt="" src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}">
 	                    </a>

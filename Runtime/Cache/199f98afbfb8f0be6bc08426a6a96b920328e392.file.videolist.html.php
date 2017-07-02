@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 18:48:26
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 20:03:32
          compiled from "./Template/default/Admin\Video\videolist.html" */ ?>
 <?php /*%%SmartyHeaderCode:2015759020b1754a172-10535321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '199f98afbfb8f0be6bc08426a6a96b920328e392' => 
     array (
       0 => './Template/default/Admin\\Video\\videolist.html',
-      1 => 1497955683,
+      1 => 1498478597,
       2 => 'file',
     ),
   ),
@@ -193,10 +193,18 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
          <td id="video_vt_<?php echo $_smarty_tpl->tpl_vars['v']->value['vid'];?>
 "><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 </td>
-          <td ><span class="fa fa-check" ><?php echo $_smarty_tpl->tpl_vars['v']->value['ishomepage'];?>
-</span></td>
-		      <td ><span class="fa fa-check"><?php echo $_smarty_tpl->tpl_vars['v']->value['isrem'];?>
-</span></td>
+        
+          <td >
+          <?php if ($_smarty_tpl->tpl_vars['v']->value['ishomepage']==1){?>
+            <span class="fa fa-check" ></span>
+          <?php }?>
+          </td>
+		      <td >
+          <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['isrem'];?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_tmp1==1){?>  
+          <span class="fa fa-check" ></span>
+          <?php }?>
+          </td>
           <td id="video_vt_<?php echo $_smarty_tpl->tpl_vars['v']->value['vid'];?>
 "><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 </td>
@@ -221,12 +229,16 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="fa fa-plus-square-o"></span> 增加内容</strong></div>
   <div class="body-content">
-  <div class="form-group">
+  <div class="form-group" style="margin-left: 70px;">
+
+         
+       
         <div id="jdt">
+         <label style="float: left;">标题：</label>
           <progress max="100" value=""></progress>
           <span id="sd"></span>
         </div>
-        <input type="file" id="video" name="up_movie" onclick="upgo();" >
+        <input style="margin-left: 40px;margin-top: 5px" type="file" id="video" name="up_movie" onclick="upgo();" >
         <div id="desc"></div>
   </div>
     <form method="post" enctype="multipart/form-data" class="form-x" action="<?php echo U('video/videoadd');?>
@@ -248,7 +260,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
         </div>
         <div class="field">
           <input type="file" id="url1" name="img" class="input" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
-          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
+         <!--  <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;"> -->
           <input type="file" id="upload_image" style="visibility: hidden;">
 		    
         </div>
@@ -300,7 +312,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                <?php }else{ ?>
                 <span ><?php echo $_smarty_tpl->tpl_vars['v']->value['vt_id'];?>
 </span><?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['v']->value['lev'];?>
-<?php $_tmp1=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp1),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
+<?php $_tmp2=ob_get_clean();?><?php echo preg_replace('!^!m',str_repeat("&nbsp&nbsp",$_tmp2),$_smarty_tpl->tpl_vars['v']->value['typename']);?>
 
                <?php }?></option>
        <?php } ?>
@@ -313,7 +325,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
             <label>其他属性：</label>
           </div>
           <div class="field" style="padding-top:8px;"> 
-            首页 <input id="isHomePage"  name="isHomePage"type="checkbox"  value="1"/>
+            首页 <input id="isHomePage"  name="isHomePage" type="checkbox"  value="1"/>
             推荐 <input id="isRem" name="isRem" type="checkbox" value="1" />
           
          
@@ -421,8 +433,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
             <label>其他属性：</label>
           </div>
           <div class="field" style="padding-top:8px;"> 
-            首页 <input name="Update" id="U-ishome"  value="1"type="checkbox" />
-            推荐 <input name="Update" id="U-isvouch"  type="checkbox" value="1" />
+            首页 <input id="isHomePage"  name="isHomePage" type="checkbox"  value="1"/>
+            推荐 <input id="isRem" name="isRem" type="checkbox" value="1" />
           
          
           </div>

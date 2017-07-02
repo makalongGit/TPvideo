@@ -21,10 +21,12 @@ class BookController extends Controller{
 		if(I('post.')){
 			//$danmu=strip_tags(I('post.danmu'));
 			$danmu=json_decode($_POST['danmu'],true);
-			$data['time']=$danmu['time']+5;
+			$data['time']=$danmu['time']+10;
 			$data['color']=$danmu['color'];
 			$data['reviews']=$danmu['text'];
-			$data['userID']=session('user_name')?session('user_name'):123;
+			$data['Retime']=date("Y-m-d H:i:s");
+			$num=rand(0,1000);
+			$data['userID']=session('user_name')?session('user_name'):"游客$num";
 			$data['vid']=session('video_id')?session('video_id'):0;
 			if($this->book->add($data)){
 				echo 'chengg';
@@ -49,6 +51,7 @@ class BookController extends Controller{
 				if($id){
 					$info=$this->book->where("ReID=$id")->find();
 					$info['status']=1;
+					$info['username']=session('user_name');
 					$rs=json_encode($info,JSON_UNESCAPED_UNICODE);				
 				}
 				$this->ajaxReturn($rs);

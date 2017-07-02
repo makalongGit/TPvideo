@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 10:36:30
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 23:24:10
          compiled from "./Template/default/Home\Video\movie_show.html" */ ?>
 <?php /*%%SmartyHeaderCode:9780593fe23f91bed8-64239685%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5dc60dd17987d71cb68817b655eecbf217d8dc34' => 
     array (
       0 => './Template/default/Home\\Video\\movie_show.html',
-      1 => 1497926187,
+      1 => 1498490625,
       2 => 'file',
     ),
   ),
@@ -92,9 +92,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>  --> 
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -305,7 +305,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 					<ul class="nav-list">
                         <li class="nav-item"><span><a href="<?php echo U('Home/Index/index');?>
 " ><i class="icon-home"></i>主页</a></span></li>
-                        <li class="nav-item"><a id="movies" href="<?php echo U('Home/Video/movie_show');?>
+                        <li class="nav-item"><a class="on" id="movies" href="<?php echo U('Home/Video/movie_show');?>
 ">电影</a></li>
                         <li class="nav-item"><a id="zongyi" href="<?php echo U('Home/Video/variety_show');?>
 ">综艺</a></li>
@@ -470,7 +470,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
 						<li class="yun yun-large border-gray">
-							<a class="yun-link" href="" title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoName'];?>
+							<a class="yun-link" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+' title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoName'];?>
 ">
 								<div class="img">
 									<img class="lazy"  src="<?php echo @__UPLOAD_IMG__;?>
@@ -524,7 +525,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 </span>
 				<em class=""><?php echo $_smarty_tpl->tpl_vars['k']->value+1;?>
 </em>
-				<a href=""><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+				<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 </a>
             </li>						
 				<?php } ?>

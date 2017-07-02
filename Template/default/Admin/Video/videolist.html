@@ -139,8 +139,17 @@
           <td width="10%"><img src="{$smarty.const.__UPLOAD_IMG__}{$v.thumb_img}" alt="" width="70" height="50" /></td></td>
           <td id="video_name_{$v.vid}">{$v.videoname}</td>
          <td id="video_vt_{$v.vid}">{$v.vt_id}</td>
-          <td ><span class="fa fa-check" >{$v.ishomepage}</span></td>
-		      <td ><span class="fa fa-check">{$v.isrem}</span></td>
+        
+          <td >
+          {if $v.ishomepage eq 1}
+            <span class="fa fa-check" ></span>
+          {/if}
+          </td>
+		      <td >
+          {if {$v.isrem} eq 1}  
+          <span class="fa fa-check" ></span>
+          {/if}
+          </td>
           <td id="video_vt_{$v.vid}">{$v.vt_id}</td>
           <td id="video_time_{$v.vid}">{$v.publishedtime}</td>
 		  <td id="video_num_{$v.vid}">{$v.numofviewed}</td>
@@ -158,12 +167,16 @@
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="fa fa-plus-square-o"></span> 增加内容</strong></div>
   <div class="body-content">
-  <div class="form-group">
+  <div class="form-group" style="margin-left: 70px;">
+
+         
+       
         <div id="jdt">
+         <label style="float: left;">标题：</label>
           <progress max="100" value=""></progress>
           <span id="sd"></span>
         </div>
-        <input type="file" id="video" name="up_movie" onclick="upgo();" >
+        <input style="margin-left: 40px;margin-top: 5px" type="file" id="video" name="up_movie" onclick="upgo();" >
         <div id="desc"></div>
   </div>
     <form method="post" enctype="multipart/form-data" class="form-x" action="{U('video/videoadd')}">  
@@ -184,7 +197,7 @@
         </div>
         <div class="field">
           <input type="file" id="url1" name="img" class="input" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
-          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
+         <!--  <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;"> -->
           <input type="file" id="upload_image" style="visibility: hidden;">
 		    
         </div>
@@ -232,7 +245,7 @@
             <label>其他属性：</label>
           </div>
           <div class="field" style="padding-top:8px;"> 
-            首页 <input id="isHomePage"  name="isHomePage"type="checkbox"  value="1"/>
+            首页 <input id="isHomePage"  name="isHomePage" type="checkbox"  value="1"/>
             推荐 <input id="isRem" name="isRem" type="checkbox" value="1" />
           
          
@@ -333,8 +346,8 @@
             <label>其他属性：</label>
           </div>
           <div class="field" style="padding-top:8px;"> 
-            首页 <input name="Update" id="U-ishome"  value="1"type="checkbox" />
-            推荐 <input name="Update" id="U-isvouch"  type="checkbox" value="1" />
+            首页 <input id="isHomePage"  name="isHomePage" type="checkbox"  value="1"/>
+            推荐 <input id="isRem" name="isRem" type="checkbox" value="1" />
           
          
           </div>

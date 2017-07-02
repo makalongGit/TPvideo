@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>唏里唏里XiliXili后台管理中心</title>  
+    <link type="image/x-icon" href="{$smarty.const.__HOME_IMAGE__}favicon.ico" rel="icon"/>
     <link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}pintuer.css">
     <link rel="stylesheet" href="{$smarty.const.__ADMIN_CSS__}admin.css">
     <link rel="stylesheet" href="{$smarty.const.__ADMIN_FONTS__}font-awesome.min.css">
@@ -17,7 +18,7 @@
     <h1><img src="{$smarty.const.__ADMIN_IMAGE__}y.jpg" class="radius-circle rotate-hover" height="50" alt="后台管理中心" />后台管理中心</h1>
   </div>
   <div class="head-l">
-  <a class="button button-little bg-blue" href="start.html" target="right"><span class="fa fa-home"></span> 前台首页</a> 
+  <a class="button button-little bg-blue" href="{U('Home/Index/index')}" ><span class="fa fa-home"></span> 前台首页</a> 
   <!--&nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a>--> 
   &nbsp;&nbsp;<a class=" button button-little bg-red outright" href="{U('Admin/Login/login')}"><span class="fa fa-power-off "></span> 退出登录</a> </div>
 </div>

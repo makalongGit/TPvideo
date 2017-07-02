@@ -1,0 +1,1472 @@
+[ 2017-06-21T17:05:57+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-21T20:56:57+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025001s ]
+
+[ 2017-06-21T20:56:58+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:03+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` WHERE ( isDelete=0 ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `video` WHERE ( isDelete=0 ) LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:04+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:04+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: catelist C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:05+08:00 ] ::1 /TPvideo/index.php/Admin/Book/booklist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `review` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `review` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:10+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: catelist C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-21T20:57:23+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:23+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:57:25+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: catelist C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-21T20:58:17+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:58:17+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-21T20:58:20+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: catelist C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp\www\TPvideo\Runtime\Cache\a564a049f2b385d626d09a405f8cfc7cc3fffecc.file.catelist.html.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:59:40+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:59:40+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:59:41+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:59:50+08:00 ] ::1 /TPvideo/index.php/Admin/Book/booklist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `review` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `review` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `review` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+NOTIC: [8] Undefined index: resym C:\wamp\www\TPvideo\Runtime\Cache\b706b87fa77d3f7745ae3ae153d5037689d430c9.file.booklist.html.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T20:59:53+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` WHERE ( isDelete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `video` WHERE ( isDelete=0 ) LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:00:03+08:00 ] ::1 /TPvideo/index.php/Admin/Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:00:04+08:00 ] ::1 /TPvideo/index.php/Admin/Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:00:05+08:00 ] ::1 /TPvideo/index.php/Admin/Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:00:06+08:00 ] ::1 /TPvideo/index.php/Admin/Upload/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:00:23+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cate` WHERE ( level=1 )  [ RunTime:0.0000s ]
+
+[ 2017-06-21T21:00:28+08:00 ] ::1 /TPvideo/index.php/Admin/video/videoadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0050s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: validate C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\TPvideo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `video` (`videoName`,`vt_id`,`isHomePage`,`introduction`,`keywords`,`uid`,`ori_img`,`thumb_img`,`mid_img`,`videoSrc`,`publishedTime`,`isDelete`,`isPassed`,`numofviewed`) VALUES ('test9','14','1','123','123','123','images/2017-06-21/594a6dec843c6.PNG','images/2017-06-21/thumb_594a6dec843c6.PNG','images/2017-06-21/mid_594a6dec843c6.PNG','test9.mp4','2017-06-21','0','1','0') [ RunTime:0.1050s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-21T21:00:31+08:00 ] ::1 /TPvideo/index.php/Admin/Video/videolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `video` WHERE ( isDelete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `video` WHERE ( isDelete=0 ) LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:01:22+08:00 ] ::1 /TPvideo/index.php/Admin/Cate/catelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cate` WHERE ( level=0 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-21T21:01:23+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-21T21:03:10+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.383022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.383022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:12+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:12+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-21T21:03:14+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:14+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:15+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-21T21:03:31+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-21T21:03:32+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:33+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:33+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:34+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-21T21:03:35+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:35+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:39+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:03:41+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-21T21:03:42+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-21T21:04:02+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:04:02+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:04:03+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:04:03+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:04:05+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:04:05+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:07:31+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.253014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.253014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:07:34+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:07:48+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.261015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.261015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:14:59+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.238013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.239013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-06-21T21:16:16+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.235014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.235014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T21:16:51+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.276016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.276016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:13:16+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.096005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.091005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.091005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.511029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.511029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2017-06-21T22:13:16+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:17:27+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.417024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.417024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:21:59+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.245014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.246014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:22:28+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.247014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.247014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:23:23+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.256014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:24:29+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.276015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.276015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:25:57+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.268015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.268015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:30:44+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.249015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.250015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:31:25+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.259015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:37:21+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.245014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.245014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:37:39+08:00 ] ::1 /TPvideo/index.php/Admin/User/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+NOTIC: [8] Undefined index: userstatue C:\wamp\www\TPvideo\Runtime\Cache\1a43262bdf3278f4738923317f7c9ec96902ae09.file.userlist.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.245014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.245014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-21T22:58:52+08:00 ] ::1 /TPvideo/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013000s ]
+
+[ 2017-06-21T22:58:54+08:00 ] ::1 /TPvideo/index.php/Admin/Index/start.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

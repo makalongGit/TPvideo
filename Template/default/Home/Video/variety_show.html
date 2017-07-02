@@ -66,9 +66,9 @@
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>  --> 
       {if $smarty.session.user_name eq null}  
       <!-- 注册-->
                 <div class="signin">
@@ -243,7 +243,7 @@
         
 
       <div style="float:right;margin-top:5px">
-        <h3><span class="label label-info" style="">{$smarty.session.user_name}</span>
+        <h3 style="font-size: 24px"><span class="label label-info" style="font-size: 19px">{$smarty.session.user_name}</span>
         <a href="{U('Home/User/logout')}"><button  type="button" class="btn btn-danger">退出</button></a>
         </h3>
         
@@ -265,7 +265,7 @@
                     <ul class="nav-list">
                         <li class="nav-item"><span><a href="{U('Home/Index/index')}" ><i class="icon-home"></i>主页</a></span></li>
                         <li class="nav-item"><a id="movies" href="{U('Home/Video/movie_show')}">电影</a></li>
-                        <li class="nav-item"><a id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
+                        <li class="nav-item"><a class="on" id="zongyi" href="{U('Home/Video/variety_show')}">综艺</a></li>
                         <li class="nav-item"><a id="dianshiju" href="{U('Home/Video/tv_show')}">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="{U('Home/Video/carton_show')}">动画</a></li>
                         <li class="nav-item"><a id="game" href="{U('Home/Video/game_show')}">游戏</a></li>
@@ -396,37 +396,24 @@ $(function(){
 </div>    <!--类别区域 END-->
 
     <!--内容区域 START-->
-    <div class="m-content">
+    <div class="m-content" style="padding-bottom:0px;">
         <div class="wp">
 <!-- 筛选功能 -->
-<div class="m-result">
-    <div class="m-relative">
-        <p class="u-count">共<b>854</b>个筛选结果</p>
-    </div>
-   
 
-</div>
 
         <!-- 列表循环 -->
 <div class="m-vlist v-list-v5 v-list">
     <ul class="v-list-inner">
     {foreach $info as $v}
         <li class="v-item-v5 v-item-x $0">
-                <a class="u-video" href="" target="_blank">
+                <a class="u-video" href='{U("Home/Player/play?video_id={$v.vid}")}' target="_blank">
                         <img class="u-image" src="{$smarty.const.__UPLOAD_IMG__}{$v.mid_img}" alt="名侦探俱乐部">
                     <em class="u-time">更新到 {$v.publishedtime} 期</em>
                     <!-- 通过接口返回的颜色和文字，在i标签中插入文字，设置style的background:# -->
                 </a>
                 <a class="u-title" href="http://www.mgtv.com/b/309803/3899509.html" target="_blank">{$v.videoname}</a>
                     <span class="u-desc">
-                                主持人：
-                <a href="" target="_blank" title="何炅">何炅</a>  / 
-
-                <a href="" target="_blank" title="撒贝宁">撒贝宁</a>  / 
-
-                <a href="" target="_blank" title="乔振宇">乔振宇</a>  / 
-
-                <a href="" target="_blank" title="白敬亭">白敬亭</a> 
+                                发布人：{$v.uid}
 
                     </span>
         </li>

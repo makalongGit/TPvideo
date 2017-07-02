@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-21 09:04:03
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-27 08:02:13
          compiled from "./Template/default/Home\User\resetPw.html" */ ?>
 <?php /*%%SmartyHeaderCode:6291593b6bb6c66c15-42124275%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e6698e4eb695927e5f0820e07e73e0ebaca03818' => 
     array (
       0 => './Template/default/Home\\User\\resetPw.html',
-      1 => 1497926353,
+      1 => 1498481208,
       2 => 'file',
     ),
   ),
@@ -62,7 +62,8 @@ lanrenzhijia.css" type="text/css" rel="stylesheet" />
 		<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+        <a id="logo" class="navbar-brand" href="<?php echo U('Home/Index/index');?>
+"><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
@@ -78,9 +79,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -246,11 +247,11 @@ jquery.magnific-popup.js" type="text/javascript"></script>
                     //alert(reg_email);
                   $.post("<?php echo U('Home/User/resetPw');?>
 ",{ email:reg_email },function(data){
-                    alert(data['link']);
+                    //alert(data['link']);
                     if(data['status']==1)
-                      alert('已发送');
+                      layer.msg('已发送');
                     else
-                      alert('邮箱不存在');
+                      layer.msg('邮箱不存在');
                   
                   })
 
@@ -289,21 +290,21 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 			<div class="navmai">
 				<nav class="nav">
 					<ul class="nav-list">
-                        <li class="nav-item"><span><a href="<?php echo U('Home/Index/index');?>
+            <li class="nav-item"><span><a href="<?php echo U('Home/Index/index');?>
 " ><i class="icon-home"></i>主页</a></span></li>
-                        <li class="nav-item"><a id="movies" href="<?php echo U('Home/Video/movie_show');?>
+            <li class="nav-item"><a id="movies" href="<?php echo U('Home/Video/movie_show');?>
 ">电影</a></li>
-                        <li class="nav-item"><a id="zongyi" href="<?php echo U('Home/Video/variety_show');?>
+            <li class="nav-item"><a id="zongyi" href="<?php echo U('Home/Video/variety_show');?>
 ">综艺</a></li>
-                        <li class="nav-item"><a id="dianshiju" href="<?php echo U('Home/Video/tv_show');?>
+            <li class="nav-item"><a id="dianshiju" href="<?php echo U('Home/Video/tv_show');?>
 ">电视剧</a></li>
-                        <li class="nav-item"><a id="dongman" href="<?php echo U('Home/Video/carton_show');?>
+            <li class="nav-item"><a id="dongman" href="<?php echo U('Home/Video/carton_show');?>
 ">动画</a></li>
-                        <li class="nav-item"><a id="game" href="<?php echo U('Home/Video/game_show');?>
+            <li class="nav-item"><a id="game" href="<?php echo U('Home/Video/game_show');?>
 ">游戏</a></li>
-                        <li class="nav-item"><a id="music" href=<?php echo U('Home/Video/yinyue');?>
+            <li class="nav-item"><a id="music" href=<?php echo U('Home/Video/yinyue');?>
 >音乐</a></li>
-                    </ul>
+            </ul>
 				</nav>
 			</div>
 		</div>

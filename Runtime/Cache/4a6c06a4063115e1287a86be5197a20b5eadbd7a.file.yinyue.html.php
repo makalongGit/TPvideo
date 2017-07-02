@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-21 16:48:26
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 23:54:02
          compiled from "./Template/default/Home\Video\yinyue.html" */ ?>
-<?php /*%%SmartyHeaderCode:3022594a17f7475092-69396067%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2715559511f41cee1c7-49866679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4a6c06a4063115e1287a86be5197a20b5eadbd7a' => 
     array (
       0 => './Template/default/Home\\Video\\yinyue.html',
-      1 => 1498034899,
+      1 => 1498492173,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3022594a17f7475092-69396067',
+  'nocache_hash' => '2715559511f41cee1c7-49866679',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_594a17f9004b3',
+  'unifunc' => 'content_59511f42c8cab',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_594a17f9004b3')) {function content_594a17f9004b3($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_59511f42c8cab')) {function content_59511f42c8cab($_smarty_tpl) {?><!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -85,7 +85,7 @@ pageload.js"></script>
 
 
 <!-- 网站头部通用html -->
-<div class="mp">
+<div class="mp" style="z-index: 999;bottom:0px">
 	<div class="mp-box">
 		<img src="<?php echo @__HOME_IMAGE__;?>
 mplayer_error.png" alt="music cover" class="mp-cover">
@@ -253,9 +253,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -476,7 +476,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 ">动画</a></li>
                         <li class="nav-item"><a id="game" href="<?php echo U('Home/Video/game_show');?>
 ">游戏</a></li>
-                        <li class="nav-item"><a id="music" href=<?php echo U('Home/Video/yinyue');?>
+                        <li class="nav-item"><a class="on" id="music" href=<?php echo U('Home/Video/yinyue');?>
 >音乐</a></li>
                     </ul>
                 </nav>
@@ -551,9 +551,9 @@ player.js"></script>
 								<a href="javascript:;"><div class="splice opacity50" style="left: -8.5px;"></div></a>
 								<div class="bannerConBox" style="width: 1349px;">
 									<div class="bannerCon" style="margin-left: -674.5px;">
-										<h1>酷我音乐盒2016</h1>
+										<h1>xilixili音乐盒2016</h1>
 										<p>高音质版震撼来袭</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+								<!-- 		<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -567,7 +567,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>经典回归</h1>
 										<p>歌手·第十一期</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -609,7 +609,7 @@ player.js"></script>
 												<a onclick="postFocusClick(&#39;384&#39;)" class="all click_log" data-click="www2016focus_link_3" href="javascript:;" data-href="http://album.kuwo.cn/album/h/mbox?id=2325&amp;jxjType=2015Web">查看全部</a>
 											
 										</div>
-										<a class="bannerDown mvDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_3" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown mvDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_3" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -622,7 +622,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>港乐时代</h1>
 										<p>钟情张国荣</p>
-										<a class="bannerDown albumDown click_log indexAB" style="margin-left: 524.5px;">下载客户端</a>
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -633,9 +633,9 @@ player.js"></script>
 								<a href="javascript:;"><div class="splice opacity50" style="left: -8.5px;"></div></a>
 								<div class="bannerConBox" style="width: 1349px;">
 									<div class="bannerCon" style="margin-left: -674.5px;">
-										<h1>酷我音乐发烧友社区上线啦</h1>
+										<h1>xilixili音乐发烧友社区上线啦</h1>
 										<p>来这里听最真的音乐，遇见志同道合的人</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_5" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_5" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>					
@@ -648,7 +648,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>一曲唱罢，感心动耳</h1>
 										<p>用歌声为自己代言</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_6" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_6" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -661,7 +661,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>3D烧脑系列</h1>
 										<p>小心让你无法自拔</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_7" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_7" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -674,7 +674,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>激情演绎热辣新歌曲！</h1>
 										<p>不容错过的绝美女声！</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_8" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_8" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -687,7 +687,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>母带音频</h1>
 										<p>震撼首发</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_9" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_9" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>				
@@ -698,9 +698,9 @@ player.js"></script>
 								<a href="javascript:;"><div class="splice opacity50" style="left: -8.5px;"></div></a>
 								<div class="bannerConBox" style="width: 1349px;">
 									<div class="bannerCon" style="margin-left: -674.5px;">
-										<h1>酷我音乐盒2016</h1>
-										<p>高音质版震撼来袭</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<h1>xilixili音乐盒2016</h1>
+										<!-- <p>高音质版震撼来袭</p> -->
+									<!-- 	<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_1" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -713,7 +713,7 @@ player.js"></script>
 									<div class="bannerCon" style="margin-left: -674.5px;">
 										<h1>经典回归</h1>
 										<p>歌手·第十一期</p>
-										<a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a>
+										<!-- <a class="bannerDown albumDown click_log indexAB" data-down="http://down.kuwo.cn/mbox/kwmusic_web_1.exe" data-click="www2016focus_down_2" href="javascript:;" style="margin-left: 524.5px;">下载客户端</a> -->
 									</div>
 								</div>
 							</li>
@@ -883,7 +883,7 @@ player.js"></script>
 			<div class="clearfix"> 
 			</div>	
 			
-		<div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>
+		<div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px;color:#337ab7"><strong>弹幕组</strong></a></div>
 			
 <!-- 网站底部通用html -->
 

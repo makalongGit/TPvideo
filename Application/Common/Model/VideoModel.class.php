@@ -24,6 +24,7 @@ class VideoModel extends RelationModel{
    			'foreign_key'=>'vt_id',
    			'as_fields'=>'typename,level',
    			),
+   		
    		);
 	/*public function has_son($vt_id){
 		$cate=D('Cate');

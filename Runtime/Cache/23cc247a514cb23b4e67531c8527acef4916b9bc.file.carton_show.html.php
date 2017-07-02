@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 10:34:24
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 23:25:24
          compiled from "./Template/default/Home\Video\carton_show.html" */ ?>
 <?php /*%%SmartyHeaderCode:32103593fe2f1678d00-92072419%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '23cc247a514cb23b4e67531c8527acef4916b9bc' => 
     array (
       0 => './Template/default/Home\\Video\\carton_show.html',
-      1 => 1497926062,
+      1 => 1498490722,
       2 => 'file',
     ),
   ),
@@ -96,9 +96,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+        <!--   <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -315,7 +315,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 ">综艺</a></li>
                         <li class="nav-item"><a id="dianshiju" href="<?php echo U('Home/Video/tv_show');?>
 ">电视剧</a></li>
-                        <li class="nav-item"><a id="dongman" href="<?php echo U('Home/Video/carton_show');?>
+                        <li class="nav-item"><a class="on" id="dongman" href="<?php echo U('Home/Video/carton_show');?>
 ">动画</a></li>
                         <li class="nav-item"><a id="game" href="<?php echo U('Home/Video/game_show');?>
 ">游戏</a></li>
@@ -556,7 +556,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
             <li static="bl=subcomic_show&amp;to=search&amp;no=0" data-id="14262" class="bd-video-item   bd-video-meta-right ">
                 <div class="bd-video-poster">
-                    <a static="stp=po" href="" target="_blank" class="bd-video-link">
+                    <a static="stp=po" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+' target="_blank" class="bd-video-link">
                         <img class="bd-video-img" src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
@@ -575,7 +576,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                 <div class="bd-video-primary">
                     <a static="stp=ti" href="" title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 " target="_blank">
-                        </a><h4 class="" title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+                        </a><h4 style="font-size: 12px" class="" title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 " target="_blank">
                             <?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 </a>
@@ -590,8 +591,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 <div class="bd-video-loading-icon">加载中</div>
 </div>
 </div>
-<div id="bd-pagination" class="bd-pagination">
-<div id="bd-pagination-list" static="bl=pagebar" class="bd-pagination-list filter-group">
+
 
 <tr> 
     <td colspan="12"><?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
@@ -599,7 +599,6 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 </tr>
       
     
-</div>
 </div>
 </div>
 

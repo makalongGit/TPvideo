@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 10:45:19
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 20:47:14
          compiled from "./Template/default/Home\Index\search_key.html" */ ?>
 <?php /*%%SmartyHeaderCode:239465942710f5e81e8-16008438%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '191f4e65183f93409be1d3418061340524313752' => 
     array (
       0 => './Template/default/Home\\Index\\search_key.html',
-      1 => 1497926707,
+      1 => 1498481230,
       2 => 'file',
     ),
   ),
@@ -83,7 +83,8 @@ main_0d32686a.js"></script>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+        <a id="logo" class="navbar-brand" href="<?php echo U('Home/Index/index');?>
+"><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
@@ -99,9 +100,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -362,7 +363,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
      <li static="bl=subcomic_show&amp;to=search&amp;no=0" data-id="14262" class="bd-video-item   bd-video-meta-right ">
                 <div class="bd-video-poster">
-                    <a static="stp=po" href="" target="_blank" class="bd-video-link">
+                    <a static="stp=po" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+' target="_blank" class="bd-video-link">
                         <img class="bd-video-img" src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>

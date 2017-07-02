@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 10:36:55
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 23:24:53
          compiled from "./Template/default/Home\Video\tv_show.html" */ ?>
 <?php /*%%SmartyHeaderCode:19549593fe39970fa35-51549765%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '70007961d6e120608287f41b79ca99d8b69f51d4' => 
     array (
       0 => './Template/default/Home\\Video\\tv_show.html',
-      1 => 1497926212,
+      1 => 1498490638,
       2 => 'file',
     ),
   ),
@@ -95,9 +95,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -312,7 +312,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 ">电影</a></li>
                         <li class="nav-item"><a id="zongyi" href="<?php echo U('Home/Video/variety_show');?>
 ">综艺</a></li>
-                        <li class="nav-item"><a id="dianshiju" href="<?php echo U('Home/Video/tv_show');?>
+                        <li class="nav-item"><a class="on" id="dianshiju" href="<?php echo U('Home/Video/tv_show');?>
 ">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="<?php echo U('Home/Video/carton_show');?>
 ">动画</a></li>
@@ -470,7 +470,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v
 $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>		
 						<li class="yun yun-large border-gray">
-							<a class="yun-link" href="" title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+							<a class="yun-link" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+' title="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 ">
 								<div class="img">
 									<img class="lazy"  src="<?php echo @__UPLOAD_IMG__;?>
@@ -525,7 +526,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 </span>
 				<em class=""><?php echo $_smarty_tpl->tpl_vars['k']->value+1;?>
 </em>
-				<a href=""><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
+				<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 </a>
             </li>						
 			<?php } ?>
@@ -536,40 +538,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 		</ul>
 		</div>
 			
-		<div class="ui-ranking border-gray">
-        <div class="cont-box-list">
-          <h2 class="cont-box-tit-tvs-list"><i class="iconfont m-r-3 f-s-16">󰃐</i>评分排行榜</h2><span class="border-r-15"></span>
-        </div>
-        <ul class="ranking-list2">
-				
-           
-			<li></li>
-            <li><span>0.0</span>
-				<em class=''>1</em>
-				<a href="http://www.ccgzwl.cn/dianying/kongbu/buhanerli/">不寒而栗</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em class=''>2</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/juedizhanjiang/">绝地战将</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em class=''>3</em>
-				<a href="http://www.ccgzwl.cn/dianying/xiju/lanyanjingmiqi/">蓝眼睛米奇</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em>4</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/tegongshaote/">特工绍特</a>
-            </li>
-				
-            <li><span>0.0</span>
-				<em>5</em>
-				<a href="http://www.ccgzwl.cn/dianying/dongzuo/guojiagongdi/">国家公敌</a>
-            </li>						
-		</ul>
-		</div>	
+		
 	</div>
 </div>
 <div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>

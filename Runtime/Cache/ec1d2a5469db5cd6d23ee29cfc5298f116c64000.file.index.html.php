@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 19:00:30
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 22:10:36
          compiled from "./Template/default/Home\Index\index.html" */ ?>
-<?php /*%%SmartyHeaderCode:65175935759a84a156-21758724%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:102165950ab422f17d1-56667172%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ec1d2a5469db5cd6d23ee29cfc5298f116c64000' => 
     array (
       0 => './Template/default/Home\\Index\\index.html',
-      1 => 1497956238,
+      1 => 1498486233,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '65175935759a84a156-21758724',
+  'nocache_hash' => '102165950ab422f17d1-56667172',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5935759c96b9b',
+  'unifunc' => 'content_5950ab43654f3',
   'variables' => 
   array (
     'info' => 0,
@@ -27,10 +27,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'TV_list' => 0,
     'carton_list' => 0,
     'game_list' => 0,
+    'music_list' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5935759c96b9b')) {function content_5935759c96b9b($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_5950ab43654f3')) {function content_5950ab43654f3($_smarty_tpl) {?><!DOCTYPE HTML>
 <html>
 <head>
 <title>唏里唏里XiliXili</title>
@@ -76,7 +77,8 @@ lanrenzhijia.css" type="text/css" rel="stylesheet" />
 		<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a id="logo" class="navbar-brand" href="U('Home/Index/index')"><h1><img src="<?php echo @__HOME_IMAGE__;?>
+        <a id="logo" class="navbar-brand" href="<?php echo U('Home/Index/index');?>
+"><h1><img src="<?php echo @__HOME_IMAGE__;?>
 logo.png1.png" alt="xilixili" /></h1></a>
       </div>
       
@@ -92,9 +94,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+         <!--  <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>  --> 
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -368,7 +370,8 @@ $(function(){
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
-	    <div class="showDiv"> <a href="">
+	    <div class="showDiv"> <a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'>
 		  <img src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['ori_img'];?>
 "></a>
@@ -409,7 +412,7 @@ jQuery(".foucebox").slide({ effect:"fold", autoPlay:true, delayTime:300, startFu
 						<div style='width:200px;height:50px;'>
 						<a href="#" style='font-size:20px;color:black'><img src="<?php echo @__HOME_IMAGE__;?>
 fenge.png"/>&nbsp;电影</a>
-						<a href="<?php echo U('Home/Film/movies');?>
+						<a href="<?php echo U('Home/Video/movie_show');?>
 " style='font-size:15px;'>>>更多</a>
 						</div>						
 					</div>
@@ -475,7 +478,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 							<?php }?>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="<?php echo @__UPLOAD_IMG__;?>
+								<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><img src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
 " alt="" /></a>
 								<div class="time small-time">
@@ -530,7 +534,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 							<?php }?>
 						<div class="col-md-3 resent-grid recommended-grid">
 							<div class="resent-grid-img recommended-grid-img">
-								<a href="single.html"><img src="<?php echo @__UPLOAD_IMG__;?>
+								<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><img src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
 " alt="" /></a>
 								<div class="time small-time">
@@ -576,7 +581,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="<?php echo @__UPLOAD_IMG__;?>
+										<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><img src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
 " alt="" /></a>
 										<div class="time small-time slider-time">
@@ -605,7 +611,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 								</div>
 							<?php } ?>
 								<div class="clearfix"> </div>
-							}
+							
 							</div>													
 					</div>
               <div class="recommended-youxi">
@@ -626,7 +632,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href=""><img src="<?php echo @__UPLOAD_IMG__;?>
+										<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><img src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
 " alt="" /></a>
 										<div class="time small-time slider-time">
@@ -658,7 +665,8 @@ views</p>
 							</div>													
 					</div>
 					<div class="recommended-yinyue">
-					<div class="recommended-grids">
+					<!-- <div class="recommended-grids">
+
 						<div class="recommended-info">
 							<div style='width:200px;height:50px;'>
 							<a href="#" style='font-size:20px;color:black'><img src="<?php echo @__HOME_IMAGE__;?>
@@ -668,33 +676,45 @@ fenge.png"/>&nbsp;音乐</a>
 						</div>
 						</div>						
 							<div class="animated-grids">
+               <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['music_list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+?>
 								<div class="col-md-3 resent-grid recommended-grid slider-first">
 									<div class="resent-grid-img recommended-grid-img">
-										<a href="single.html"><img src="<?php echo @__HOME_IMAGE__;?>
-c.jpg" alt="" /></a>
+										<a href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><img src="<?php echo @__HOME_IMAGE__;?>
+<?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>
+" alt="" /></a>
 										<div class="time small-time slider-time">
-											<p>7:34</p>
+											<p><?php echo $_smarty_tpl->tpl_vars['v']->value['publishedtime'];?>
+</p>
 										</div>
 										<div class="clck small-clck">
 											<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 										</div>
 									</div>
 									<div class="resent-grid-info recommended-grid-info">
-										<h5><a href="single.html" class="title">Varius sit sed viverra nullam viverra nullam interdum metus</a></h5>
+										<h5><a href="single.html" class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>
+</a></h5>
 										<div class="slid-bottom-grids">
 											<div class="slid-bottom-grid">
-												<p class="author author-info"><a href="#" class="author">John Maniya</a></p>
+												<p class="author author-info"><a href="#" class="author"><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
+</a></p>
 											</div>
 											<div class="slid-bottom-grid slid-bottom-right">
-												<p class="views views-info">2,114,200 views</p>
+												<p class="views views-info"><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
+views</p>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
 									</div>
 								</div>
+                <?php } ?>
 								<div class="clearfix"> </div>
 							</div>													
-					</div>
+					</div> -->
 
 			    </div>
 				<!-- footer -->
@@ -739,11 +759,12 @@ c.jpg" alt="" /></a>
 				<a id="scroll_yinyue" class="appgame-leftside-twi"  title="音乐">音乐</a>
 			</div>
 			<a class="appgame-leftside-top" onclick="gotoTPoint(&#39;top&#39;,400)"></a>
-		</div></div></div>
-		<div class="clearfix"> </div>
-			
- 	<div class="footer">
- 	<p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a>
- 	</div>
+		</div></div>
+    <div class="footer"><p align="center">@Copyright Design By <a href="#" style="font-size:20px"><strong>弹幕组</strong></a></div>
+      
+    </div>
+
+		
+
  </body>
 </html><?php }} ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-06-20 10:36:06
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 23:26:26
          compiled from "./Template/default/Home\Video\game_show.html" */ ?>
 <?php /*%%SmartyHeaderCode:24010593fe0ed70b417-40128250%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b7353a6f558e4240dbd54ab9399d023417274f32' => 
     array (
       0 => './Template/default/Home\\Video\\game_show.html',
-      1 => 1497926165,
+      1 => 1498490783,
       2 => 'file',
     ),
   ),
@@ -115,9 +115,9 @@ logo.png1.png" alt="xilixili" /></h1></a>
 
         <div class="header-top-right">
         <!-- 上传 -->
-          <div class="file">
+          <!-- <div class="file">
             <a href="upload.html">上传</a>
-          </div>  
+          </div>   -->
       <?php if ($_SESSION['user_name']==null){?>  
       <!-- 注册-->
                 <div class="signin">
@@ -324,7 +324,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 	
 		<div class="wrapper">
 			<div class="navmai">
-				<nav class="nav">
+				<nav class="nav" style="margin-top: 30px">
 					<ul class="nav-list">
                         <li class="nav-item"><span><a href="<?php echo U('Home/Index/index');?>
 " ><i class="icon-home"></i>主页</a></span></li>
@@ -336,7 +336,7 @@ jquery.magnific-popup.js" type="text/javascript"></script>
 ">电视剧</a></li>
                         <li class="nav-item"><a id="dongman" href="<?php echo U('Home/Video/carton_show');?>
 ">动画</a></li>
-                        <li class="nav-item"><a id="game" href="<?php echo U('Home/Video/game_show');?>
+                        <li class="nav-item"><a class="on" id="game" href="<?php echo U('Home/Video/game_show');?>
 ">游戏</a></li>
                         <li class="nav-item"><a id="music" href=<?php echo U('Home/Video/yinyue');?>
 >音乐</a></li>
@@ -408,13 +408,17 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 " alt="<?php echo $_smarty_tpl->tpl_vars['v']->value['videoname'];?>
 "></a></p>
 	                        <div class="r-neck">
-	                            <a target="_blank" class="useravatar" href=""><img alt="" src="./唏里唏里游戏频道-视频_files/294457638_156ec691fe6g201b2831066_1.jpg"></a>
-	                            <a target="_blank" class="username" href="http://my.tv.sohu.com/user/294457638"><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
+	                            <a target="_blank" class="useravatar" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'></a>
+	                            <a target="_blank" class="username"  href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'><?php echo $_smarty_tpl->tpl_vars['v']->value['uid'];?>
 </a>
 	                        </div>
-	                        <h3><a title="零交流？辅助逆天获得四杀" href="" target="_blank">零交流？辅助逆天获得四杀</a></h3>
+	                        <h3><a title="" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+' target="_blank"><?php echo $_smarty_tpl->tpl_vars['v']->value['introduction'];?>
+</a></h3>
 	                        <p>
-	                           <a title="零交流？辅助逆天获得四杀" href="" target="_blank">
+	                           <a title="" href="" target="_blank">
 	                        	<span rel="87322823" class="bcount" id="bvid87322823"><?php echo $_smarty_tpl->tpl_vars['v']->value['numofviewed'];?>
  Views</span>
 	                           </a>
@@ -455,7 +459,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v
 $_smarty_tpl->tpl_vars['v']->_loop = true;
 ?>
 					<li class="cfix">
-	                    <a class="r-pic3" target="_blank" href="">
+	                    <a class="r-pic3" target="_blank" href='<?php echo U("Home/Player/play?video_id=".($_smarty_tpl->tpl_vars['v']->value['vid']));?>
+'>
 	                        <span class="num nm1">1</span>
 	                        <img alt="" src="<?php echo @__UPLOAD_IMG__;?>
 <?php echo $_smarty_tpl->tpl_vars['v']->value['mid_img'];?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-05-31 08:39:01
+<?php /* Smarty version Smarty-3.1.6, created on 2017-06-26 20:08:28
          compiled from "./Template/default/Admin\Index\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:1201559020252e550a5-75704626%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '408aa0e156ccdb7b90072c07bbc1e65c70a1ae73' => 
     array (
       0 => './Template/default/Admin\\Index\\index.html',
-      1 => 1496122521,
+      1 => 1498478903,
       2 => 'file',
     ),
   ),
@@ -24,6 +24,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>唏里唏里XiliXili后台管理中心</title>  
+    <link type="image/x-icon" href="<?php echo @__HOME_IMAGE__;?>
+favicon.ico" rel="icon"/>
     <link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
 pintuer.css">
     <link rel="stylesheet" href="<?php echo @__ADMIN_CSS__;?>
@@ -45,7 +47,8 @@ layer.js"></script>
 y.jpg" class="radius-circle rotate-hover" height="50" alt="后台管理中心" />后台管理中心</h1>
   </div>
   <div class="head-l">
-  <a class="button button-little bg-blue" href="start.html" target="right"><span class="fa fa-home"></span> 前台首页</a> 
+  <a class="button button-little bg-blue" href="<?php echo U('Home/Index/index');?>
+" ><span class="fa fa-home"></span> 前台首页</a> 
   <!--&nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a>--> 
   &nbsp;&nbsp;<a class=" button button-little bg-red outright" href="<?php echo U('Admin/Login/login');?>
 "><span class="fa fa-power-off "></span> 退出登录</a> </div>
